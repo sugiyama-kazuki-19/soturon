@@ -273,8 +273,8 @@ $$d(x_{i-1},x_i)\leq c|t_{i-1}-t_i|+b=c\cdot b/c+b=2b$$
 \end{align*}
 を得る．$x_i\in g_i\cdot B \subset g_i\cdot B^\prime$ でもあるので，
 \begin{align*}
-  g_i\cdot B^\prime &\cap g_{i-1}\cdot B^\prime \neq\emptyset,\\
-  (g_{i-1}^{-1}\cdot g_i)\cdot B^\prime &\cap B^\prime \neq \emptyset.
+  g_i\cdot B^\prime \cap g_{i-1}\cdot B^\prime &\neq\emptyset,\\
+  (g_{i-1}^{-1}\cdot g_i)\cdot B^\prime \cap B^\prime &\neq \emptyset.
 \end{align*}
 よって，$(g_{i-1})^{-1}\cdot g_i \in S$ であり，$s_i:=(g_{i-1})^{-1}\cdot g_i\in S$ とすれば， $g$ は $g=g_n=e(g_0^{-1}g_1)(g_1^{-1}g_2)\cdots(g_{n-1}^{-1}g_n)=es_1s_2\cdots s_n$ と $S$ の元で表すことができる．
 \end{proof}
@@ -403,9 +403,9 @@ Theorem \ref{svarc} は，群作用が等長でなくても成立する．つま
 \end{proof}
 
 \begin{lem}\label{lem3}
-  Theorem \ref{svarc} の証明において，群作用が $(c^\prime,b^\prime)$-擬等長作用でも，定数$C,B$ があり，任意の $g,h\in G$ に関しての不等式
+  Theorem \ref{svarc} の証明において，群作用が $(c^\prime,b^\prime)$-擬等長作用でも，定数$C>0,B\geq 0$ があり，任意の $g,h\in G$ に関しての不等式
   $$\frac{1}{C}d_S(e,g)-B\leq d_X(\varphi(e),\varphi(g))\leq Cd_S(e,g)+B$$
-  が成立するならば，定数$C^\prime,B^\prime$ があり，任意の $g,h\in G$ に関しての不等式
+  が成立するならば，定数$C^\prime>0,B^\prime\geq 0$ があり，任意の $g,h\in G$ に関しての不等式
   $$\frac{1}{C^\prime}d_S(g,h)-B^\prime\leq d_X(\varphi(g),\varphi(h))\leq C^\prime d_S(g,h)+B^\prime$$
   が成立する．
 \end{lem}
@@ -598,5 +598,7 @@ $g(x)$ を $g\cdot x$ と表記する．
   $$X^g:=\{x\in X\mid g\cdot x=x\}\subset X$$
   のことである．
 \end{dfn}
+
+
 
 \end{document}
