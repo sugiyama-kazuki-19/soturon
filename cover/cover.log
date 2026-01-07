@@ -1,0 +1,120 @@
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.11.30)  23 DEC 2025 15:46
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**c:/Users/kazus/Desktop/tex/soturon/cover.tex
+(c:/Users/kazus/Desktop/tex/soturon/cover.tex
+pLaTeX2e <2023-02-14u04>+1, based on
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-14>
+(c:/texlive/2025/texmf-dist/tex/uplatex/base/ujarticle.cls
+Document Class: ujarticle 2020/09/30 v1.8f-u00 Standard upLaTeX class
+\c@@paper=\count274
+(c:/texlive/2025/texmf-dist/tex/uplatex/base/ujsize12.clo
+File: ujsize12.clo 2020/09/30 v1.8f-u00 Standard upLaTeX file (size option)
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 11.54663pt on input line 28.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 11.54663pt on input line 28.
+)
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY2/mc/m/n --> JY2/gt/m/n on input line 616.
+\toclineskip=\dimen164
+\@lnumwidth=\dimen165
+\bibindent=\dimen166
+\heisei=\count283
+) (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2025-10-09 L3 backend support: dvips
+\l__pdfannot_backend_content_box=\box70
+\l__pdfannot_backend_model_box=\box71
+\g__pdfannot_backend_int=\count284
+\g__pdfannot_backend_link_int=\count285
+\g__pdfannot_backend_link_sf_int=\count286
+) (./cover.aux)
+\openout1 = `cover.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 16.62714pt on input line 30.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 16.62714pt on input line 30.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 23.94002pt on input line 34.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 23.94002pt on input line 34.
+LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <24.88> not available
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 35.
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 23.94002pt on input line 35.
+LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <24.88> not available
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 35.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 23.94002pt on input line 35.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 19.95642pt on input line 41.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 19.95642pt on input line 41.
+LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <20.74> not available
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 43.
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 19.95642pt on input line 43.
+LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <20.74> not available
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 43.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 19.95642pt on input line 43.
+LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 49.
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 16.62714pt on input line 49.
+LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 49.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 16.62714pt on input line 49.
+ [1
+
+] (./cover.aux)
+ ***********
+pLaTeX2e <2023-02-14u04>+1, based on
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-14>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 523 strings out of 469647
+ 9477 string characters out of 5472212
+ 428578 words of memory out of 5000000
+ 29389 multiletter control sequences out of 15000+600000
+ 634200 words of font info for 77 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 35i,5n,38p,184b,287s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on cover.dvi (1 page, 768 bytes).
