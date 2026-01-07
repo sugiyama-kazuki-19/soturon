@@ -1,10 +1,10 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.11.30)  23 DEC 2025 15:46
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.11.30)  7 JAN 2026 15:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/kazus/Desktop/tex/soturon/cover.tex
-(c:/Users/kazus/Desktop/tex/soturon/cover.tex
+**c:/Users/kazus/github/soturon/cover/cover.tex
+(c:/Users/kazus/github/soturon/cover/cover.tex
 pLaTeX2e <2023-02-14u04>+1, based on
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-14>
@@ -110,11 +110,11 @@ L3 programming layer <2025-11-14>
  ) 
 Here is how much of TeX's memory you used:
  523 strings out of 469647
- 9477 string characters out of 5472212
+ 9480 string characters out of 5472212
  428578 words of memory out of 5000000
  29389 multiletter control sequences out of 15000+600000
  634200 words of font info for 77 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 35i,5n,38p,184b,287s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 35i,5n,38p,185b,287s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on cover.dvi (1 page, 768 bytes).
+Output written on cover.dvi (1 page, 776 bytes).

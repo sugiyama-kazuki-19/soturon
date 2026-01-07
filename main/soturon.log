@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.11.30)  7 JAN 2026 13:13
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.11.30)  7 JAN 2026 15:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -436,30 +436,17 @@ File: ../cover/cover.pdf Graphic file (type pdf)
 
 ]
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 8.65997pt on input line 40.
+(Font)              scaled to size 13.85594pt on input line 42.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 8.65997pt on input line 40.
-LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <9> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 40.
-LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 8.65997pt on input line 40.
-LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <9> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 40.
-LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 8.65997pt on input line 40.
- [2]
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 45.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 45.
+(Font)              scaled to size 13.85594pt on input line 42.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 45.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 42.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 45.
+(Font)              scaled to size 13.85594pt on input line 42.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 45.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 42.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 45.
+(Font)              scaled to size 13.85594pt on input line 42.
  (./soturon.toc
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <10> not available
 (Font)              Font shape `JT2/gt/m/n' tried instead on input line 1.
@@ -470,85 +457,85 @@ LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <10> not available
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 9.6222pt on input line 1.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 6.73553pt on input line 2.
+(Font)              scaled to size 6.73553pt on input line 3.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 4.8111pt on input line 2.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+(Font)              scaled to size 4.8111pt on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 6.73553pt on input line 2.
+(Font)              scaled to size 6.73553pt on input line 3.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 4.8111pt on input line 2.
+(Font)              scaled to size 4.8111pt on input line 3.
 )
 \tf@toc=\write4
 \openout4 = `soturon.toc'.
 
- [3
+ [2
 
 ]
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 49.
+(Font)              scaled to size 11.54663pt on input line 48.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 49.
+(Font)              scaled to size 11.54663pt on input line 48.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 49.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 48.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 49.
+(Font)              scaled to size 11.54663pt on input line 48.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 49.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 48.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 49.
- [4
+(Font)              scaled to size 11.54663pt on input line 48.
+ [3
 
 ]
 File: ../picture/benzu.png Graphic file (type bmp)
 <../picture/benzu.png>
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 129.
+(Font)              No change on input line 128.
+ [4]
+LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
+(Font)              No change on input line 184.
  [5]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 183.
+(Font)              No change on input line 252.
  [6]
-LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 250.
 File: ../picture/syoumei.png Graphic file (type bmp)
 <../picture/syoumei.png>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7]
-LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 282.
- [8]
+ [7]
 File: ../picture/2diamB+2b.png Graphic file (type bmp)
 <../picture/2diamB+2b.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9]
+[8]
 File: ../picture/R2Z2.png Graphic file (type bmp)
 <../picture/R2Z2.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
+(Font)              No change on input line 377.
+[9]
+LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
+(Font)              No change on input line 394.
  [10]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 376.
+(Font)              No change on input line 414.
+ [11]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 393.
+(Font)              No change on input line 483.
+ [12]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 413.
- [11] [12]
-LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 482.
-LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 502.
- [13] [14] [15] (./soturon.aux)
+(Font)              No change on input line 503.
+ [13] [14] (./soturon.aux)
  ***********
 pLaTeX2e <2023-02-14u04>+1, based on
 LaTeX2e <2025-11-01>
@@ -556,12 +543,12 @@ L3 programming layer <2025-11-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 14369 strings out of 469647
- 283578 string characters out of 5472212
- 673616 words of memory out of 5000000
- 42892 multiletter control sequences out of 15000+600000
- 638129 words of font info for 90 fonts, out of 8000000 for 9000
+ 14356 strings out of 469647
+ 283400 string characters out of 5472212
+ 672591 words of memory out of 5000000
+ 42881 multiletter control sequences out of 15000+600000
+ 636948 words of font info for 84 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  84i,14n,94p,858b,771s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on soturon.dvi (15 pages, 64720 bytes).
+Output written on soturon.dvi (14 pages, 64296 bytes).

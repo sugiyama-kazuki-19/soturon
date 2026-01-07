@@ -182,12 +182,6 @@ INPUT extractbb -p 1 -B cropbox -O ../cover/cover.pdf
 OUTPUT soturon.dvi
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-h.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-v.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-h.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-v.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm

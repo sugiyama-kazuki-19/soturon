@@ -37,20 +37,19 @@
 
 \includepdf{../cover/cover.pdf}
 
-\begin{abstract}
-頑張っていっぱい書こうね～～～～～～～～～
-\end{abstract}
 \clearpage
 
 \tableofcontents
 \clearpage
+\section{導入}
+いっぱい頑張って書こうね。
 
 \section{準備}
-\subsection{Quasi-Isometry of Meric Space}
-本論文では，$(X,d_X)，(Y,d_Y)$ を距離空間とし，省略して $X,Y$ と表記する．
+\subsection{Quasi-Isometry of Meric Spaces}
+$(X,d_X)$ を距離空間とし，省略して $X$ と表記する．
 
 \begin{dfn}\label{isom}
-写像 $f\colon X\rightarrow Y$ が \textbf{等長埋め込み (isometry embedding)} であるとは，任意の $x,x^\prime\in X$ に関して，$d_X(x,x^\prime)=d_Y(f(x),f(x^\prime))$ が成り立つことをいう．また，$f$ が \textbf{等長写像 (isometry)} であるというのは，以下の二条件を満たすときをいう．
+写像 $f\colon X\rightarrow Y$ が \textbf{等長埋め込み (isometry embedding)} であるとは，任意の $x,x^\prime\in X$ に関して，$d_X(x,x^\prime)=d_Y(f(x),f(x^\prime))$ が成り立つことをいう．また，$f$ が \textbf{等長写像 (isometry)} であるとは，以下の二条件を満たすときをいう．
 \begin{enumerate}
   \item $f$ が等長埋め込みである．
   \item ある等長埋め込み $g\colon Y\rightarrow X$ が存在し，$f\circ g=\mathrm{id}_Y，g\circ f=\mathrm{id}_X$ を満たす．
@@ -67,14 +66,14 @@
  $$\frac{1}{c}d_X(x,x^\prime)\leq d_Y(f(x),f(x^\prime))\leq cd_X(x,x^\prime)$$
  が成り立つことをいう．また，$f$ が \textbf{bilipschitz equivalence (bi-Lip)} であるとは，以下の二条件を満たすときをいう．
  \begin{enumerate}
-   \item $f$ が bilipschitz埋め込み である．
+   \item $f$ がbilipschitz埋め込みである．
    \item あるbilipschitz埋め込み $g\colon Y\rightarrow X$ が存在し，$f\circ g=\mathrm{id}_Y$，$g\circ f=\mathrm{id}_X$ を満たす．
  \end{enumerate}
 さらに，二つの距離空間 $X,Y$ が \textbf{bilipschitz equivalent} であるとは，bilipschitz equivalence な写像 $f\colon X\rightarrow Y$ が存在するときをいう． 
 \end{dfn}
 
 \begin{ex}
-$f\colon\mathbb{Z}\rightarrow 2\mathbb{Z}$ を，$f(n)=2n$ とすると，これは等長埋め込みではないが bilipschitz埋め込み である．実際，この写像は $c=2$ とすれば bilipschitz埋め込み の定義を満たす (ユークリッド距離から誘導される距離が入っているとみなしている)．かつ，$g\colon2\mathbb{Z}\rightarrow \mathbb{Z}$ を，$g(m)=m/2$ とすれば，$f,g$ によって $\mathbb{Z}$ と $2\mathbb{Z}$ は bilipschitz equivalent である．
+通常の距離が入った距離空間 $\mathbb{Z},2\mathbb{Z}$ に対し， $f\colon\mathbb{Z}\rightarrow 2\mathbb{Z}$ を，$f(n)=2n$ とすると，これは等長埋め込みではないが bilipschitz埋め込みである．実際，この写像は $c=2$ とすれば bilipschitz埋め込み の定義を満たす．また，$g\colon2\mathbb{Z}\rightarrow \mathbb{Z}$ を，$g(m)=m/2$ とすれば，$f,g$ によって $\mathbb{Z}$ と $2\mathbb{Z}$ は bilipschitz equivalent である．
 \end{ex}
 
 \begin{rem}
@@ -100,7 +99,7 @@ bilipschitz埋め込み は単射な連続写像である．よって，bilipsch
 \end{dfn}
 
 \begin{ex}
-$f\colon\mathbb{R}\rightarrow\mathbb{Z}$ を，$f(x)=\lfloor x \rfloor$ と定めると，これは bilipschitz embedding ではないが，擬等長埋め込みである．実際，この写像は $c=1,b=1$ とすれば擬等長埋め込みの定義を満たす (ユークリッド距離から誘導される距離が入っているとみなしている)．また，$\mathbb{Z}$ から $\mathbb{R}$ への包含写像を考えると，$f$ と包含写像によって $\mathbb{Z}$ と $\mathbb{R}$ は擬等長である．
+通常の距離が入った距離空間 $\mathbb{R},\mathbb{Z}$ に対し， $f\colon\mathbb{R}\rightarrow\mathbb{Z}$ を，$f(x)=\lfloor x \rfloor$ と定めると，これは bilipschitz embedding ではないが，擬等長埋め込みである．実際，この写像は $c=1,b=1$ とすれば擬等長埋め込みの定義を満たす．また，$\mathbb{Z}$ から $\mathbb{R}$ への包含写像を考えると，$f$ と包含写像によって $\mathbb{Z}$ と $\mathbb{R}$ は擬等長である．
 \end{ex}
 
 \begin{rem}
@@ -126,10 +125,12 @@ Definition \ref{QI} の 擬等長写像における二条件は，以下の二�
 \end{prop}
 
 \begin{proof}
-(Definition \ref{QI} $\Rightarrow$ の証明) ［2］を示せばよい．$f\colon X\rightarrow Y$ に対し，定義より，ある擬等長写像 $g\colon Y\rightarrow X$ が存在し，$f\circ g$ が $\mathrm{id}_Y$ と finite distance である．任意の $y\in Y$ をとる．$x:=g(y)$ と定めることで，
+Definition \ref{QI} を満たすならば［1］,［2］を満たすことの証明：\\
+［2］を示せばよい．$f\colon X\rightarrow Y$ に対し，定義より，ある擬等長写像 $g\colon Y\rightarrow X$ が存在し，$f\circ g$ が $\mathrm{id}_Y$ と finite distance である．任意の $y\in Y$ をとる．$x:=g(y)$ と定めることで，
 $$d_Y(f(x),y)=d_Y((f\circ g)(y),y)\leq c$$
 を満たす．\\
-($\Rightarrow$ Definition \ref{QI} の証明) ［1］［2］より，ある定数 $c\in\mathbb{R}_{>0}$ が存在し，
+［1］,［2］を満たすならば Definition \ref{QI} を満たすことの証明：\\ 
+仮定より，ある定数 $c\in\mathbb{R}_{>0}$ が存在し，
 \begin{enumerate}
   \item 任意の $x,x^\prime \in X$ に対し，$\frac{1}{c}d_X(x,x^\prime)-c \leq d_Y(f(x),f(x^\prime)) \leq cd_X(x,x^\prime)+c.$\label{1}
   \item 任意の $y\in Y$ に対しある $x\in X$ が存在し，$d_Y(f(x),y)\leq c.$\label{2}
@@ -151,36 +152,36 @@ $$d_Y(f(x),y)=d_Y((f\circ g)(y),y)\leq c$$
 Proposition \ref{dense image} の条件［2］を $f$ が満たすとき，$f$ は \textbf{quasi-dense image} をもつという．
 \end{dfn}
 
-\subsection{Quasi-Isometry of Group}
+\subsection{Quasi-Isometry of Groups}
 以下，$G$ を群として，$S$ をその生成系とする．
 \begin{dfn}
 生成系 $S$ による，群 $G$ 上の \textbf{word metric} とは，$d_S\colon G\times G\rightarrow \mathbb{N}$，
- $$d_S(g,h)=\mathrm{min}\{n\in\mathbb{N}\mid s_1,s_2,\ldots s_n\in S\cup S^{-1}，g^{-1}h=s_1s_2\cdots s_n\}$$
+ $$d_S(g,h)=\mathrm{min}\{n\in\mathbb{N}\mid s_1,s_2,\ldots, s_n\in S\cup S^{-1}，g^{-1}h=s_1s_2\cdots s_n\}$$
 であり，これは $G$ 上の距離関数である．
 \end{dfn}
 
 \begin{ex}
-  群 $G$ の生成系 $S$ からなる $\mathrm{Cay}(G,S)$ において，グラフ上の頂点間の距離とはまさに $d_S$ のことである($\mathrm{Cay}(G,S)$ の定義は Definition \ref{cayley} を参照していただきたい)．
+  群 $G$ の生成系 $S$ からなる $\mathrm{Cay}(G,S)$ において，グラフ上の頂点間の距離とはまさに $d_S$ のことである($\mathrm{Cay}(G,S)$ の定義は Definition \ref{cayley} を参照されたい)．
 \end{ex}
 
 \begin{dfn}\label{GQIX}
-$G$ を有限生成群としたとき，$G$ が距離空間 $X$ に \textbf{bilipschitz equivalent} であるとは，$G$ のある有限な生成系 $S$ がとれ，距離空間 $(G,d_S)$ と $X$ が bilipschitz equivalent であることをいう．また，$G$ が $X$ に \textbf{quasi-isometric} であるとは，ある有限な生成系 $S$ がとれ，距離空間 $(G,d_S)$ と $X$ が，quasi-isometric であることをいう．
+$G$ を有限生成群としたとき，$G$ が距離空間 $X$ に \textbf{bilipschitz equivalent} であるとは，$G$ のある有限な生成系 $S$ がとれ，距離空間 $(G,d_S)$ と $X$ が bilipschitz equivalent であることをいう．また，$G$ が $X$ に \textbf{擬等長 (quasi-isometric)} であるとは，ある有限な生成系 $S$ がとれ，距離空間 $(G,d_S)$ と $X$ が，quasi-isometric であることをいう．
 \end{dfn}
 
 \begin{rem}
-  群からできる距離空間では，群が有限生成であること，生成系を有限としていることに注意．
+  群 $G$ とその生成系 $S$ からできる距離空間 $(G,d_S)$ では，$G$ が有限生成であること，$S$ を有限としていることに注意．
 \end{rem}
 
 \begin{ex}
-  群 $\mathbb{Z}^2$ とその生成系 $S=\{(0,1),(1,0)\}$ からなる距離空間は，距離空間 $\mathbb{R}^2$ と quasi-isometric である．
+  群 $\mathbb{Z}^2$ とその生成系 $S=\{(0,1),(1,0)\}$ からなる距離空間 $(\mathbb{Z}^2,d_S)$ は，距離空間 $\mathbb{R}^2$ と擬等長である．
 \end{ex}
 
 \begin{prop}\label{Sprime}
-  $S$,$S^\prime$ をともに群 $G$ の有限な生成系 としたとき，距離空間 $(G,d_S)$ が 距離空間 $(X,d_X)$ と $f$ で bilipschitz equivalent ならば，$(G,d_{S^\prime})$ と $(X,d)$ も $f$ で bilipschitz equivalent である．
+  $S$,$S^\prime$ をともに群 $G$ の有限な生成系 としたとき，距離空間 $(G,d_S)$ が 距離空間 $(X,d_X)$ と $f$ で bilipschitz equivalent ならば，$(G,d_{S^\prime})$ と $(X,d_X)$ も $f$ で bilipschitz equivalent である．
 \end{prop}
 
 \begin{proof}
-$f \colon (X,d_X)\rightarrow (G,d_S)$，$f^\prime\colon (X,d_X)\rightarrow (G,d_{S^\prime})$ を共に bilipschitz equivalence とすると,以下の可換図式より，$f^\prime=f\circ\mathrm{id}=f$ が成立する．bilipschitz equivalence の合成写像は bilipschitz equivalence なので，あとは $\mathrm{id}$ が bilipschitz equivalence であることを示せばよい．
+$f \colon (X,d_X)\rightarrow (G,d_S)$，$f^\prime\colon (X,d_X)\rightarrow (G,d_{S^\prime})$ を共に bilipschitz equivalence とすると,可換図式
 \begin{center}
 \begin{tikzpicture}[auto]
 \node (X) at (0, 0) {$(X,d_X)$};
@@ -191,9 +192,9 @@ $f \colon (X,d_X)\rightarrow (G,d_S)$，$f^\prime\colon (X,d_X)\rightarrow (G,d_
 \draw[->] (S) to node {id} (S*);
 \end{tikzpicture}
 \end{center}
-($S$ が有限なので)有限値
+より，$f^\prime=f\circ\mathrm{id}=f$ が成立する．bilipschitz equivalence の合成写像は bilipschitz equivalence なので，あとは $\mathrm{id}$ が bilipschitz equivalence であることを示せばよい．$c$ を，
 $$c:=\underset{s\in S\cup S^{-1}}{\mathrm{max}}d_{S^\prime}(e,s)$$
-をとる．$g,h\in G$ をとり，$d_S(g,h)=n$ とし，$g^{-1}h=s_1s_2\cdots s_{n-1} s_n$ ($s_1,s_2,\ldots,s_{n-1},s_n\in S\cup S^{-1}$) と表せられるとする．このとき，$S^\prime$ 上での $g,h$ の word metric は，
+とすると，$S$ は有限なのでこれは有限値である．$g,h\in G$ をとり，$d_S(g,h)=n$ とし，$g^{-1}h=s_1s_2\cdots s_{n-1} s_n$ ($s_1,s_2,\ldots,s_{n-1},s_n\in S\cup S^{-1}$) と表せられるとする．このとき，$S^\prime$ 上での $g,h$ の word metric は，
 \begin{align*}
   d_{S^\prime}(g,h)&=d_{S^\prime}(g,s_1s_2\cdots s_nh)\\
   &\leq d_{S^\prime}(g,gs_1)+d_{S^\prime}(gs_1,gs_1s_2)+\cdots+d_{S^\prime}(gs_1s_2\cdots s_{n-1},gs_1s_2\cdots s_{n-1}s_n)\\
@@ -201,7 +202,7 @@ $$c:=\underset{s\in S\cup S^{-1}}{\mathrm{max}}d_{S^\prime}(e,s)$$
   &\leq c+c+\cdots+c+c\\
   &=cn=cd_S(g,h)
 \end{align*}
-となり，上からの不等式が得られる．同様の議論を $S,S^\prime$ を逆にしてすれば下からの不等式が得られる．id は全単射なので，bilipschitz equivalence である．
+となり，$d_{S^\prime}(g,h)\leq cd_S(g,h)$ が得られる．同様の議論を $S,S^\prime$ を逆にしてすれば $d_S(g,h)\leq cd_{S^\prime}(g,h)$ が得られる．id は全単射であることも含めると，id は bilipschitz equivalence である．
 \end{proof}
 
 \begin{rem}
@@ -225,9 +226,9 @@ $\mathbb{R}^n$ は測地的だが，$\mathbb{R}^n\setminus\{0\}$ は測地的で
 $\mathbb{R}^n\setminus\{0\}$ は，$(1,\epsilon)$-測地的である($\epsilon>0$)．これは，原点中心で十分小さい半径の円で原点を迂回すれば，擬測地線が得られるからである．
 \end{ex}
 
-\section{主定理 幾何学的群論 版}
-本論文の主定理となる，Švarc-Milnor lemma と，それに関連する主張について紹介する．
-\subsection{Švarc-Milnor lemma}
+\section{主定理}
+本論文の主定理となる，Švarc-Milnor Lemma と，それに関連する主張について紹介する．
+\subsection{Švarc-Milnor Lemma}
 \begin{thm}\label{svarc}
 $G$ を群とし，距離空間 $X$ 上に等長な群作用があるとする．もし
  \begin{enumerate}
@@ -247,7 +248,8 @@ $G$ を群とし，距離空間 $X$ 上に等長な群作用があるとする�
 ただし，$B^\prime :=\{x\in X\mid y\in X，d_X(x,y)\leq 2b\}$ と定める．
 \end{thm}
 
-\begin{proof}[Proof of \eqref{S_is_generating_set}]\label{proof1}
+\begin{proof}
+\eqref{S_is_generating_set} の証明：\\
 $g\in G$ を任意にとる．$x\in B$ としたとき，$X$ の仮定から $\gamma(0)=x$，$\gamma(L)=g\cdot x$ なる $(c,b)$-擬測地線 $\gamma$ が存在する．$[0,L]$ をおおよそ $n=\lceil L\cdot c/b \rceil$ 等分した点列を $t_i (0\leq i\leq n)$ とする．厳密には，
 $$t_i:=i\cdot b/c\;(0\leq i\leq n-1)，t_n:=L$$
 と定める．この点列と対応するように，$\mathrm{Im}\gamma$ に点列 $x_i \in X (0\leq i \leq n)$ をとる．つまり，
@@ -276,10 +278,9 @@ $$d(x_{i-1},x_i)\leq c|t_{i-1}-t_i|+b=c\cdot b/c+b=2b$$
   g_i\cdot B^\prime \cap g_{i-1}\cdot B^\prime &\neq\emptyset,\\
   (g_{i-1}^{-1}\cdot g_i)\cdot B^\prime \cap B^\prime &\neq \emptyset.
 \end{align*}
-よって，$(g_{i-1})^{-1}\cdot g_i \in S$ であり，$s_i:=(g_{i-1})^{-1}\cdot g_i\in S$ とすれば， $g$ は $g=g_n=e(g_0^{-1}g_1)(g_1^{-1}g_2)\cdots(g_{n-1}^{-1}g_n)=es_1s_2\cdots s_n$ と $S$ の元で表すことができる．
-\end{proof}
+よって，$(g_{i-1})^{-1}\cdot g_i \in S$ であり，$s_i:=(g_{i-1})^{-1}\cdot g_i\in S$ とすれば， $g$ は $g=g_n=e(g_0^{-1}g_1)(g_1^{-1}g_2)\cdots(g_{n-1}^{-1}g_n)=es_1s_2\cdots s_n$ と $S$ の元で表すことができる．\\
 
-\begin{proof}[Proof of \eqref{G~X}]
+\eqref{2} の証明：\\
 $B$ の仮定より，任意の $x\in X$ は $B$ に含まれていると考えてよい($x\in g\cdot B$ となる $g\cdot B$ を改めて $B$ とすればよいため)．
 \begin{enumerate}
   \item[［1］] 写像 $\varphi(g)=g\cdot x$ に関して，quasi-dense image であること．
@@ -288,13 +289,13 @@ $B$ の仮定より，任意の $x\in X$ は $B$ に含まれていると考え�
 の二点を示す．\\
 
 \noindent
-［1］ $\varphi$ が quasi-dense image であること:\\
+［1］ $\varphi$ が quasi-dense image であること：\\
 任意の $x^\prime \in X$ に関して，$x^\prime\in g^\prime\cdot B$ となる $g^\prime \in G$ がとれるため，
 $$d_X(x^\prime,\varphi(g^\prime))=d_X(x^\prime,g^\prime\cdot x)\leq \mathrm{diam}(g^\prime \cdot B)=\mathrm{diam}B.$$
 仮定より $\mathrm{diam}B$ は有限なので，$\varphi$ が quasi-dense image であることが示された．\\
 
 \noindent
-［2］ $\varphi$ が 擬等長埋め込みであること:\\
+［2］ $\varphi$ が 擬等長埋め込みであること：\\
 ある定数 $C>0,B\geq0$ が存在し， 任意の $g,h\in G$ に対して，
 $$\frac{1}{C}d_S(g,h)-B\leq d_X(\varphi(g),\varphi(h))\leq Cd_S(g,h)+B.$$
 であることを示せばいいが，word metric の定義と $G$ が等長に作用していることから，
@@ -309,7 +310,7 @@ $$\frac{1}{C}d_S(e,g)-B\leq d_X(\varphi(e),\varphi(g))\leq Cd_S(e,g)+B$$
 が成立することを示せばよい．\\
 
 \noindent
-［$2-1$］ $\frac{1}{C}d_S(e,g)-B\leq d_X(\varphi(e),\varphi(g))$ が成立すること:\\
+［$2-1$］ $\frac{1}{C}d_S(e,g)-B\leq d_X(\varphi(e),\varphi(g))$ が成立すること：\\
  任意に $g\in G$ をとる．このとき，$g$ に対して proof of (1) と同様の議論により $s_1,s_2,\ldots ,s_n\in S\cup S^{-1}$ がとれ，$g=s_1s_2\cdots s_n$ と表せられる．このときの $\gamma$ を用いて，
 \begin{align*}
   d_X(\varphi(e),\varphi(g))=d_X(x,g\cdot x)&=d_X(\gamma(0),\gamma(L))\\
@@ -320,7 +321,7 @@ $$\frac{1}{C}d_S(e,g)-B\leq d_X(\varphi(e),\varphi(g))\leq Cd_S(e,g)+B$$
 とすることで，下からの不等式が得られる．\\
 
 \noindent
-［$2-2$］ $d_X(\varphi(e),\varphi(g))\leq Cd_S(e,g)+B$ が成立すること:\\
+［$2-2$］ $d_X(\varphi(e),\varphi(g))\leq Cd_S(e,g)+B$ が成立すること：\\
 任意に $g\in G$ をとる．$d_S(e,g)=n$ とし，$g=s_1s_2\cdots s_n$ と表せられるとする．このとき，各 $s_i\in S\cup S^{-1}$ ($1\leq i\leq n$) に対して，$S$ の定義 $B^\prime\cap s_i\cdot B^\prime\neq\emptyset$ より，
 $$d_X(x,s_i\cdot x)\leq \mathrm{diam}B+2b+\mathrm{diam}B=2(\mathrm{diam}B+b)$$
 が成立する(図 \ref{2diamB+2b} 参照)．
@@ -356,24 +357,24 @@ $$B=\{(x,y)\in\mathbb{R}^2\mid -1\leq x\leq 1，-1\leq y\leq 1\}$$
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=11cm]{../picture/R2Z2}
+\includegraphics[width=10cm]{../picture/R2Z2}
 \caption{$B,B^\prime$ の図}
 \label{R2Z2}
 \end{figure}
 
 \end{ex}
-\subsection{Švarc-Milnor lemma の拡張}
+\subsection{Švarc-Milnor Lemma の拡張}
 Theorem \ref{svarc} は，群作用が等長でなくても成立する．つまり，以下のとおりである．
 \begin{thm}
-  Theorem \ref{svarc} は，群 $G$ が距離空間 $X$ に“擬”等長な群作用としても成り立つ．
+  Theorem \ref{svarc} は，群 $G$ が距離空間 $X$ に等長な群作用だけでなく，擬等長な群作用としても成り立つ．
 \end{thm}
-証明は，以下のLemma \ref{lem1}，Lemma \ref{lem2}，Lemma \ref{lem3} より与えらえる．
+証明は，以下のLemma \ref{lem1}--\ref{lem3} より与えらえる．
 
 \begin{lem}\label{lem1}
-  Theorem \ref{svarc} の証明において，群作用が $(c^\prime,b^\prime)$-擬等長作用でも $x_i\in g_{i-1}\cdot B^\prime$ が成立する．ただし，$B^\prime :=\{x\in X\mid y\in X，d_X(x,y)\leq 2bc^\prime+b^\prime\}$ とする．
+  Theorem \ref{svarc} の証明において，群作用が $(c^\prime,b^\prime)$-擬等長な作用でも $x_i\in g_{i-1}\cdot B^\prime$ が成立する．ただし，$B^\prime :=\{x\in X\mid y\in X，d_X(x,y)\leq 2bc^\prime+b^\prime\}$ とする．
 \end{lem}
 \begin{proof}
-  群作用が $(c^\prime,b^\prime)$-擬等長作用より，
+  群作用が $(c^\prime,b^\prime)$-擬等長なので，
   $$\frac{1}{c^\prime}d_X(g\cdot x,g\cdot y)-\frac{b^\prime}{c^\prime}\leq d_X(x,y)$$
   が成立する．したがって，
   \begin{align*}
@@ -387,10 +388,10 @@ Theorem \ref{svarc} は，群作用が等長でなくても成立する．つま
 \end{proof}
 
 \begin{lem}\label{lem2}
-  Theorem \ref{svarc} の証明において，群作用が $(c^\prime,b^\prime)$-擬等長作用でも $\mathrm{diam}(g^\prime\cdot B)< \infty$ である． 
+  Theorem \ref{svarc} の証明において，群作用が $(c^\prime,b^\prime)$-擬等長な作用でも $\mathrm{diam}(g^\prime\cdot B)< \infty$ である． 
 \end{lem}
 \begin{proof}
-   群作用が $(c^\prime,b^\prime)$-擬等長作用より，
+   群作用が $(c^\prime,b^\prime)$-擬等長なので，
       $$d_X(g\cdot x,g\cdot y)\leq c^\prime d_X(x,y)+b^\prime$$
     が成立する．よって，
   \begin{align*}
@@ -403,7 +404,7 @@ Theorem \ref{svarc} は，群作用が等長でなくても成立する．つま
 \end{proof}
 
 \begin{lem}\label{lem3}
-  Theorem \ref{svarc} の証明において，群作用が $(c^\prime,b^\prime)$-擬等長作用でも，定数$C>0,B\geq 0$ があり，任意の $g,h\in G$ に関しての不等式
+  Theorem \ref{svarc} の証明において，群作用が $(c^\prime,b^\prime)$-擬等長な作用でも，定数$C>0,B\geq 0$ があり，任意の $g,h\in G$ に関しての不等式
   $$\frac{1}{C}d_S(e,g)-B\leq d_X(\varphi(e),\varphi(g))\leq Cd_S(e,g)+B$$
   が成立するならば，定数$C^\prime>0,B^\prime\geq 0$ があり，任意の $g,h\in G$ に関しての不等式
   $$\frac{1}{C^\prime}d_S(g,h)-B^\prime\leq d_X(\varphi(g),\varphi(h))\leq C^\prime d_S(g,h)+B^\prime$$
@@ -414,7 +415,7 @@ word metric の定義から，
 \begin{align*}
   d_S(g,h)&=d_S(e,g^{-1}h)
 \end{align*}
-が成立し，群作用が$(c^\prime,b^\prime)$-擬等長作用なことから，
+が成立し，群作用が$(c^\prime,b^\prime)$-擬等長なことから，
 \begin{align*}
   d_X(\varphi(e),\varphi(g^{-1}h))&=d_X(x,(g^{-1}h)\cdot x)\\
   &\leq c^\prime d_X(g\cdot x,h\cdot x)+c^\prime b^\prime=c^\prime d_X(\varphi(g),\varphi(h))+c^\prime b^\prime\\
@@ -447,7 +448,7 @@ Thm \ref{svarc} の主張を，位相空間論の視点で言い換えた主張�
 \begin{dfn}
   距離空間 $(X,d)$ が \textbf{proper} であるとは，任意の $x\in X$，$r\in \mathbb{R}_{>0}$ に関して，集合
   $$\{y\in X\mid d(x,y)\leq r\}$$
-  が常に コンパクト になることをいう．ここでの位相とは，距離から自然に誘導される位相をさす．
+  が常にコンパクトになることをいう．
 \end{dfn}
 
 \begin{ex}
@@ -465,7 +466,7 @@ $\mathbb{R}$ に $\mathbb{Z}$ が加法で群作用をしているとき，こ�
 \end{ex}
 
 \begin{dfn}
-  群 $G$ が位相空間 $X$ に作用しているとする．この作用が \textbf{余コンパクト (cocompact)} であるとは，商空間 $G\backslash X$ が コンパクトであることをいう．言い換えると，ある コンパクト な集合 $K\subset X$ が存在し，
+  群 $G$ が位相空間 $X$ に作用しているとする．この作用が \textbf{余コンパクト (cocompact)} であるとは，商空間 $G\backslash X$ がコンパクトであることをいう．言い換えると，あるコンパクトな集合 $K\subset X$ が存在し，
   $$X=\bigcup_{g\in G}g\cdot K$$
   を満たす．
 \end{dfn}
@@ -474,7 +475,7 @@ $\mathbb{R}$ に $\mathbb{Z}$ が加法で群作用をしているとき，こ�
   $\mathbb{R}$ に $\mathbb{Z}$ や $\mathbb{Q}$ が加法で群作用をしているとき，この作用は余コンパクトである．一方，$\mathbb{R}^2$ に $\mathbb{Z}$ が作用する場合，これは余コンパクトでない(商空間は$S^1\times \mathbb{R}$ と同相であり，これはコンパクトでないため)．
 \end{ex}
 
-\subsection{Švarc-Milnor lemma (位相空間論 版)}
+\subsection{Švarc-Milnor Lemma (位相空間論 版)}
 \begin{thm}
   群 $G$ が，proper かつ擬測地的な距離空間 $(X,d)$ に，等長に作用しているとする．この群作用が properly discontinuous かつ余コンパクトであれば，$G$ は有限生成であり，$G$ と $X$ は擬等長である．
 \end{thm}
@@ -517,7 +518,7 @@ $X$ は擬測地的であるので，Thm \ref{svarc} の仮定を満足するよ
 \appendix
 \section{付録}
 ここでは幾何学的群論の分野にて基本的な概念となる Cayleyグラフ や，その周辺の事項について述べる．
-\subsection{Cayley Graph}
+\subsection{Cayley Graphs}
 以下，$G$ を群として，$S$ をその生成系とする．
 
 \begin{dfn}\label{cayley}
@@ -536,7 +537,7 @@ $X$ は擬測地的であるので，Thm \ref{svarc} の仮定を満足するよ
  $\mathrm{Cay}(G,S)$ が tree であり，任意の $s,s^\prime\in S$ に対して $s\cdot s^\prime \neq e$ のとき，$G$ は自由群である．
 \end{thm}
 
-\subsection{Group Action}
+\subsection{Group Actions}
  以下，$G$ を群，$X$ を集合とする．
 
 \begin{dfn}
@@ -557,9 +558,9 @@ $g(x)$ を $g\cdot x$ と表記する．
 \end{dfn}
 
 \begin{dfn}
-  $(V,E),(V^\prime,E^\prime)$ をグラフとする．写像 $f\colon (V,E)\rightarrow(V^\prime,E^\prime)$ が \textbf{グラフ準同型 (graph homomorphism)} であるとは，二条件
+  $(V,E),(V^\prime,E^\prime)$ をグラフとする．$f\colon (V,E)\rightarrow(V^\prime,E^\prime)$ が \textbf{グラフ準同型 (graph homomorphism)} であるとは，二条件
   \begin{enumerate}
-    \item $f\colon V\rightarrow V$ が写像.
+    \item $f\colon V\rightarrow V^\prime$ が写像.
     \item $\{v,v^\prime\}\in E\Rightarrow \{f(v),f(v^\prime)\}\in E^\prime.$   
   \end{enumerate}
   が成り立つときをいう．また，$f$ が \textbf{グラフ同型 (graph isomorphism)} であるとは，二条件
@@ -598,5 +599,7 @@ $g(x)$ を $g\cdot x$ と表記する．
   $$X^g:=\{x\in X\mid g\cdot x=x\}\subset X$$
   のことである．
 \end{dfn}
+
+
 
 \end{document}
