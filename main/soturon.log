@@ -1,10 +1,10 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.11.30)  7 JAN 2026 00:04
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.11.30)  7 JAN 2026 12:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/kazus/Desktop/tex/soturon/main/soturon.tex
-(c:/Users/kazus/Desktop/tex/soturon/main/soturon.tex
+**c:/Users/kazus/github/soturon/main/soturon.tex
+(c:/Users/kazus/github/soturon/main/soturon.tex
 pLaTeX2e <2023-02-14u04>+1, based on
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-14>
@@ -557,11 +557,11 @@ L3 programming layer <2025-11-14>
  ) 
 Here is how much of TeX's memory you used:
  14369 strings out of 469647
- 283593 string characters out of 5472212
- 673613 words of memory out of 5000000
+ 283578 string characters out of 5472212
+ 673616 words of memory out of 5000000
  42892 multiletter control sequences out of 15000+600000
  638129 words of font info for 90 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 84i,14n,94p,863b,771s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,14n,94p,858b,771s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on soturon.dvi (15 pages, 64712 bytes).
+Output written on soturon.dvi (15 pages, 64684 bytes).
