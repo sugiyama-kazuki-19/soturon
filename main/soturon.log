@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.11.30)  7 JAN 2026 15:07
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.11.30)  9 JAN 2026 02:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -480,61 +480,59 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 
 ]
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 48.
+(Font)              scaled to size 11.54663pt on input line 52.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 48.
+(Font)              scaled to size 11.54663pt on input line 52.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 48.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 52.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 48.
+(Font)              scaled to size 11.54663pt on input line 52.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 48.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 52.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 48.
+(Font)              scaled to size 11.54663pt on input line 52.
  [3
 
 ]
 File: ../picture/benzu.png Graphic file (type bmp)
 <../picture/benzu.png>
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 128.
+(Font)              No change on input line 135.
  [4]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 184.
- [5]
+(Font)              No change on input line 195.
+ [5] [6]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 252.
- [6]
+(Font)              No change on input line 260.
 File: ../picture/syoumei.png Graphic file (type bmp)
 <../picture/syoumei.png>
- [7]
+ [7] [8]
 File: ../picture/2diamB+2b.png Graphic file (type bmp)
 <../picture/2diamB+2b.png>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[8]
 File: ../picture/R2Z2.png Graphic file (type bmp)
 <../picture/R2Z2.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 377.
 [9]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 394.
+(Font)              No change on input line 390.
+LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
+(Font)              No change on input line 407.
  [10]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 414.
+(Font)              No change on input line 427.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 6.73553pt on input line 448.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 4.8111pt on input line 448.
  [11]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 483.
+(Font)              No change on input line 498.
  [12]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 503.
+(Font)              No change on input line 518.
  [13] [14] (./soturon.aux)
  ***********
 pLaTeX2e <2023-02-14u04>+1, based on
@@ -543,12 +541,12 @@ L3 programming layer <2025-11-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 14356 strings out of 469647
- 283400 string characters out of 5472212
- 672591 words of memory out of 5000000
- 42881 multiletter control sequences out of 15000+600000
+ 14368 strings out of 469647
+ 283615 string characters out of 5472212
+ 673806 words of memory out of 5000000
+ 42893 multiletter control sequences out of 15000+600000
  636948 words of font info for 84 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 84i,14n,94p,858b,771s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,14n,94p,966b,769s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on soturon.dvi (14 pages, 64296 bytes).
+Output written on soturon.dvi (14 pages, 67300 bytes).

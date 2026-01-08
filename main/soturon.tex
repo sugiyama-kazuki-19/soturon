@@ -41,15 +41,20 @@
 
 \tableofcontents
 \clearpage
-\section{導入}
-いっぱい頑張って書こうね。
+\section{導入}\label{intro}
+幾何群論について語る。\\
+
+Švarc-Milnor Lemma とは，「群が“よい”距離空間によい群作用をしているとき，その群の有限生成系が分かり，群の構造と空間の構造が“大雑把に”等しい」という主張であり，その内容から「幾何学的群論の基本補題」とも言われている．一般に，群が与えられたとき，その群が有限生成であるかどうかの判別は難しいのだが，この補題では生成系が分かるだけでなく，作用している空間の持つ構造と，群の持つ構造が大雑把に等しいことまで分かる．群のことを知りたければ，よく知られている距離空間への作用を考えればよく，逆に距離空間のことを知りたければ，よく知られている群の作用を考えればよい．まさに群と幾何を繋ぐ補題であるといえるだろう．\\
+
+(もうちょい書きたい)
 
 \section{準備}
-\subsection{Quasi-Isometry of Meric Spaces}
-$(X,d_X)$ を距離空間とし，省略して $X$ と表記する．
+\subsection{Quasi-Isometry of Meric Spaces}\label{subsec_QI_of_Metric}
+この節では，空間同士を見積もるための道具となる写像について述べる．条件の厳しい等長写像から始まり，その条件を少しずつ緩めることによって，幾何学的群論における“大雑把な視点”を得ることができる．
 
+以下，$(X,d_X)$ を距離空間とし，省略して $X$ と表記する．
 \begin{dfn}\label{isom}
-写像 $f\colon X\rightarrow Y$ が \textbf{等長埋め込み (isometry embedding)} であるとは，任意の $x,x^\prime\in X$ に関して，$d_X(x,x^\prime)=d_Y(f(x),f(x^\prime))$ が成り立つことをいう．また，$f$ が \textbf{等長写像 (isometry)} であるとは，以下の二条件を満たすときをいう．
+写像 $f\colon X\rightarrow Y$ が \textbf{等長埋め込み (isometric embedding)} であるとは，任意の $x,x^\prime\in X$ に関して，$d_X(x,x^\prime)=d_Y(f(x),f(x^\prime))$ が成り立つことをいう．また，$f$ が \textbf{等長写像 (isometry)} であるとは，以下の二条件を満たすときをいう．
 \begin{enumerate}
   \item $f$ が等長埋め込みである．
   \item ある等長埋め込み $g\colon Y\rightarrow X$ が存在し，$f\circ g=\mathrm{id}_Y，g\circ f=\mathrm{id}_X$ を満たす．
@@ -64,7 +69,7 @@ $(X,d_X)$ を距離空間とし，省略して $X$ と表記する．
 \begin{dfn}\label{bi-Lip}
 写像 $f\colon X\rightarrow Y$ が \textbf{bilipschitz埋め込み (bilipschitz embedding)} であるとは，ある定数 $c\in\mathbb{R}_{>0}$ が存在し，任意の $x,x^\prime\in X$ に対して，
  $$\frac{1}{c}d_X(x,x^\prime)\leq d_Y(f(x),f(x^\prime))\leq cd_X(x,x^\prime)$$
- が成り立つことをいう．また，$f$ が \textbf{bilipschitz equivalence (bi-Lip)} であるとは，以下の二条件を満たすときをいう．
+ が成り立つことをいう．また，$f$ が \textbf{bilipschitz equivalence} であるとは，以下の二条件を満たすときをいう．
  \begin{enumerate}
    \item $f$ がbilipschitz埋め込みである．
    \item あるbilipschitz埋め込み $g\colon Y\rightarrow X$ が存在し，$f\circ g=\mathrm{id}_Y$，$g\circ f=\mathrm{id}_X$ を満たす．
@@ -87,7 +92,7 @@ bilipschitz埋め込み は単射な連続写像である．よって，bilipsch
 \end{dfn}
 
 \begin{dfn}\label{QI}
-写像 $f\colon X\rightarrow Y$ が \textbf{擬等長埋め込み (quasi-isometry embedding)} であるとは，ある定数 $c\in\mathbb{R}_{>0}$，$b\in\mathbb{R}_{\geq0}$ が存在し，任意の $x,x^\prime\in X$ に対して，
+写像 $f\colon X\rightarrow Y$ が \textbf{擬等長埋め込み (quasi-isometric embedding)} であるとは，ある定数 $c\in\mathbb{R}_{>0}$，$b\in\mathbb{R}_{\geq0}$ が存在し，任意の $x,x^\prime\in X$ に対して，
  $$\frac{1}{c}d_X(x,x^\prime)-b\leq d_Y(f(x),f(x^\prime))\leq cd_X(x,x^\prime)+b$$
  が成り立つことをいう．このとき，$f$ を \bm{$(c,b)$}\textbf{-quasi-isometric embedding} とも表現する．また，$f$ が\textbf{擬等長写像 (quasi-isometry, QI)} であるとは，以下の二条件を満たすときをいう．
  \begin{enumerate}
@@ -115,6 +120,8 @@ bilipschitz埋め込み は単射な連続写像である．よって，bilipsch
 \begin{rem}
   等長埋め込み同士の合成写像は等長埋め込みであり，bilipschitz埋め込み同士の合成写像はbilipschitz埋め込みであり，擬等長埋め込み同士の合成は擬等長埋め込みである．
 \end{rem}
+
+定数倍と定数分のズレを許してしまうという，擬等長の“大雑把な視点”が幾何学的群論では大切なのだが，その擬等長に関する定義について，それと同値なものを紹介する．
 
 \begin{prop}\label{dense image}
 Definition \ref{QI} の 擬等長写像における二条件は，以下の二条件と同値．
@@ -153,10 +160,12 @@ Proposition \ref{dense image} の条件［2］を $f$ が満たすとき，$f$ �
 \end{dfn}
 
 \subsection{Quasi-Isometry of Groups}
+\ref{subsec_QI_of_Metric} 節では距離空間同士を大雑把にみることについて述べたが，本節では群を距離空間に拡張し，群に対しても定義を行う．
+
 以下，$G$ を群として，$S$ をその生成系とする．
 \begin{dfn}
 生成系 $S$ による，群 $G$ 上の \textbf{word metric} とは，$d_S\colon G\times G\rightarrow \mathbb{N}$，
- $$d_S(g,h)=\mathrm{min}\{n\in\mathbb{N}\mid s_1,s_2,\ldots, s_n\in S\cup S^{-1}，g^{-1}h=s_1s_2\cdots s_n\}$$
+ $$d_S(g,h):=\mathrm{min}\{n\in\mathbb{N}\mid s_1,s_2,\ldots, s_n\in S\cup S^{-1}，g^{-1}h=s_1s_2\cdots s_n\}$$
 であり，これは $G$ 上の距離関数である．
 \end{dfn}
 
@@ -175,6 +184,8 @@ $G$ を有限生成群としたとき，$G$ が距離空間 $X$ に \textbf{bili
 \begin{ex}
   群 $\mathbb{Z}^2$ とその生成系 $S=\{(0,1),(1,0)\}$ からなる距離空間 $(\mathbb{Z}^2,d_S)$ は，距離空間 $\mathbb{R}^2$ と擬等長である．
 \end{ex}
+
+群に組み込む距離関数を word metric にした場合，その定義からこれは生成系に大きく依存するため，距離空間と群が同じ構造を持つかどうかの議論が難しくなる．しかし，擬等長という“大雑把な視点”で見ると，生成系に依らずに議論することが可能である．
 
 \begin{prop}\label{Sprime}
   $S$,$S^\prime$ をともに群 $G$ の有限な生成系 としたとき，距離空間 $(G,d_S)$ が 距離空間 $(X,d_X)$ と $f$ で bilipschitz equivalent ならば，$(G,d_{S^\prime})$ と $(X,d_X)$ も $f$ で bilipschitz equivalent である．
@@ -210,6 +221,7 @@ $$c:=\underset{s\in S\cup S^{-1}}{\mathrm{max}}d_{S^\prime}(e,s)$$
 \end{rem}
 
 \subsection{Quasi-Geodesic}
+本節では，\ref{intro} 章でも記した，“よい”距離空間について述べる．
 \begin{dfn}
 距離空間 $X$ 上の長さ $L\in\mathbb{R}_{>0}$ の \textbf{測地線 (geodesic)} とは，$[0,L]\subset\mathbb{R}$ から $X$ への等長埋め込み，$\gamma\colon[0,L]\rightarrow X$ のことである．また，$X$ が \textbf{測地的 (geodesic)} であるとは，任意の $x,x^\prime\in X$ において，$\gamma(0)=x$，$\gamma(L)=x^\prime$ となるような 等長埋め込み $\gamma$ がとれるときをいう．
 \end{dfn}
@@ -230,27 +242,23 @@ $\mathbb{R}^n\setminus\{0\}$ は，$(1,\epsilon)$-測地的である($\epsilon>0
 本論文の主定理となる，Švarc-Milnor Lemma と，それに関連する主張について紹介する．
 \subsection{Švarc-Milnor Lemma}
 \begin{thm}\label{svarc}
-$G$ を群とし，距離空間 $X$ 上に等長な群作用があるとする．もし
- \begin{enumerate}
-   \item[(i)] ある定数 $c,b\in\mathbb{R}_{>0}$ が存在し，$X$ は $(c,b)$-測地的 である．
-   \item[(ii)] ある部分集合 $B\subset X$ が存在し，
+$G$ を群とし，$(c,b)$-測地的な距離空間 $(X,d)$ 上に等長な群作用があるとする．もしある部分集合 $B\subset X$ が存在し，
    \begin{enumerate}
-   \item $\mathrm{diam}B<\infty,$
-   \item $\bigcup_{g\in G}g\cdot B=X,$
-   \item 集合 $S=\{g\in G\mid g\cdot B^\prime \cap B^\prime \neq \emptyset\}$ が有限．
+   \item[(a)] $\mathrm{diam}B:=\underset{x,y\in B}{\mathrm{sup}}d(x,y)<\infty,$
+   \item[(b)] $\bigcup_{g\in G}g\cdot B=X,$
+   \item[(c)] 集合 $S:=\{g\in G\mid g\cdot B^\prime \cap B^\prime \neq \emptyset\}$ が有限．
    \end{enumerate}
- \end{enumerate}
  を満たすならば，
  \begin{enumerate}
-  \item $S$ は $G$ の(有限)生成系である．\label{S_is_generating_set}
-\item 任意の $x\in X$ に対して定まる写像 $\varphi\colon G\rightarrow X ; g\mapsto gx$ によって，$G$ と $X$ は擬等長．\label{G~X}
+  \item $S$ は $G$ の有限生成系である．\label{S_is_generating_set}
+\item 任意の $x\in X$ に対して定まる写像 $\varphi\colon G\rightarrow X\;;\; g\mapsto gx$ によって，$G$ と $X$ は擬等長．\label{G~X}
  \end{enumerate}
 ただし，$B^\prime :=\{x\in X\mid y\in X，d_X(x,y)\leq 2b\}$ と定める．
 \end{thm}
 
 \begin{proof}
 \eqref{S_is_generating_set} の証明：\\
-$g\in G$ を任意にとる．$x\in B$ としたとき，$X$ の仮定から $\gamma(0)=x$，$\gamma(L)=g\cdot x$ なる $(c,b)$-擬測地線 $\gamma$ が存在する．$[0,L]$ をおおよそ $n=\lceil L\cdot c/b \rceil$ 等分した点列を $t_i (0\leq i\leq n)$ とする．厳密には，
+$g\in G$ を任意にとる．$x\in B$ としたとき，$X$ の仮定から $\gamma(0)=x$，$\gamma(L)=g\cdot x$ なる $(c,b)$-擬測地線 $\gamma$ が存在する．$[0,L]$ をおおよそ $n:=\lceil L\cdot c/b \rceil$ 等分した点列を $t_i (0\leq i\leq n)$ とする．厳密には，
 $$t_i:=i\cdot b/c\;(0\leq i\leq n-1)，t_n:=L$$
 と定める．この点列と対応するように，$\mathrm{Im}\gamma$ に点列 $x_i \in X (0\leq i \leq n)$ をとる．つまり，
 $$x_i:=\gamma(t_i)　(0\leq i\leq n)$$
@@ -346,7 +354,12 @@ $$d_X(x,s_i\cdot x)\leq \mathrm{diam}B+2b+\mathrm{diam}B=2(\mathrm{diam}B+b)$$
 \end{proof}
 
 \begin{ex}
-通常の距離が入った距離空間 $(\mathbb{R}^2,d)$ に群 $\mathbb{Z}^2$ が作用しているとする．$(1,0)\in\mathbb{Z}^2$ は $(x,y)\in\mathbb{R}^2$ を $(x+2,y)$ に送り，$(0,1)$ は $(x,y+2)$ に送るような群作用とする．作用の仕方からこれは等長な群作用である．$\mathbb{R}^2$ を $(1,1/2)$-擬測地的空間とし，部分集合 $B\subset \mathbb{R}^2$ を，
+通常の距離が入った距離空間 $\mathbb{R}^2$ に群 $\mathbb{Z}^2$ が，
+\begin{align*}
+  (1,0)\cdot (x,y) = (x+2,y)\\
+  (0,1)\cdot (x,y) = (x,y+2)
+\end{align*}
+からなる作用をしているとする．作用の仕方からこれは等長な群作用である．$\mathbb{R}^2$ を $(1,1/2)$-擬測地的空間とし，部分集合 $B\subset \mathbb{R}^2$ を，
 $$B=\{(x,y)\in\mathbb{R}^2\mid -1\leq x\leq 1，-1\leq y\leq 1\}$$
 とすれば，これは Theorem\ref{svarc} の条件(a),(b)を満たす．$S\subset \mathbb{Z}^2$ は，
 \begin{align*}
@@ -412,39 +425,41 @@ Theorem \ref{svarc} は，群作用が等長でなくても成立する．つま
 \end{lem}
 \begin{proof}
 word metric の定義から，
-\begin{align*}
-  d_S(g,h)&=d_S(e,g^{-1}h)
-\end{align*}
+\begin{align}
+  d_S(g,h)&=d_S(e,g^{-1}h)\label{lem3.5.1}
+\end{align}
 が成立し，群作用が$(c^\prime,b^\prime)$-擬等長なことから，
-\begin{align*}
-  d_X(\varphi(e),\varphi(g^{-1}h))&=d_X(x,(g^{-1}h)\cdot x)\\
-  &\leq c^\prime d_X(g\cdot x,h\cdot x)+c^\prime b^\prime=c^\prime d_X(\varphi(g),\varphi(h))+c^\prime b^\prime\\
-  d_X(\varphi(e),\varphi(g^{-1}h))&=d_X(x,(g^{-1}h)\cdot x)\\
-  &\geq\frac{1}{c^\prime}d_X(g\cdot x,h\cdot x)-\frac{b^\prime}{c^\prime}=\frac{1}{c^\prime}d_X(\varphi(g),\varphi(h))-\frac{b^\prime}{c^\prime}
-\end{align*}
+\begin{align}
+  d_X(\varphi(e),\varphi(g^{-1}h))&=d_X(x,(g^{-1}h)\cdot x)\nonumber\\
+  &\leq c^\prime d_X(g\cdot x,h\cdot x)+c^\prime b^\prime=c^\prime d_X(\varphi(g),\varphi(h))+c^\prime b^\prime\label{lem3.5.2}\\
+  d_X(\varphi(e),\varphi(g^{-1}h))&=d_X(x,(g^{-1}h)\cdot x)\nonumber\\
+  &\geq\frac{1}{c^\prime}d_X(g\cdot x,h\cdot x)-\frac{b^\prime}{c^\prime}=\frac{1}{c^\prime}d_X(\varphi(g),\varphi(h))-\frac{b^\prime}{c^\prime}\label{lem3.5.3}
+\end{align}
 が成立する．仮定より，以下の不等式
-$$\frac{1}{C}d_S(e,g)-B\leq d_X(\varphi(e),\varphi(g))\leq Cd_S(e,g)+B$$
+\begin{equation}
+\frac{1}{C}d_S(e,g)-B\leq d_X(\varphi(e),\varphi(g))\leq Cd_S(e,g)+B\label{lem3.5.4}
+\end{equation}
 が成立するので，これらの不等式を用いて，
 \begin{align*}
-  \frac{1}{C}d_S(g,h)-B&=\frac{1}{C}d_S(e,g^{-1}h)-B\\
-  &\leq d_X(\varphi(e),\varphi(g^{-1}h))\\
-  &\leq c^\prime d_X(\varphi(g),\varphi(h))+c^\prime b^\prime\\
+  \frac{1}{C}d_S(g,h)-B&=\frac{1}{C}d_S(e,g^{-1}h)-B \qquad \eqref{lem3.5.1} より\\
+  &\leq d_X(\varphi(e),\varphi(g^{-1}h)) \qquad \eqref{lem3.5.4} より\\
+  &\leq c^\prime d_X(\varphi(g),\varphi(h))+c^\prime b^\prime \qquad \eqref{lem3.5.2} より\\
   \frac{1}{Cc^\prime}d_S(g,h)-\frac{B+c^\prime b^\prime}{c^\prime}&\leq d_X(\varphi(g),\varphi(h))
 \end{align*}
 が得られ，もう一方も
 \begin{align*}
-  Cd_S(g,h)+B&=Cd_S(e,g^{-1}h)+B\\
-  &\geq d_X(\varphi(e),\varphi(g^{-1}h))\\
-  &\geq \frac{1}{c^\prime} d_X(\varphi(g),\varphi(h))-\frac{b^\prime}{c^\prime}\\
+  Cd_S(g,h)+B&=Cd_S(e,g^{-1}h)+B \qquad \eqref{lem3.5.1} より\\
+  &\geq d_X(\varphi(e),\varphi(g^{-1}h)) \qquad \eqref{lem3.5.4} より\\
+  &\geq \frac{1}{c^\prime} d_X(\varphi(g),\varphi(h))-\frac{b^\prime}{c^\prime} \qquad \eqref{lem3.5.3} より\\
   Cc^\prime d_S(g,h)+(Bc^\prime +b^\prime)&\geq d_X(\varphi(g),\varphi(h))
 \end{align*}
-が得られ，与式が成立する．
+が得られ，目的の不等式が成立する．
 \end{proof}
 
 
 \section{主定理 位相空間論 版}
-Thm \ref{svarc} の主張を，位相空間論の視点で言い換えた主張が存在する．それに必要な用語の定義を先に行う．
-\subsection{準備}
+Theorem \ref{svarc} の主張を，位相空間論の視点で言い換えた主張が存在する．その主張に必要な用語の定義を \ref{subsec_jyunbi} 節で行った後，\ref{subsec_svarc_top} 節にて述べる．
+\subsection{準備}\label{subsec_jyunbi}
 \begin{dfn}
   距離空間 $(X,d)$ が \textbf{proper} であるとは，任意の $x\in X$，$r\in \mathbb{R}_{>0}$ に関して，集合
   $$\{y\in X\mid d(x,y)\leq r\}$$
@@ -475,7 +490,7 @@ $\mathbb{R}$ に $\mathbb{Z}$ が加法で群作用をしているとき，こ�
   $\mathbb{R}$ に $\mathbb{Z}$ や $\mathbb{Q}$ が加法で群作用をしているとき，この作用は余コンパクトである．一方，$\mathbb{R}^2$ に $\mathbb{Z}$ が作用する場合，これは余コンパクトでない(商空間は$S^1\times \mathbb{R}$ と同相であり，これはコンパクトでないため)．
 \end{ex}
 
-\subsection{Švarc-Milnor Lemma (位相空間論 版)}
+\subsection{Švarc-Milnor Lemma (位相空間論 版)}\label{subsec_svarc_top}
 \begin{thm}
   群 $G$ が，proper かつ擬測地的な距離空間 $(X,d)$ に，等長に作用しているとする．この群作用が properly discontinuous かつ余コンパクトであれば，$G$ は有限生成であり，$G$ と $X$ は擬等長である．
 \end{thm}

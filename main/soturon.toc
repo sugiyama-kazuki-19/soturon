@@ -4,10 +4,10 @@
 \contentsline {subsection}{\numberline {2.2}Quasi-Isometry of Groups}{5}{}%
 \contentsline {subsection}{\numberline {2.3}Quasi-Geodesic}{6}{}%
 \contentsline {section}{\numberline {3}主定理}{6}{}%
-\contentsline {subsection}{\numberline {3.1}^^c5^^a0varc-Milnor Lemma}{6}{}%
-\contentsline {subsection}{\numberline {3.2}^^c5^^a0varc-Milnor Lemma の拡張}{9}{}%
-\contentsline {section}{\numberline {4}主定理 位相空間論 版}{11}{}%
-\contentsline {subsection}{\numberline {4.1}準備}{11}{}%
+\contentsline {subsection}{\numberline {3.1}^^c5^^a0varc-Milnor Lemma}{7}{}%
+\contentsline {subsection}{\numberline {3.2}^^c5^^a0varc-Milnor Lemma の拡張}{10}{}%
+\contentsline {section}{\numberline {4}主定理 位相空間論 版}{12}{}%
+\contentsline {subsection}{\numberline {4.1}準備}{12}{}%
 \contentsline {subsection}{\numberline {4.2}^^c5^^a0varc-Milnor Lemma (位相空間論 版)}{12}{}%
 \contentsline {subsection}{\numberline {4.3}応用例}{13}{}%
 \contentsline {section}{\numberline {A}付録}{13}{}%
