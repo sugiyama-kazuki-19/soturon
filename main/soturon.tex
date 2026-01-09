@@ -185,7 +185,7 @@ $G$ を有限生成群としたとき，$G$ が距離空間 $X$ に \textbf{bili
   群 $\mathbb{Z}^2$ とその生成系 $S=\{(0,1),(1,0)\}$ からなる距離空間 $(\mathbb{Z}^2,d_S)$ は，距離空間 $\mathbb{R}^2$ と擬等長である．
 \end{ex}
 
-群に組み込む距離関数を word metric にした場合，その定義からこれは生成系に大きく依存するため，距離空間と群が同じ構造を持つかどうかの議論が難しくなる．しかし，擬等長という“大雑把な視点”で見ると，生成系に依らずに議論することが可能である．
+群に組み込む距離関数を word metric にした場合，その定義からこの距離空間は生成系に大きく依存するため，距離空間と群が同じ構造を持つかどうかの議論が難しくなる．しかし，擬等長という“大雑把な視点”で見ると，生成系に依らずに議論することが可能である．
 
 \begin{prop}\label{Sprime}
   $S$,$S^\prime$ をともに群 $G$ の有限な生成系 としたとき，距離空間 $(G,d_S)$ が 距離空間 $(X,d_X)$ と $f$ で bilipschitz equivalent ならば，$(G,d_{S^\prime})$ と $(X,d_X)$ も $f$ で bilipschitz equivalent である．
@@ -509,7 +509,7 @@ $X$ は擬測地的であるので，Thm \ref{svarc} の仮定を満足するよ
 \subsection{応用例}
 この定理の応用例として，以下のような主張がある．
 \begin{cor}
-  $M$ をコンパクトで境界のないリーマン多様体とする．その普遍被覆 $\widetilde{M}$ に，基本群 $\pi_1(M)$ が被覆変換で群作用をしているとき， $\pi_1(M)$ は有限生成であり，$\tilde{x}\in\widetilde{M}$ によって定まる写像
+  $M$ をコンパクトで境界のないリーマン多様体とする．$M$ の普遍被覆 $\widetilde{M}$ に，基本群 $\pi_1(M)$ が被覆変換で群作用をしているとき， $\pi_1(M)$ は有限生成であり，$\tilde{x}\in\widetilde{M}$ によって定まる写像
   $$\pi_1(M)\rightarrow \widetilde{M}\; ;\; g\mapsto g\cdot \tilde{x}$$
   は擬等長写像である．
 \end{cor}
@@ -654,6 +654,10 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
   を導入することで群ができる．この群を \textbf{基本群 (fundamental group)} といい，\bm{$\pi_1(X,x_0)$} と表記する．
 \end{dfn}
 
+\begin{rem}
+  $X$ が弧状連結のとき，$X$ による基本群は基点に依らない．そこで，$X$ が弧状連結のときは，基点を省略して単に $\pi_1(X)$ と表記する．
+\end{rem}
+
 \subsection{Covering Spaces}
 \begin{dfn}
   位相空間 $X$ の \textbf{被覆空間 (covering space)} とは，位相空間 $\widetilde{X}$ と連続写像 $p\colon\widetilde{X}\rightarrow X$ の組であり，以下を満たすときをいう．
@@ -668,6 +672,8 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
   を満たす．
 \end{dfn}
 
-
+\begin{dfn}
+  位相空間 $X$ の 被覆空間 $\widetilde{X}$ が \textbf{普遍被覆 (universal cover)} であるとは，$X$ が弧状連結かつ $\pi_1(X)$ が自明群であることをいう．
+\end{dfn}
 
 \end{document}
