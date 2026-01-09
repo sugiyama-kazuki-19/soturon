@@ -13,4 +13,5 @@
 \contentsline {section}{\numberline {A}付録}{13}{}%
 \contentsline {subsection}{\numberline {A.1}Cayley Graphs}{13}{}%
 \contentsline {subsection}{\numberline {A.2}Group Actions}{14}{}%
-\contentsline {subsection}{\numberline {A.3}Covering Spaces}{14}{}%
+\contentsline {subsection}{\numberline {A.3}Fundamental Groups}{15}{}%
+\contentsline {subsection}{\numberline {A.4}Covering Spaces}{15}{}%

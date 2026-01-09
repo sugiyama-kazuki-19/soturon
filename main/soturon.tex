@@ -535,8 +535,10 @@ $$g\cdot K\cap K\subset g\cdot \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)\cap \B
 
 \appendix
 \section{付録}
-ここでは幾何学的群論の分野にて基本的な概念となる Cayleyグラフ や，その周辺の事項について述べる．
+ここでは幾何学的群論の分野にて基本的な概念となる Cayleyグラフ や，その周辺の事項について述べる．なおここで述べるグラフとは，・・・・
 \subsection{Cayley Graphs}
+群からできる Cayleyグラフ とは，その生成系を用いて群の構造を可視化することを目的としており，幾何学的群論では幅広く用いられている．たくさんの性質を持っているが，ここではその定義と特徴的な定理の紹介に留める．
+
 以下，$G$ を群として，$S$ をその生成系とする．
 
 \begin{dfn}\label{cayley}
@@ -546,6 +548,10 @@ $$g\cdot K\cap K\subset g\cdot \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)\cap \B
     \item 辺集合を $\{\{g,g\cdot s\}\mid g\in G，s\in(S\cup S^{-1})\setminus\{e\}\}$ とする．
   \end{enumerate}
 \end{dfn}
+
+\begin{ex}
+  $\mathbb{Z}^2$ の Cayley グラフとか．
+\end{ex}
 
 \begin{thm}
  $F$ が自由群であり，$S$ がその生成系の場合，$\mathrm{Cay}(F,S)$ は treeである．
@@ -575,28 +581,29 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
   群 $G$ による集合 $X$ への群作用が\textbf{自由 (free)} であるとは，任意の $g\in G\setminus\{e\}$ と任意の $x\in X$ に対して，$g\cdot x\neq x$ が成り立つときをいう．
 \end{dfn}
 
-\begin{dfn}
-  $(V,E),(V^\prime,E^\prime)$ をグラフとする．$f\colon (V,E)\rightarrow(V^\prime,E^\prime)$ が \textbf{グラフ準同型 (graph homomorphism)} であるとは，二条件
-  \begin{enumerate}
-    \item $f\colon V\rightarrow V^\prime$ が写像.
-    \item $\{v,v^\prime\}\in E\Rightarrow \{f(v),f(v^\prime)\}\in E^\prime.$   
-  \end{enumerate}
-  が成り立つときをいう．また，$f$ が \textbf{グラフ同型 (graph isomorphism)} であるとは，二条件
-  \begin{enumerate}
-    \item $f\colon V\rightarrow V$ が全単射.
-    \item $\{v,v^\prime\}\in E\Leftrightarrow \{f(v),f(v^\prime)\}\in E^\prime.$   
-  \end{enumerate}
-  が成り立つときをいう．
-\end{dfn}
 
-\begin{dfn}
-  群 $G$ がグラフ $(V,E)$ にグラフ同型に作用しているとする．この作用が \textbf{自由 (free)} であるとは，任意の $g\in G\setminus \{e\}$ に対して，以下の二条件
-  \begin{enumerate}
-   \item 任意の $v\in V$ に対して，$g(v)\neq v$ が成り立つ．
-   \item 任意の $v,v^\prime \in V$ に対して，$\{g(v),g(v^\prime)\}\neq\{v,v^\prime\}$ が成り立つ．
-  \end{enumerate}
-  が成立することをいう．
-\end{dfn}
+% \begin{dfn}
+%   $(V,E),(V^\prime,E^\prime)$ をグラフとする．$f\colon (V,E)\rightarrow(V^\prime,E^\prime)$ が \textbf{グラフ準同型 (graph homomorphism)} であるとは，二条件
+%   \begin{enumerate}
+%     \item $f\colon V\rightarrow V^\prime$ が写像.
+%     \item $\{v,v^\prime\}\in E\Rightarrow \{f(v),f(v^\prime)\}\in E^\prime.$   
+%   \end{enumerate}
+%   が成り立つときをいう．また，$f$ が \textbf{グラフ同型 (graph isomorphism)} であるとは，二条件
+%   \begin{enumerate}
+%     \item $f\colon V\rightarrow V$ が全単射.
+%     \item $\{v,v^\prime\}\in E\Leftrightarrow \{f(v),f(v^\prime)\}\in E^\prime.$   
+%   \end{enumerate}
+%   が成り立つときをいう．
+% \end{dfn}
+
+% \begin{dfn}
+%   群 $G$ がグラフ $(V,E)$ にグラフ同型に作用しているとする．この作用が \textbf{自由 (free)} であるとは，任意の $g\in G\setminus \{e\}$ に対して，以下の二条件
+%   \begin{enumerate}
+%    \item 任意の $v\in V$ に対して，$g(v)\neq v$ が成り立つ．
+%    \item 任意の $v,v^\prime \in V$ に対して，$\{g(v),g(v^\prime)\}\neq\{v,v^\prime\}$ が成り立つ．
+%   \end{enumerate}
+%   が成立することをいう．
+% \end{dfn}
 
 \begin{prop}
   群 $G$ の生成系を $S$ とする．$\mathrm{Cay}(G,S)$ への左群作用が free であることと，位数が2である元が $S$ に存在しないことは同値． 
@@ -618,6 +625,22 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
   のことである．
 \end{dfn}
 
+\subsection{Fundamental Groups}
+
+
 \subsection{Covering Spaces}
+\begin{dfn}
+  位相空間 $X$ の \textbf{被覆空間 (covering space)} とは，位相空間 $\widetilde{X}$ と連続写像 $p\colon\widetilde{X}\rightarrow X$ の組であり，以下を満たす：
+
+
+  任意の $x\in X$ に対し，開近傍 $U\subset X$ と 開集合族 $\{\widetilde{U}_\lambda\}_{\lambda\in\Lambda}\subset \widetilde{X}$ が存在し，三条件
+  \begin{enumerate}
+    \item $\alpha,\beta\in\Lambda$ に関して，$\alpha\neq\beta$ ならば $\widetilde{U}_\alpha\cap\widetilde{U}_\beta=\emptyset$．
+    \item $p^{-1}(U)=\bigsqcup_{\lambda\in\Lambda}\widetilde{U}_\lambda$．
+    \item 全ての $\lambda\in\Lambda$ に対し， $p|_\lambda$ によって $\widetilde{U}_\lambda$ と $U$ は同相．
+  \end{enumerate}
+\end{dfn}
+
+
 
 \end{document}
