@@ -626,19 +626,46 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \end{dfn}
 
 \subsection{Fundamental Groups}
+以下，$X$ を位相空間とする．
+\begin{dfn}\label{homotopy}
+  $X$ を位相空間とする．$I:=[0,1]$ として，連続写像 $f\colon I\rightarrow X$ を \textbf{パス (path)} といい，$f(0)=f(1)$ のときを特に \textbf{ループ (loop)} という．また，パスの族 $f_t\colon I\rightarrow X\;(0\leq t\leq 1)$ が \textbf{ホモトピー (homotopy)} であるとは，以下の二条件：
+  \begin{enumerate}
+    \item $f_t(0)=x_0$，$f_t(1)=x_1$ が $t\in I$ と独立．
+    \item $F(s,t):=f_t(s)$ が，$s,t$ に関して連続．
+  \end{enumerate}
+  が成り立つときをいう．このとき，パス $f_0$ と $f_1$ を \textbf{ホモトピック (homotopic)} であるといい，$f_0\simeq f_1$ と表記する．
+\end{dfn}
+ 
+\begin{rem}
+  Definition \ref{homotopy} における $\simeq$ は同値関係である．
+\end{rem}
 
+\begin{dfn}
+  パス $f,g\colon I\rightarrow X$ に関して，$f(1)=g(0)$ のとき， $f$ と $g$ の演算を
+  \begin{align*}
+    f\cdot g :=
+    \begin{cases}
+           f(2s) \qquad ( s\in [0,1/2] )\\
+           g(2s-1) \qquad ( s\in [1/2,1] )
+       \end{cases}
+  \end{align*}
+  とする．$x_0\in X$ を基点としたループの集合を Definition \ref{homotopy} の同値関係 $\simeq$ で割り，演算
+  $$[f][g]:=[f\cdot g]$$
+  を導入することで群ができる．この群を \textbf{基本群 (fundamental group)} といい，\bm{$\pi_1(X,x_0)$} と表記する．
+\end{dfn}
 
 \subsection{Covering Spaces}
 \begin{dfn}
-  位相空間 $X$ の \textbf{被覆空間 (covering space)} とは，位相空間 $\widetilde{X}$ と連続写像 $p\colon\widetilde{X}\rightarrow X$ の組であり，以下を満たす：
+  位相空間 $X$ の \textbf{被覆空間 (covering space)} とは，位相空間 $\widetilde{X}$ と連続写像 $p\colon\widetilde{X}\rightarrow X$ の組であり，以下を満たすときをいう．
 
 
-  任意の $x\in X$ に対し，開近傍 $U\subset X$ と 開集合族 $\{\widetilde{U}_\lambda\}_{\lambda\in\Lambda}\subset \widetilde{X}$ が存在し，三条件
+任意の $x\in X$ に対し，開近傍 $U\subset X$ と 開集合族 $\{\widetilde{U}_\lambda\}_{\lambda\in\Lambda}\subset \widetilde{X}$ が存在し，三条件
   \begin{enumerate}
     \item $\alpha,\beta\in\Lambda$ に関して，$\alpha\neq\beta$ ならば $\widetilde{U}_\alpha\cap\widetilde{U}_\beta=\emptyset$．
     \item $p^{-1}(U)=\bigsqcup_{\lambda\in\Lambda}\widetilde{U}_\lambda$．
     \item 全ての $\lambda\in\Lambda$ に対し， $p|_\lambda$ によって $\widetilde{U}_\lambda$ と $U$ は同相．
   \end{enumerate}
+  を満たす．
 \end{dfn}
 
 
