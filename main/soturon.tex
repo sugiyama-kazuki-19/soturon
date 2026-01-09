@@ -509,25 +509,28 @@ $X$ は擬測地的であるので，Thm \ref{svarc} の仮定を満足するよ
 \subsection{応用例}
 この定理の応用例として，以下のような主張がある．
 \begin{cor}
-  コンパクトで境界のないリーマン多様体 $M$ と，その普遍被覆 $\widetilde{M}$ に関して，基本群 $\pi_1(M)$ は有限生成であり，$\tilde{x}\in\widetilde{M}$ によって定まる写像
+  $M$ をコンパクトで境界のないリーマン多様体とする．その普遍被覆 $\widetilde{M}$ に，基本群 $\pi_1(M)$ が被覆変換で群作用をしているとき， $\pi_1(M)$ は有限生成であり，$\tilde{x}\in\widetilde{M}$ によって定まる写像
   $$\pi_1(M)\rightarrow \widetilde{M}\; ;\; g\mapsto g\cdot \tilde{x}$$
-  は擬等長写像である．なお、ここでの群作用は被覆変換による群作用とする．
+  は擬等長写像である．
 \end{cor}
 
 \begin{proof}
 \noindent
-($\widetilde{M}$ が proper かつ geodesic な metric space であること)
+$\widetilde{M}$ が proper かつ測地的な距離空間であること：\\
 
 \noindent
-(群作用が isometric であること)
+群作用が等長であること：\\
+%$\widetilde{M}$ には，$M$ から誘導される距離が入っているので，被覆変換の定義より等長である．\\
 
 \noindent
-(群作用が cocompact であること)
-%被覆空間の定義より，$\pi_1(M)\backslash \widetilde{M}$ は $M$ と同相である．仮定より $M$ はコンパクトなので，$\pi_1(M)\backslash \widetilde{M}$ もそうである．\\
+群作用が余コンパクトであること：\\
+被覆空間の定義より，$\pi_1(M)\backslash \widetilde{M}$ は $M$ と同相である．仮定より $M$ はコンパクトなので，$\pi_1(M)\backslash \widetilde{M}$ もそうである．\\
 
 \noindent
-(群作用が properly discontinuous であること) 
-%任意のコンパクトな集合 $K\subset \widetilde{M}$ をとる．有限個の開被覆 $\{\widetilde{U}_k\}_{1\leq k\leq n}$ に関して，被覆変換の一意性により $g\cdot\widetilde{U}_k\cap\widetilde{U}_l$ を満たすような $g\in G$ は，$(k,l)$ のペアに対し高々一個である．したがって，$$g\cdot K\cap K\subset g\cdot(\bigcup_{k=1}^n\widetilde{U}_k)\cap (\bigcup_{k=1}^n\widetilde{U}_k)$$が空でないような $g\in G$ は有限個である．
+群作用が properly discontinuous であること：\\
+任意のコンパクトな集合 $K\subset \widetilde{M}$ をとる．この $K$ の十分小さい有限個の開被覆 $\{\widetilde{U}_k\}_{1\leq k\leq n}$ に関して，被覆変換の一意性により $g\cdot\widetilde{U}_k\cap\widetilde{U}_l$ を満たすような $g\in G$ は，$(k,l)$ のペアに対し高々一個である．したがって，
+$$g\cdot K\cap K\subset g\cdot \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)\cap \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)$$
+が空でないような $g\in G$ は有限個である．
 \end{proof}
 
 \appendix
@@ -565,7 +568,7 @@ $X$ は擬測地的であるので，Thm \ref{svarc} の仮定を満足するよ
 \end{dfn}
 
 \begin{rem}
-$g(x)$ を $g\cdot x$ と表記する．
+$g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に対し，$g\cdot A:=\{g\cdot x\mid x\in A\}$ とする．
 \end{rem}
 
 \begin{dfn}
@@ -615,6 +618,6 @@ $g(x)$ を $g\cdot x$ と表記する．
   のことである．
 \end{dfn}
 
-
+\subsection{Covering Space}
 
 \end{document}

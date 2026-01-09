@@ -12,4 +12,5 @@
 \contentsline {subsection}{\numberline {4.3}応用例}{13}{}%
 \contentsline {section}{\numberline {A}付録}{13}{}%
 \contentsline {subsection}{\numberline {A.1}Cayley Graphs}{13}{}%
-\contentsline {subsection}{\numberline {A.2}Group Actions}{13}{}%
+\contentsline {subsection}{\numberline {A.2}Group Actions}{14}{}%
+\contentsline {subsection}{\numberline {A.3}Covering Space}{15}{}%
