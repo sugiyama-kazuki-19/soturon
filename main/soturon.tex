@@ -242,7 +242,7 @@ $\mathbb{R}^n\setminus\{0\}$ は，$(1,\epsilon)$-測地的である($\epsilon>0
 本論文の主定理となる，Švarc-Milnor Lemma と，それに関連する主張について紹介する．
 \subsection{Švarc-Milnor Lemma}
 \begin{thm}\label{svarc}
-$G$ を群とし，$(c,b)$-測地的な距離空間 $(X,d)$ 上に等長な群作用があるとする．もしある部分集合 $B\subset X$ が存在し，
+$G$ を群とし，$(c,b)$-測地的な距離空間 $(X,d_X)$ 上に等長な群作用があるとする．もしある部分集合 $B\subset X$ が存在し，
    \begin{enumerate}
    \item[(a)] $\mathrm{diam}B:=\underset{x,y\in B}{\mathrm{sup}}d(x,y)<\infty,$
    \item[(b)] $\bigcup_{g\in G}g\cdot B=X,$
@@ -461,8 +461,8 @@ word metric の定義から，
 Theorem \ref{svarc} の主張を，位相空間論の視点で言い換えた主張が存在する．その主張に必要な用語の定義を \ref{subsec_jyunbi} 節で行った後，\ref{subsec_svarc_top} 節にて述べる．
 \subsection{準備}\label{subsec_jyunbi}
 \begin{dfn}
-  距離空間 $(X,d)$ が \textbf{proper} であるとは，任意の $x\in X$，$r\in \mathbb{R}_{>0}$ に関して，集合
-  $$\{y\in X\mid d(x,y)\leq r\}$$
+  距離空間 $(X,d_X)$ が \textbf{proper} であるとは，任意の $x\in X$，$r\in \mathbb{R}_{>0}$ に関して，集合
+  $$\{y\in X\mid d_X(x,y)\leq r\}$$
   が常にコンパクトになることをいう．
 \end{dfn}
 
@@ -483,7 +483,7 @@ $\mathbb{R}$ に $\mathbb{Z}$ が加法で群作用をしているとき，こ�
 \begin{dfn}
   群 $G$ が位相空間 $X$ に作用しているとする．この作用が \textbf{余コンパクト (cocompact)} であるとは，商空間 $G\backslash X$ がコンパクトであることをいう．言い換えると，あるコンパクトな集合 $K\subset X$ が存在し，
   $$X=\bigcup_{g\in G}g\cdot K$$
-  を満たす．
+  を満たす．商空間に関しては Definition \ref{orbit_quotient} を参照されたい．
 \end{dfn}
 
 \begin{ex}
@@ -492,16 +492,16 @@ $\mathbb{R}$ に $\mathbb{Z}$ が加法で群作用をしているとき，こ�
 
 \subsection{Švarc-Milnor Lemma (位相空間論 版)}\label{subsec_svarc_top}
 \begin{thm}
-  群 $G$ が，proper かつ擬測地的な距離空間 $(X,d)$ に，等長に作用しているとする．この群作用が properly discontinuous かつ余コンパクトであれば，$G$ は有限生成であり，$G$ と $X$ は擬等長である．
+  群 $G$ が，proper かつ擬測地的な距離空間 $(X,d_X)$ に，等長に作用しているとする．この群作用が properly discontinuous かつ余コンパクトであれば，$G$ は有限生成であり，$G$ と $X$ は擬等長である．
 \end{thm}
 \begin{proof}
-$X$ は擬測地的であるので，Thm \ref{svarc} の仮定を満足するような $B\subset X$ をみつければよい．以下，$X$ は $(1,b)$-quasi-geodesic であるとする($b>0$)．自然な射影 $\pi\colon X\rightarrow G\backslash X$ は開写像であるので，開球 $B_1(x)=\{y\in X\mid d(x,y)<1\}$ の像 $\pi(B_1(x))$ は $G\backslash X$ 上の開集合である．また，$\pi(X)=G\backslash X$ より，$\{\pi(B_1(x))\}_{x\in X}$ は $G\backslash X$ の開被覆である．$G\backslash X$ のコンパクト性より，これらから有限個 $\{\pi(B_1(x_k))\}_{1\leq k\leq n}$ の開被覆で $G\backslash X$ を覆うことができる．各開球 $B_1(x_k)$ の閉包 $\overline{B_1(x_k)}$ を考え，$$B=\bigcup_{k=1}^n\overline{B_1(x_k)}$$ とすれば，
+$X$ は擬測地的であるので，Theorem \ref{svarc} の仮定を満足するような $B\subset X$ をみつければよい．以下，$X$ は $(1,b)$-quasi-geodesic であるとする($b>0$)．自然な射影 $\pi\colon X\rightarrow G\backslash X$ は開写像であるので，開球 $B_1(x)=\{y\in X\mid d_X(x,y)<1\}$ の像 $\pi(B_1(x))$ は $G\backslash X$ 上の開集合である．また，$\pi(X)=G\backslash X$ より，$\{\pi(B_1(x))\}_{x\in X}$ は $G\backslash X$ の開被覆である．$G\backslash X$ のコンパクト性より，これらから有限個 $\{\pi(B_1(x_k))\}_{1\leq k\leq n}$ の開被覆で $G\backslash X$ を覆うことができる．各開球 $B_1(x_k)$ の閉包 $\overline{B_1(x_k)}$ を考え，$$B=\bigcup_{k=1}^n\overline{B_1(x_k)}$$ とすれば，
 \begin{enumerate}
   \item[(a)] $\mathrm{diam}B<\infty$.
   \item[(b)] $\bigcup_{g\in G}g\cdot B=X$.
 \end{enumerate}
 \noindent
-をみたす．また，$B$ はコンパクト集合である($X$ の proper 性から各 $\overline{B_1(x_k)}$ はコンパクトであり，$B$ はそれらの有限和のため)．同様の議論として，$B^\prime=\{x\in X\mid y\in B，d(x,y)\leq 2b\}$ とすれば，これはコンパクト集合である．そして群作用が properly discontinuous であることから，
+をみたす．また，$B$ はコンパクト集合である($X$ の proper 性から各 $\overline{B_1(x_k)}$ はコンパクトであり，$B$ はそれらの有限和のため)．同様の議論として，$B^\prime=\{x\in X\mid y\in B，d_X(x,y)\leq 2b\}$ とすれば，これはコンパクト集合である．そして群作用が properly discontinuous であることから，
  $$\{g\in G\mid g\cdot B^\prime\cap B^\prime\neq \emptyset\}$$
 は有限である(c)．
 \end{proof}
@@ -528,7 +528,7 @@ $\widetilde{M}$ が proper かつ測地的な距離空間であること：\\
 
 \noindent
 群作用が properly discontinuous であること：\\
-任意のコンパクトな集合 $K\subset \widetilde{M}$ をとる．この $K$ の十分小さい有限個の開被覆 $\{\widetilde{U}_k\}_{1\leq k\leq n}$ に関して，被覆変換の一意性により $g\cdot\widetilde{U}_k\cap\widetilde{U}_l$ を満たすような $g\in G$ は，$(k,l)$ のペアに対し高々一個である．したがって，
+任意のコンパクトな集合 $K\subset \widetilde{M}$ をとる．この $K$ の十分小さい有限個の開被覆 $\{\widetilde{U}_k\}_{1\leq k\leq n}$ に関して，被覆変換の一意性( Lemma \ref{deck_lemma} )により $g\cdot\widetilde{U}_k\cap\widetilde{U}_l$ を満たすような $g\in G$ は，$(k,l)$ のペアに対し高々一個である．したがって，
 $$g\cdot K\cap K\subset g\cdot \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)\cap \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)$$
 が空でないような $g\in G$ は有限個である．
 \end{proof}
@@ -537,7 +537,7 @@ $$g\cdot K\cap K\subset g\cdot \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)\cap \B
 \section{付録}
 ここでは幾何学的群論の分野にて基本的な概念となる Cayleyグラフ や，その周辺の事項について述べる．なおここで述べるグラフとは，・・・・
 \subsection{Cayley Graphs}
-群からできる Cayleyグラフ とは，その生成系を用いて群の構造を可視化することを目的としており，幾何学的群論では幅広く用いられている．たくさんの性質を持っているが，ここではその定義と特徴的な定理の紹介に留める．
+群からできる Cayleyグラフ とは，その生成系を用いて群の構造を可視化することを目的としており，幾何学的群論では幅広く用いられている．たくさんの重要な性質を持っているが，ここではその定義と特徴的な定理の紹介に留める．
 
 以下，$G$ を群として，$S$ をその生成系とする．
 
@@ -577,10 +577,9 @@ $$g\cdot K\cap K\subset g\cdot \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)\cap \B
 $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に対し，$g\cdot A:=\{g\cdot x\mid x\in A\}$ とする．
 \end{rem}
 
-\begin{dfn}
-  群 $G$ による集合 $X$ への群作用が\textbf{自由 (free)} であるとは，任意の $g\in G\setminus\{e\}$ と任意の $x\in X$ に対して，$g\cdot x\neq x$ が成り立つときをいう．
-\end{dfn}
-
+%\begin{dfn}
+%  群 $G$ による集合 $X$ への群作用が\textbf{自由 (free)} であるとは，任意の $g\in G\setminus\{e\}$ と任意の $x\in X$ に対して，$g\cdot x\neq x$ が成り立つときをいう．
+%\end{dfn}
 
 % \begin{dfn}
 %   $(V,E),(V^\prime,E^\prime)$ をグラフとする．$f\colon (V,E)\rightarrow(V^\prime,E^\prime)$ が \textbf{グラフ準同型 (graph homomorphism)} であるとは，二条件
@@ -605,32 +604,32 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 %   が成立することをいう．
 % \end{dfn}
 
-\begin{prop}
-  群 $G$ の生成系を $S$ とする．$\mathrm{Cay}(G,S)$ への左群作用が free であることと，位数が2である元が $S$ に存在しないことは同値． 
-\end{prop}
+%\begin{prop}
+%  群 $G$ の生成系を $S$ とする．$\mathrm{Cay}(G,S)$ への左群作用が free であることと，位数が2である元が $S$ に存在しないことは同値． 
+%\end{prop}
 
-\begin{dfn}
+\begin{dfn}\label{orbit_quotient}
  群 $G$ が 集合 $X$ に群作用しているとする．元 $x\in X$ における，この群作用による\textbf{軌道 (orbit)} とは，集合
  $$G\cdot x:=\{g\cdot x\mid g\in G\}\subset X$$
- のことである．また，この群作用による $X$ の \textbf{商集合 (quotient)} とは，集合
+ のことである．また，この群作用による $X$ の \textbf{商空間 (quotient)} とは，集合
  $$G\backslash X:=\{G\cdot x\mid x\in X\}\subset 2^X$$
  のことである．
 \end{dfn}
 
-\begin{dfn}
-  群 $G$ が 集合 $X$ に群作用しているとする．元 $x\in X$ における，この群作用による\textbf{安定化群 (stabiliser group)} とは，群
-  $$G_x:=\{g\in G\mid g\cdot x=x\}\subset G$$
-  のことである．また，元 $g\in G$ における \textbf{不動点？固定点？ (fixed set)} とは，集合
-  $$X^g:=\{x\in X\mid g\cdot x=x\}\subset X$$
-  のことである．
-\end{dfn}
+% \begin{dfn}
+%   群 $G$ が 集合 $X$ に群作用しているとする．元 $x\in X$ における，この群作用による\textbf{安定化群 (stabiliser group)} とは，群
+%   $$G_x:=\{g\in G\mid g\cdot x=x\}\subset G$$
+%   のことである．また，元 $g\in G$ における \textbf{固定点集合 (fixed point set)} とは，集合
+%   $$X^g:=\{x\in X\mid g\cdot x=x\}\subset X$$
+%   のことである．
+% \end{dfn}
 
 \subsection{Fundamental Groups}
 以下，$X$ を位相空間とする．
 \begin{dfn}\label{homotopy}
   $X$ を位相空間とする．$I:=[0,1]$ として，連続写像 $f\colon I\rightarrow X$ を \textbf{パス (path)} といい，$f(0)=f(1)$ のときを特に \textbf{ループ (loop)} という．また，パスの族 $f_t\colon I\rightarrow X\;(0\leq t\leq 1)$ が \textbf{ホモトピー (homotopy)} であるとは，以下の二条件：
   \begin{enumerate}
-    \item $f_t(0)=x_0$，$f_t(1)=x_1$ が $t\in I$ と独立．
+    \item $f_t(0)=x_0$，$f_t(1)=x_1$ が $t\in I$ に依らない．
     \item $F(s,t):=f_t(s)$ が，$s,t$ に関して連続．
   \end{enumerate}
   が成り立つときをいう．このとき，パス $f_0$ と $f_1$ を \textbf{ホモトピック (homotopic)} であるといい，$f_0\simeq f_1$ と表記する．
@@ -654,26 +653,40 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
   を導入することで群ができる．この群を \textbf{基本群 (fundamental group)} といい，\bm{$\pi_1(X,x_0)$} と表記する．
 \end{dfn}
 
+\begin{ex}
+  $S^1\subset \mathbb{R}^2$ の，基点 $(1,0)$ に関する基本群は，$\pi_1(S^2,(1,0))\cong \mathbb{Z}$ である．
+\end{ex}
+
 \begin{rem}
   $X$ が弧状連結のとき，$X$ による基本群は基点に依らない．そこで，$X$ が弧状連結のときは，基点を省略して単に $\pi_1(X)$ と表記する．
 \end{rem}
 
 \subsection{Covering Spaces}
 \begin{dfn}
-  位相空間 $X$ の \textbf{被覆空間 (covering space)} とは，位相空間 $\widetilde{X}$ と連続写像 $p\colon\widetilde{X}\rightarrow X$ の組であり，以下を満たすときをいう．
-
-
-任意の $x\in X$ に対し，開近傍 $U\subset X$ と 開集合族 $\{\widetilde{U}_\lambda\}_{\lambda\in\Lambda}\subset \widetilde{X}$ が存在し，三条件
+   $X,\widetilde{X}$ を位相空間，$p\colon\widetilde{X}\rightarrow X$ を連続写像とする．任意の $x\in X$ に対し，開近傍 $U\subset X$ と 開集合族 $\{\widetilde{U}_\lambda\}_{\lambda\in\Lambda}\subset 2^{\widetilde{X}}$ が存在し，三条件
   \begin{enumerate}
     \item $\alpha,\beta\in\Lambda$ に関して，$\alpha\neq\beta$ ならば $\widetilde{U}_\alpha\cap\widetilde{U}_\beta=\emptyset$．
     \item $p^{-1}(U)=\bigsqcup_{\lambda\in\Lambda}\widetilde{U}_\lambda$．
     \item 全ての $\lambda\in\Lambda$ に対し， $p|_\lambda$ によって $\widetilde{U}_\lambda$ と $U$ は同相．
   \end{enumerate}
-  を満たす．
+  が成り立つとき，$\widetilde{X}$ と $p$ の組 $(\widetilde{X},p)$ を $X$ の \textbf{被覆空間 (covering space)} という．
+\end{dfn}
+
+
+\begin{dfn}
+  位相空間 $X$ の 被覆空間 $\widetilde{X}$ が \textbf{普遍被覆 (universal cover)} であるとは，$\widetilde{X}$ が弧状連結かつ $\pi_1(\widetilde{X})$ が自明群であることをいう．
 \end{dfn}
 
 \begin{dfn}
-  位相空間 $X$ の 被覆空間 $\widetilde{X}$ が \textbf{普遍被覆 (universal cover)} であるとは，$X$ が弧状連結かつ $\pi_1(X)$ が自明群であることをいう．
+  $X$ を位相空間，$(\widetilde{X},p)$ を $X$ の被覆空間とする．写像 $f\colon \widetilde{X}\rightarrow \widetilde{X}$ が同相写像かつ $p\circ f=p$ をみたすとき，$f$ を \textbf{被覆変換 (deck transformation)} という．
 \end{dfn}
+
+\begin{ex}
+  何か書く
+\end{ex}
+
+\begin{lem}\label{deck_lemma}
+  $X$ を位相空間，$(\widetilde{X},p)$ を $X$ の被覆空間とし，$\widetilde{X}$ が連結であるとする．$x\in X$ に対し，$y_1,y_2\in p^{-1}(x)$ としたとき，$f(y_1)=y_2$ となるような被覆変換 $f$ は，存在すれば一意的である．
+\end{lem}
 
 \end{document}
