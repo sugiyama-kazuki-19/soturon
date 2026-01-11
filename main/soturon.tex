@@ -517,10 +517,15 @@ $X$ は擬測地的であるので，Theorem \ref{svarc} の仮定を満足す�
 \begin{proof}
 \noindent
 $\widetilde{M}$ が proper かつ測地的な距離空間であること：\\
+点 $\tilde{x}\in\widetilde{M}$ における $p\colon\widetilde{M}\rightarrow M$ の微分を
+$$ (dp)_{\tilde{x}}\colon T_{\tilde{x}}(\widetilde{M})\rightarrow T_{p(\tilde{x})}(M) $$
+とし，$\widetilde{M}$ 上の点 $\tilde{x}$ におけるリーマン計量 $\tilde{g}_{\tilde{x}}$ を，
+$$\tilde{g}_{\tilde{x}}(u,v):=g_{p(\tilde{x})}((dp)_{\tilde{x}}(u),(dp)_{\tilde{x}}(v))$$
+とすることで，$\widetilde{M}$ に距離が入る．\\
 
 \noindent
 群作用が等長であること：\\
-%$\widetilde{M}$ には，$M$ から誘導される距離が入っているので，被覆変換の定義より等長である．\\
+%$\widetilde{M}$ には，$M$ から誘導される距離が入っているので，被覆変換の定義より等長である．
 
 \noindent
 群作用が余コンパクトであること：\\
@@ -688,5 +693,9 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \begin{lem}\label{deck_lemma}
   $X$ を位相空間，$(\widetilde{X},p)$ を $X$ の被覆空間とし，$\widetilde{X}$ が連結であるとする．$x\in X$ に対し，$y_1,y_2\in p^{-1}(x)$ としたとき，$f(y_1)=y_2$ となるような被覆変換 $f$ は，存在すれば一意的である．
 \end{lem}
+
+\begin{dfn}
+  $M$ を位相多様体とする．各点 $p\in M$ における接空間 $T_p(M)$ の内積 $g_p$ があり，それが $M$ 全体で $C^\infty$ 級のとき，$(M,\{g_p\}p\in M)$ を \textbf{リーマン多様体} という．
+\end{dfn}
 
 \end{document}
