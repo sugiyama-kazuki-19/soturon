@@ -511,21 +511,27 @@ $X$ は擬測地的であるので，Theorem \ref{svarc} の仮定を満足す�
 \begin{cor}
   $M$ をコンパクトで境界のないリーマン多様体とする．$M$ の普遍被覆 $\widetilde{M}$ に，基本群 $\pi_1(M)$ が被覆変換で群作用をしているとき， $\pi_1(M)$ は有限生成であり，$\tilde{x}\in\widetilde{M}$ によって定まる写像
   $$\pi_1(M)\rightarrow \widetilde{M}\; ;\; g\mapsto g\cdot \tilde{x}$$
-  は擬等長写像である．
+  は擬等長写像である．被覆変換に関しては Definition \ref{def_deck} を参照されたい．
 \end{cor}
 
 \begin{proof}
-\noindent
-$\widetilde{M}$ が proper かつ測地的な距離空間であること：\\
 点 $\tilde{x}\in\widetilde{M}$ における $p\colon\widetilde{M}\rightarrow M$ の微分を
-$$ (dp)_{\tilde{x}}\colon T_{\tilde{x}}(\widetilde{M})\rightarrow T_{p(\tilde{x})}(M) $$
+$$ dp_{\tilde{x}}\colon T_{\tilde{x}}(\widetilde{M})\rightarrow T_{p(\tilde{x})}(M) $$
 とし，$\widetilde{M}$ 上の点 $\tilde{x}$ におけるリーマン計量 $\tilde{g}_{\tilde{x}}$ を，
-$$\tilde{g}_{\tilde{x}}(u,v):=g_{p(\tilde{x})}((dp)_{\tilde{x}}(u),(dp)_{\tilde{x}}(v))$$
+$$\tilde{g}_{\tilde{x}}(u,v):=g_{p(\tilde{x})}(dp_{\tilde{x}}(u),dp_{\tilde{x}}(v))$$
 とすることで，$\widetilde{M}$ に距離が入る．\\
+$\widetilde{M}$ が proper かつ測地的な距離空間であること：\\
+
 
 \noindent
 群作用が等長であること：\\
-%$\widetilde{M}$ には，$M$ から誘導される距離が入っているので，被覆変換の定義より等長である．
+$f\in\pi_1(M)$ とする．リーマン多様体における距離の定義より，$f$ でベクトルを送る前と送った後で内積の値が一致することを示せば十分である． $p\circ f=p$ より，任意の $\tilde{x}\in\widetilde{M}$ において，微分 $dp_{f(\tilde{x})}\circ df_{\tilde{x}}=dp_{\tilde{x}}$ が成立する．$u,v\in T_{\tilde{x}}(\widetilde{M})$ を $f$ で送った $df_{\tilde{x}}(u),df_{\tilde{x}}(v)$ の内積は，
+\begin{align*}
+  \tilde{g}_{f(\tilde{x})}(df_{\tilde{x}}(u),df_{\tilde{x}}(v))&=g_{p(f(\tilde{x}))}(dp_{f(\tilde{x})}(df_{\tilde{x}}(u)),dp_{f(\tilde{x})}(df_{\tilde{x}}(v)))\\
+  &=g_{p(\tilde{x})}(dp_{\tilde{x}}(u),dp_{\tilde{x}}(v))\\
+  &=\tilde{g}_{\tilde{x}}(u,v)
+\end{align*}
+となり，$f$ で送る前の $u,v$ の内積と一致する．\\
 
 \noindent
 群作用が余コンパクトであること：\\
@@ -682,7 +688,7 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
   位相空間 $X$ の 被覆空間 $\widetilde{X}$ が \textbf{普遍被覆 (universal cover)} であるとは，$\widetilde{X}$ が弧状連結かつ $\pi_1(\widetilde{X})$ が自明群であることをいう．
 \end{dfn}
 
-\begin{dfn}
+\begin{dfn}\label{def_deck}
   $X$ を位相空間，$(\widetilde{X},p)$ を $X$ の被覆空間とする．写像 $f\colon \widetilde{X}\rightarrow \widetilde{X}$ が同相写像かつ $p\circ f=p$ をみたすとき，$f$ を \textbf{被覆変換 (deck transformation)} という．
 \end{dfn}
 
@@ -690,12 +696,27 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
   何か書く
 \end{ex}
 
+\subsection{Riemann anifolds}
+
 \begin{lem}\label{deck_lemma}
   $X$ を位相空間，$(\widetilde{X},p)$ を $X$ の被覆空間とし，$\widetilde{X}$ が連結であるとする．$x\in X$ に対し，$y_1,y_2\in p^{-1}(x)$ としたとき，$f(y_1)=y_2$ となるような被覆変換 $f$ は，存在すれば一意的である．
 \end{lem}
 
 \begin{dfn}
-  $M$ を位相多様体とする．各点 $p\in M$ における接空間 $T_p(M)$ の内積 $g_p$ があり，それが $M$ 全体で $C^\infty$ 級のとき，$(M,\{g_p\}p\in M)$ を \textbf{リーマン多様体} という．
+  $M$ を位相多様体とする．各点 $p\in M$ における接空間 $T_p(M)$ 上の内積 $g_p$ があり，それが $M$ 全体で $C^\infty$ 級のとき，$(M,\{g_p\}_{p\in M})$ を \textbf{リーマン多様体} という．また，$p\in M$ における接空間 $T_p(M)$ 上のベクトル $u\in T_p(M)$ に関して，
+  \begin{equation*}
+    \|u\|:=\sqrt{g_p(u,u)}
+  \end{equation*}
+  を，$u$ における \textbf{ノルム (norm)} という．さらに，曲線 $\gamma:[a,b]\rightarrow M$ に対し，
+  \begin{equation*}
+    L(\gamma):=\int_{a}^{b}\Bigl\|\frac{d\gamma}{dt}\Bigr\|dt
+  \end{equation*}
+  を曲線 $\gamma$ の \textbf{長さ (length)} といい，二点間 $x_0,x_1\in M$ の距離 $d_M$ を，
+  \begin{equation*}
+    d_M(x_0,x_1):=\mathrm{inf}\{L(\gamma)\mid \gamma(a)=x_0,\gamma(b)=x_1\}
+  \end{equation*}
+  と定める．
 \end{dfn}
+
 
 \end{document}
