@@ -15,4 +15,4 @@
 \contentsline {subsection}{\numberline {A.2}Group Actions}{14}{}%
 \contentsline {subsection}{\numberline {A.3}Fundamental Groups}{15}{}%
 \contentsline {subsection}{\numberline {A.4}Covering Spaces}{15}{}%
-\contentsline {subsection}{\numberline {A.5}Riemann anifolds}{16}{}%
+\contentsline {subsection}{\numberline {A.5}Riemannian manifolds}{16}{}%
