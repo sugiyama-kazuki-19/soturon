@@ -12,7 +12,7 @@
 \contentsline {subsection}{\numberline {4.3}応用例}{13}{}%
 \contentsline {section}{\numberline {A}付録}{14}{}%
 \contentsline {subsection}{\numberline {A.1}Cayley Graphs}{14}{}%
-\contentsline {subsection}{\numberline {A.2}Group Actions}{15}{}%
+\contentsline {subsection}{\numberline {A.2}Group Actions}{14}{}%
 \contentsline {subsection}{\numberline {A.3}Fundamental Groups}{15}{}%
-\contentsline {subsection}{\numberline {A.4}Covering Spaces}{16}{}%
+\contentsline {subsection}{\numberline {A.4}Covering Spaces}{15}{}%
 \contentsline {subsection}{\numberline {A.5}Riemannian manifolds}{16}{}%
