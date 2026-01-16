@@ -181,7 +181,7 @@ Proposition \ref{dense image} の条件［2］を $f$ が満たすとき，$f$ �
 \end{dfn}
 
 \subsection{Quasi-Isometry of Groups}
-\ref{subsec_QI_of_Metric} 節では距離空間同士を大雑把にみることについて述べたが，本節では群を距離空間に拡張し，群に対しても定義を行う．
+\ref{subsec_QI_of_Metric} 節では距離空間同士を大雑把にみることについて述べたが，本節では群を距離空間に拡張し，群に対しても定義を行う．群に入れる距離は，Cayleyグラフの一辺を長さ1として見ることで得られる距離であり，これはCayleyグラフと相性が良いものの，選ぶ生成系に依存してしまう．しかし，bilipschitz equivalent という定数倍の誤差を無視してしまえば，Proposition \ref{Sprime} により生成系に依らずに群と距離空間が同じ構造を持つかどうかの議論が可能となる．
 
 以下，$G$ を群として，$S$ をその生成系とする．
 \begin{dfn}
@@ -541,8 +541,14 @@ $$ dp_{\tilde{x}}\colon T_{\tilde{x}}(\widetilde{M})\rightarrow T_{p(\tilde{x})}
 とし，$\widetilde{M}$ 上の点 $\tilde{x}$ におけるリーマン計量 $\tilde{g}_{\tilde{x}}$ を，
 $$\tilde{g}_{\tilde{x}}(u,v):=g_{p(\tilde{x})}(dp_{\tilde{x}}(u),dp_{\tilde{x}}(v))$$
 とすることで，$\widetilde{M}$ に距離が入る．\\
-$\widetilde{M}$ が proper かつ測地的な距離空間であること：\\
+\textcolor{red}{$\widetilde{M}$ が proper かつ測地的な距離空間であること：}\\
 
+とりあえず，\\
+$M$ がコンパクトな距離空間⇒完備である (距離空間の性質)\\
+$M$ が距離空間として完備⇒測地的完備 (Hopf-Rinow の定理)\\
+$M$ が測地的完備⇒$\widetilde{M}$ も測地的完備 (測地線の持ち上げ)\\
+$\widetilde{M}$ が測地的完備⇒$\widetilde{M}$ 上の有界閉集合がコンパクト,$\widetilde{M}$ が測地的である (Hopf-Rinow の定理)\\
+という流れであることは理解した．\\
 
 \noindent
 群作用が等長であること：\\
@@ -565,11 +571,15 @@ $$g\cdot K\cap K\subset g\cdot \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)\cap \B
 が空でないような $g\in G$ は有限個である．
 \end{proof}
 
+\begin{ex}
+  \textcolor{red}{何か書く？}
+\end{ex}
+
 \appendix
 \section{付録}
-ここでは幾何学的群論の分野にて基本的な概念となるCayleyグラフや，その周辺の事項について述べる．なおここで述べるグラフとは，多重辺やループは許していないことに注意．
+ここでは幾何学的群論の分野にて基本的な概念となるCayleyグラフや，その周辺の事項について述べる．なおここで述べるグラフとは，多重辺やループは許していないことに注意．\textcolor{red}{もう少し取捨選択して書く。内容が著しく増えるようであれば本編に回すのもアリ}
 \subsection{Cayley Graphs}
-群からできるCayleyグラフとは，その生成系を用いて群の構造を可視化することを目的としており，幾何学的群論では幅広く用いられている．たくさんの重要な性質を持っているが，ここではその定義と特徴的な定理の紹介に留める．
+群からできるCayleyグラフとは，その生成系を用いて群の構造を可視化することを目的としており，幾何学的群論では幅広く用いられている．たくさんの重要な性質を持っているが，ここではその定義と特徴的な定理の紹介に留める．\textcolor{red}{Cayleyグラフについて導入で色濃く触れているので、定理などの証明はした方がいいかもと思ったり}
 
 以下，$G$ を群として，$S$ をその生成系とする．
 
@@ -582,7 +592,7 @@ $$g\cdot K\cap K\subset g\cdot \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)\cap \B
 \end{dfn}
 
 \begin{ex}
-  $\mathbb{Z}^2$ のCayleyグラフとか．
+ \textcolor{red}{$\mathbb{Z}^2$ のCayleyグラフとか}
 \end{ex}
 
 \begin{thm}
@@ -730,7 +740,7 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \end{dfn}
 
 \begin{ex}
-  $S^1$ の被覆空間とか．
+  \textcolor{red}{$S^1$ の被覆空間とか．}
 \end{ex}
 
 \begin{dfn}\label{def_deck}
@@ -738,7 +748,7 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \end{dfn}
 
 \begin{ex}
-  何か書く
+  \textcolor{red}{何か書く}
 \end{ex}
 
 \begin{lem}\label{deck_lemma}
@@ -763,6 +773,8 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
   と定める．
 \end{dfn}
 
+\textcolor{red}{めんどくさがらず参考文献かけ．}
+\textcolor{red}{定理に関しては出典元を調べる．}
 \begin{thebibliography}{9}
 \bibitem{1} Clara Löh, \textit{Geometric Group Theory}, Springer, 2018, 404  
 \end{thebibliography}
