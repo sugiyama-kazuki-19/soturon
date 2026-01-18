@@ -238,4 +238,8 @@ INPUT ../picture/cayleyZ2_2.png
 INPUT ../picture/cayleyZ2_2.png
 INPUT ../picture/cayleyZ2_2.png
 INPUT extractbb -B cropbox -O ../picture/cayleyZ2_2.png
+INPUT ../picture/coveringspace.png
+INPUT ../picture/coveringspace.png
+INPUT ../picture/coveringspace.png
+INPUT extractbb -B cropbox -O ../picture/coveringspace.png
 INPUT soturon.aux

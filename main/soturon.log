@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.11.30)  18 JAN 2026 23:57
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.11.30)  19 JAN 2026 02:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -541,21 +541,11 @@ LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
 File: ../picture/cayleyZ2_2.png Graphic file (type bmp)
 <../picture/cayleyZ2_2.png>
  [17] [18] [19]
-
-c:/Users/kazus/github/soturon/main/soturon.tex:760: LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.760 \caption
-              {$S^2$ の被覆空間}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[20]
+File: ../picture/coveringspace.png Graphic file (type bmp)
+<../picture/coveringspace.png>
+ [20]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 825.
+(Font)              No change on input line 803.
  [21] (./soturon.aux)
  ***********
 pLaTeX2e <2023-02-14u04>+1, based on
@@ -564,12 +554,12 @@ L3 programming layer <2025-11-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 16070 strings out of 469647
- 319777 string characters out of 5472212
- 703318 words of memory out of 5000000
- 44589 multiletter control sequences out of 15000+600000
+ 14455 strings out of 469647
+ 285454 string characters out of 5472212
+ 672506 words of memory out of 5000000
+ 42973 multiletter control sequences out of 15000+600000
  636948 words of font info for 84 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  84i,14n,94p,1196b,769s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on soturon.dvi (21 pages, 128404 bytes).
+Output written on soturon.dvi (21 pages, 92336 bytes).

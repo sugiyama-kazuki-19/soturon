@@ -729,35 +729,14 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \end{dfn}
 
 \begin{ex}
-  $S^2$ の被覆空間
-\begin{center}
-\begin{tikzpicture}
-\draw[samples=100,domain=0:2*pi,thick] plot({2*cos(\x r)},{sin(\x r)});
-\draw[samples=300,domain=0:6*pi,thick] plot({2*cos(\x r)},{sin(\x r)+\x/4+1.5});
-\draw (-1,-1.9/2)node[below]{$x$};
-\draw (2,0)node[right]{$X$};
-\draw (2,3)node[right]{$\tilde{X}$};
-\draw[->,samples=100,domain=2/3*pi:4/3*pi] plot({cos(\x r)-2},{2*sin(\x r)+2});
-\draw (-3,2)node[left]{$p$};
-\draw(-1.4,-1.4/2) circle (0.1); %5/4pi
-\draw(0,-1) circle (0.1); %3/2pi
-\draw[samples=100,domain=5/4*pi:3/2*pi,thick] plot({2*cos(\x r)},{sin(\x r)});
-\draw(-0.8,-1.7/2)node[above]{$U$};
-\draw(-1.4,-1.4/2+1.5+0.98) circle (0.1); 
-\draw(-1.4,-1.4/2+1.5+2.55) circle (0.1); 
-\draw(-1.4,-1.4/2+1.5+4.12) circle (0.1); 
-\draw(0,-1+1.5+1.18) circle (0.1); 
-\draw(0,-1+1.5+2.75) circle (0.1); 
-\draw(0,-1+1.5+4.32) circle (0.1); 
-\draw(-0.8,1.6)node[above]{$\tilde{U}_1$};
-\draw(-0.8,1.6+1.57)node[above]{$\tilde{U}_2$};
-\draw(-0.8,1.6+1.57*2)node[above]{$\tilde{U}_3$};
-\draw[samples=100,domain=5/4*pi:3/2*pi,blue,thick] plot({2*cos(\x r)},{sin(\x r)+\x/4+1.5});
-\draw[samples=100,domain=(5/4+2)*pi:(3/2+2)*pi,blue,thick] plot({2*cos(\x r)},{sin(\x r)+\x/4+1.5});
-\draw[samples=100,domain=(5/4+4)*pi:(3/2+4)*pi,blue,thick] plot({2*cos(\x r)},{sin(\x r)+\x/4+1.5});
-\fill[black] (-1,-1.7/2) circle (0.1); %4/3pi
-\end{tikzpicture}
-\end{center}
+  $S^2$ の被覆空間は様々あるが，その中の一つに $\mathbb{R}$ がある(図\ref{S2coveringspace}参照)． 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=6cm]{../picture/coveringspace.png}
+\caption{$S^2$ の被覆空間}
+\label{S2coveringspace}
+\end{figure}
 \end{ex}
 
 % \begin{dfn}
@@ -782,11 +761,11 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 % \end{lem}
 
 \begin{dfn}
-  位相空間 $X$ の 被覆空間 $\widetilde{X}$ が \textbf{普遍被覆 (universal cover)} であるとは，$\widetilde{X}$ が弧状連結かつ $\pi_1(\widetilde{X})$ が自明群であることをいう．
+  位相空間 $X$ の 被覆空間 $\widetilde{X}$ が \textbf{普遍被覆 (universal cover)} であるとは，$\widetilde{X}$ が弧状連結かつ $\pi_1(\widetilde{X})$ が自明群であることをいう．また，$p$ を省略し，単に $\widetilde{X}$ だけを普遍被覆ともいうこともある．
 \end{dfn}
 
 \begin{ex}
-  \textcolor{red}{$S^1$ の被覆空間とか．}
+  図\ref{S2coveringspace} より，$\mathbb{R}^2$ は $S^2$ の普遍被覆である．
 \end{ex}
 
 \begin{dfn}\label{def_deck}
