@@ -57,7 +57,7 @@
 \label{cayleyZ2}
 \end{figure}
 
-Cayleyグラフとは，群の元を頂点とし，生成系の元で辺を結ぶことで得られるグラフであり，生成系によってグラフの形は変わるものの，生成系込みでの群の構造を可視化することに長けている．特に自由群に関しては相性が良く，そのCayleyグラフは tree になることが知られている．逆に，適切な条件下であれば，群と生成系に関するCayleyグラフが tree のとき群は自由群であることも知られており，このことから自由群の部分群が自由群になるスマートな証明も与えられる．また，Cayleyグラフは群が作用する空間の代表例と言える．実際，群は自身のCayleyグラフの頂点集合に対して，左からの演算で群作用をなす．この群作用は，サイクルなどのグラフの構造を保つため，Cayleyグラフの構造を群作用を通して理解することもできる．そのため，幾何学的群論ではしばしば群作用に着目することが多い．
+Cayleyグラフとは，群の元を頂点とし，生成系の元で辺を結ぶことで得られるグラフであり，生成系によってグラフの形は変わるものの，生成系込みでの群の構造を可視化することに長けている．特に自由群に関しては相性が良く，そのCayleyグラフは tree になることが知られている．逆に，適切な条件下であれば，群と生成系に関するCayleyグラフが tree のとき群は自由群であることも知られている．また，Cayleyグラフは群が作用する空間の代表例と言える．実際，群は自身のCayleyグラフの頂点集合に対して，左からの演算で群作用をなす．この群作用は，サイクルなどのグラフの構造を保つため，Cayleyグラフの構造を群作用を通して理解することもできる．また，自由群が作用する場合，群作用が自由になることから，自由群の部分群が自由群になるスマートな証明も与えらえる．幾何学的群論ではしばしば群作用に着目することが多い．
 
 一般に群作用とは，とある集合の自己同型写像として群が振る舞うことであり，群の代数的構造を空間の幾何学的な構造として表現するものである．群を直接調べるのではなく，どのような空間にどのように作用しているかを観察することで，幾何学的な特徴や性質を通して群を調べることを可能としている．例えば，群 $\mathbb{Z}^2$ による，空間 $\mathbb{R}^2$ への加法の群作用を考えると，$\mathbb{R}^2$ は一辺が1の正方形を $\mathbb{Z}^2$ の作用によって敷き詰められた空間であることが分かり，逆に $\mathbb{Z}^2$ という群は $\mathbb{R}^2$ のような広がりのある群構造を持つことが分かる．このことは上の図 \ref{cayleyZ2} のようなCayleyグラフを用いても確かめることができる．群 $\mathbb{Z}^2$ のCayleyグラフが，空間 $\mathbb{R}^2$ のような広がりを持っていることが分かるだろう．
 
@@ -577,7 +577,7 @@ $$g\cdot K\cap K\subset g\cdot \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)\cap \B
 
 \appendix
 \section{付録}
-ここでは幾何学的群論の分野にて基本的な概念となるCayleyグラフや，その周辺の事項について述べる．なおここで述べるグラフとは，多重辺やループは許していないことに注意．\textcolor{red}{もう少し取捨選択して書く。内容が著しく増えるようであれば本編に回すのもアリ}
+ここでは幾何学的群論の分野にて基本的な概念となるCayleyグラフや，その周辺の事項について述べる．\ref{fundamentalgroup}--\ref{coveringspace} 節の基本群や被覆空間の概念は，\cite{2} を参考にした．なおここで述べるグラフとは，多重辺やループは許していないことに注意．\textcolor{red}{もう少し取捨選択して書く。内容が著しく増えるようであれば本編に回すのもアリ}
 \subsection{Cayley Graphs}
 群からできるCayleyグラフとは，その生成系を用いて群の構造を可視化することを目的としており，幾何学的群論では幅広く用いられている．たくさんの重要な性質を持っているが，ここではその定義と特徴的な定理の紹介に留める．\textcolor{red}{Cayleyグラフについて導入で色濃く触れているので、定理などの証明はした方がいいかもと思ったり}
 
@@ -592,14 +592,24 @@ $$g\cdot K\cap K\subset g\cdot \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)\cap \B
 \end{dfn}
 
 \begin{ex}
- \textcolor{red}{$\mathbb{Z}^2$ のCayleyグラフとか}
+$\mathbb{Z}^2$ の生成系 $\{(1,0),(0,1)\}$ と，$\{(1,1),(0,1)\}$ に関するCayleyグラフは以下のようになる．
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm]{../picture/cayleyZ2_2.png}
+\caption{Cayleyグラフの例}
+\label{cayleyZ2_2}
+\end{figure}
+
 \end{ex}
 
-\begin{thm}
+\begin{thm}\label{-tree}
  $F$ が自由群であり，$S$ がその生成系の場合，$\mathrm{Cay}(F,S)$ は treeである．
 \end{thm}
 
-\begin{thm}
+Cayleyグラフにサイクルがある場合，そのサイクルに沿って $S\cup S^{-1}$ の元を演算することで，非自明なリレーションが得られる．よって，非自明なリレーションがない，つまり自由群の場合，Cayleyグラフ上にはサイクルができないので，tree となる．一方この逆は一般には成り立たない．Cayleyグラフ上にサイクルがなかったとしても，$s\cdot s^\prime= e$ のような，二元からなる非自明なリレーションが存在するケースもあるためである．
+
+\begin{thm}\label{tree-}
  $\mathrm{Cay}(G,S)$ が tree であり，任意の $s,s^\prime\in S$ に対して $s\cdot s^\prime \neq e$ のとき，$G$ は自由群である．
 \end{thm}
 
@@ -619,32 +629,36 @@ $$g\cdot K\cap K\subset g\cdot \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)\cap \B
 $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に対し，$g\cdot A:=\{g\cdot x\mid x\in A\}$ とする．
 \end{rem}
 
-%\begin{dfn}
-%  群 $G$ による集合 $X$ への群作用が\textbf{自由 (free)} であるとは，任意の $g\in G\setminus\{e\}$ と任意の $x\in X$ に対して，$g\cdot x\neq x$ が成り立つときをいう．
-%\end{dfn}
+\begin{dfn}
+ 群 $G$ による集合 $X$ への群作用が \textbf{自由 (free)} であるとは，任意の $g\in G\setminus\{e\}$ と任意の $x\in X$ に対して，$g\cdot x\neq x$ が成り立つときをいう．
+\end{dfn}
 
-% \begin{dfn}
-%   $(V,E),(V^\prime,E^\prime)$ をグラフとする．$f\colon (V,E)\rightarrow(V^\prime,E^\prime)$ が \textbf{グラフ準同型 (graph homomorphism)} であるとは，二条件
-%   \begin{enumerate}
-%     \item $f\colon V\rightarrow V^\prime$ が写像.
-%     \item $\{v,v^\prime\}\in E\Rightarrow \{f(v),f(v^\prime)\}\in E^\prime.$   
-%   \end{enumerate}
-%   が成り立つときをいう．また，$f$ が \textbf{グラフ同型 (graph isomorphism)} であるとは，二条件
-%   \begin{enumerate}
-%     \item $f\colon V\rightarrow V$ が全単射.
-%     \item $\{v,v^\prime\}\in E\Leftrightarrow \{f(v),f(v^\prime)\}\in E^\prime.$   
-%   \end{enumerate}
-%   が成り立つときをいう．
-% \end{dfn}
+\begin{ex}
+  群 $\mathbb{Z}^2$ の集合 $\mathbb{R}^2$ への加法での群作用は自由である．しかし，回転群 $\mathrm{SO}(2):=\{A\in \mathrm{GL}_2(\mathbb{R})\mid \mathrm{det}A=1\}$ の $\mathbb{R}^2$ への群作用は自由でない．点 $(0,0)\in \mathbb{R}^2$ は$\mathrm{SO}(2)$ のいかなる元を作用させても不動だからである．
+\end{ex}
 
-% \begin{dfn}
-%   群 $G$ がグラフ $(V,E)$ にグラフ同型に作用しているとする．この作用が \textbf{自由 (free)} であるとは，任意の $g\in G\setminus \{e\}$ に対して，以下の二条件
-%   \begin{enumerate}
-%    \item 任意の $v\in V$ に対して，$g(v)\neq v$ が成り立つ．
-%    \item 任意の $v,v^\prime \in V$ に対して，$\{g(v),g(v^\prime)\}\neq\{v,v^\prime\}$ が成り立つ．
-%   \end{enumerate}
-%   が成立することをいう．
-% \end{dfn}
+\begin{dfn}
+  $(V,E),(V^\prime,E^\prime)$ をグラフとする．$f\colon (V,E)\rightarrow(V^\prime,E^\prime)$ が \textbf{グラフ準同型 (graph homomorphism)} であるとは，二条件
+  \begin{enumerate}
+    \item $f\colon V\rightarrow V^\prime$ が写像.
+    \item $\{v,v^\prime\}\in E\Rightarrow \{f(v),f(v^\prime)\}\in E^\prime.$   
+  \end{enumerate}
+  が成り立つときをいう．また，$f$ が \textbf{グラフ同型 (graph isomorphism)} であるとは，二条件
+  \begin{enumerate}
+    \item $f\colon V\rightarrow V$ が全単射.
+    \item $\{v,v^\prime\}\in E\Leftrightarrow \{f(v),f(v^\prime)\}\in E^\prime.$   
+  \end{enumerate}
+  が成り立つときをいう．
+\end{dfn}
+
+\begin{dfn}
+  群 $G$ がグラフ $(V,E)$ にグラフ同型に作用しているとする．この作用が \textbf{自由 (free)} であるとは，任意の $g\in G\setminus \{e\}$ に対して，以下の二条件
+  \begin{enumerate}
+   \item 任意の $v\in V$ に対して，$g(v)\neq v$ が成り立つ．
+   \item 任意の $v,v^\prime \in V$ に対して，$\{g(v),g(v^\prime)\}\neq\{v,v^\prime\}$ が成り立つ．
+  \end{enumerate}
+  が成立することをいう．
+\end{dfn}
 
 %\begin{prop}
 %  群 $G$ の生成系を $S$ とする．$\mathrm{Cay}(G,S)$ への左群作用が free であることと，位数が2である元が $S$ に存在しないことは同値． 
@@ -666,7 +680,7 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 %   のことである．
 % \end{dfn}
 
-\subsection{Fundamental Groups}
+\subsection{Fundamental Groups}\label{fundamentalgroup}
 以下，$X$ を位相空間とする．
 \begin{dfn}\label{homotopy}
   $X$ を位相空間とする．$I:=[0,1]$ として，連続写像 $f\colon I\rightarrow X$ を \textbf{パス (path)} といい，$f(0)=f(1)$ のときを特に \textbf{ループ (loop)} という．また，パスの族 $f_t\colon I\rightarrow X\;(0\leq t\leq 1)$ が \textbf{ホモトピー (homotopy)} であるとは，以下の二条件：
@@ -703,7 +717,7 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
   $X$ が弧状連結のとき，$X$ による基本群は基点に依らない．そこで，$X$ が弧状連結のときは，基点を省略して単に $\pi_1(X)$ と表記する．
 \end{rem}
 
-\subsection{Covering Spaces}
+\subsection{Covering Spaces}\label{coveringspace}
 \begin{dfn}
    $X,\widetilde{X}$ を位相空間，$p\colon\widetilde{X}\rightarrow X$ を連続写像とする．任意の $x\in X$ に対し，開近傍 $U\subset X$ と 開集合族 $\{\widetilde{U}_\lambda\}_{\lambda\in\Lambda}\subset 2^{\widetilde{X}}$ が存在し，三条件
   \begin{enumerate}
@@ -713,6 +727,38 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
   \end{enumerate}
   が成り立つとき，$\widetilde{X}$ と $p$ の組 $(\widetilde{X},p)$ を $X$ の \textbf{被覆空間 (covering space)} という．
 \end{dfn}
+
+\begin{ex}
+  $S^2$ の被覆空間
+\begin{center}
+\begin{tikzpicture}
+\draw[samples=100,domain=0:2*pi,thick] plot({2*cos(\x r)},{sin(\x r)});
+\draw[samples=300,domain=0:6*pi,thick] plot({2*cos(\x r)},{sin(\x r)+\x/4+1.5});
+\draw (-1,-1.9/2)node[below]{$x$};
+\draw (2,0)node[right]{$X$};
+\draw (2,3)node[right]{$\tilde{X}$};
+\draw[->,samples=100,domain=2/3*pi:4/3*pi] plot({cos(\x r)-2},{2*sin(\x r)+2});
+\draw (-3,2)node[left]{$p$};
+\draw(-1.4,-1.4/2) circle (0.1); %5/4pi
+\draw(0,-1) circle (0.1); %3/2pi
+\draw[samples=100,domain=5/4*pi:3/2*pi,thick] plot({2*cos(\x r)},{sin(\x r)});
+\draw(-0.8,-1.7/2)node[above]{$U$};
+\draw(-1.4,-1.4/2+1.5+0.98) circle (0.1); 
+\draw(-1.4,-1.4/2+1.5+2.55) circle (0.1); 
+\draw(-1.4,-1.4/2+1.5+4.12) circle (0.1); 
+\draw(0,-1+1.5+1.18) circle (0.1); 
+\draw(0,-1+1.5+2.75) circle (0.1); 
+\draw(0,-1+1.5+4.32) circle (0.1); 
+\draw(-0.8,1.6)node[above]{$\tilde{U}_1$};
+\draw(-0.8,1.6+1.57)node[above]{$\tilde{U}_2$};
+\draw(-0.8,1.6+1.57*2)node[above]{$\tilde{U}_3$};
+\draw[samples=100,domain=5/4*pi:3/2*pi,blue,thick] plot({2*cos(\x r)},{sin(\x r)+\x/4+1.5});
+\draw[samples=100,domain=(5/4+2)*pi:(3/2+2)*pi,blue,thick] plot({2*cos(\x r)},{sin(\x r)+\x/4+1.5});
+\draw[samples=100,domain=(5/4+4)*pi:(3/2+4)*pi,blue,thick] plot({2*cos(\x r)},{sin(\x r)+\x/4+1.5});
+\fill[black] (-1,-1.7/2) circle (0.1); %4/3pi
+\end{tikzpicture}
+\end{center}
+\end{ex}
 
 % \begin{dfn}
 %   $X$ を位相空間，$(\widetilde{X},p)$ を $X$ の被覆空間とし，写像 $f\colon Y\rightarrow X$ は連続とする．
@@ -774,9 +820,9 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \end{dfn}
 
 \textcolor{red}{めんどくさがらず参考文献かけ．}
-\textcolor{red}{定理に関しては出典元を調べる．}
 \begin{thebibliography}{9}
-\bibitem{1} Clara Löh, \textit{Geometric Group Theory}, Springer, 2018, 404  
+\bibitem{1} Clara Löh, \textit{Geometric Group Theory}, Springer, 2018, 404 
+\bibitem{2} 
 \end{thebibliography}
 
 \end{document}

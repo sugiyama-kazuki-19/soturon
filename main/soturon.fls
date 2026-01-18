@@ -234,4 +234,8 @@ INPUT extractbb -B cropbox -O ../picture/2diamB+2b.png
 INPUT ../picture/R2Z2.png
 INPUT ../picture/R2Z2.png
 INPUT extractbb -B cropbox -O ../picture/R2Z2.png
+INPUT ../picture/cayleyZ2_2.png
+INPUT ../picture/cayleyZ2_2.png
+INPUT ../picture/cayleyZ2_2.png
+INPUT extractbb -B cropbox -O ../picture/cayleyZ2_2.png
 INPUT soturon.aux
