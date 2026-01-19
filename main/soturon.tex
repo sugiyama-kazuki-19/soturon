@@ -12,6 +12,11 @@
 \usepackage{pdfpages}
 \usepackage{tikz}
 \usepackage{xcolor}
+\usepackage{mathtools}
+
+\DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\Cay}{Cay}
 
 \theoremstyle{definition}
 \newtheorem{dfn}{Definition}[section]
@@ -78,7 +83,7 @@ Cayleyグラフから得られる距離を群に導入することで，群を�
 写像 $f\colon X\rightarrow Y$ が \textbf{等長埋め込み (isometric embedding)} であるとは，任意の $x,x^\prime\in X$ に関して，$d_X(x,x^\prime)=d_Y(f(x),f(x^\prime))$ が成り立つことをいう．また，$f$ が \textbf{等長写像 (isometry)} であるとは，以下の二条件を満たすときをいう．
 \begin{enumerate}
   \item $f$ が等長埋め込みである．
-  \item ある等長埋め込み $g\colon Y\rightarrow X$ が存在し，$f\circ g=\mathrm{id}_Y，g\circ f=\mathrm{id}_X$ を満たす．
+  \item ある等長埋め込み $g\colon Y\rightarrow X$ が存在し，$f\circ g=\id_Y，g\circ f=\id_X$ を満たす．
 \end{enumerate}
 さらに，二つの距離空間 $X,Y$ が \textbf{等長 (isometric)} であるとは，等長写像 $f\colon X\rightarrow Y$ が存在するときをいう． 
 \end{dfn}
@@ -93,7 +98,7 @@ Cayleyグラフから得られる距離を群に導入することで，群を�
  が成り立つことをいう．また，$f$ が \textbf{bilipschitz equivalence} であるとは，以下の二条件を満たすときをいう．
  \begin{enumerate}
    \item $f$ がbilipschitz埋め込みである．
-   \item あるbilipschitz埋め込み $g\colon Y\rightarrow X$ が存在し，$f\circ g=\mathrm{id}_Y$，$g\circ f=\mathrm{id}_X$ を満たす．
+   \item あるbilipschitz埋め込み $g\colon Y\rightarrow X$ が存在し，$f\circ g=\id_Y$，$g\circ f=\id_X$ を満たす．
  \end{enumerate}
 さらに，二つの距離空間 $X,Y$ が \textbf{bilipschitz equivalent} であるとは，bilipschitz equivalence な写像 $f\colon X\rightarrow Y$ が存在するときをいう． 
 \end{dfn}
@@ -119,7 +124,7 @@ bilipschitz埋め込み は単射な連続写像である．よって，bilipsch
  \begin{enumerate}
   \item $f$ が擬等長埋め込みである．
   \item ある擬等長埋め込み $g\colon Y\rightarrow X$ が存在し，
-  $f\circ g$ が $\mathrm{id}_Y$ と finite distance，$g\circ f$ が $\mathrm{id}_X$ と finite distance である．
+  $f\circ g$ が $\id_Y$ と finite distance，$g\circ f$ が $\id_X$ と finite distance である．
  \end{enumerate}
 さらに，二つの距離空間 $X,Y$ が \textbf{擬等長 (quasi-isometric)} であるとは，擬等長写像 $f\colon X\rightarrow Y$ が存在するときをいう．
 \end{dfn}
@@ -154,7 +159,7 @@ Definition \ref{QI} の 擬等長写像における二条件は，以下の二�
 
 \begin{proof}
 Definition \ref{QI} を満たすならば［1］,［2］を満たすことの証明：\\
-［2］を示せばよい．$f\colon X\rightarrow Y$ に対し，定義より，ある擬等長写像 $g\colon Y\rightarrow X$ が存在し，$f\circ g$ が $\mathrm{id}_Y$ と finite distance である．任意の $y\in Y$ をとる．$x:=g(y)$ と定めることで，
+［2］を示せばよい．$f\colon X\rightarrow Y$ に対し，定義より，ある擬等長写像 $g\colon Y\rightarrow X$ が存在し，$f\circ g$ が $\id_Y$ と finite distance である．任意の $y\in Y$ をとる．$x\coloneqq g(y)$ と定めることで，
 $$d_Y(f(x),y)=d_Y((f\circ g)(y),y)\leq c$$
 を満たす．\\
 ［1］,［2］を満たすならば Definition \ref{QI} を満たすことの証明：\\ 
@@ -186,12 +191,12 @@ Proposition \ref{dense image} の条件［2］を $f$ が満たすとき，$f$ �
 以下，$G$ を群として，$S$ をその生成系とする．
 \begin{dfn}
 生成系 $S$ による，群 $G$ 上の \textbf{word metric} とは，$d_S\colon G\times G\rightarrow \mathbb{N}$，
- $$d_S(g,h):=\mathrm{min}\{n\in\mathbb{N}\mid s_1,s_2,\ldots, s_n\in S\cup S^{-1}，g^{-1}h=s_1s_2\cdots s_n\}$$
+ $$d_S(g,h)\coloneqq\min\{n\in\mathbb{N}\mid s_1,s_2,\ldots, s_n\in S\cup S^{-1}，g^{-1}h=s_1s_2\cdots s_n\}$$
 であり，これは $G$ 上の距離関数である．
 \end{dfn}
 
 \begin{ex}
-  群 $G$ の生成系 $S$ からなる $\mathrm{Cay}(G,S)$ において，グラフ上の頂点間の距離とはまさに $d_S$ のことである($\mathrm{Cay}(G,S)$ の定義は Definition \ref{cayley} を参照されたい)．
+  群 $G$ の生成系 $S$ からなる $\Cay(G,S)$ において，グラフ上の頂点間の距離とはまさに $d_S$ のことである($\Cay(G,S)$ の定義は Definition \ref{cayley} を参照されたい)．
 \end{ex}
 
 \begin{dfn}\label{GQIX}
@@ -224,8 +229,8 @@ $f \colon (X,d_X)\rightarrow (G,d_S)$，$f^\prime\colon (X,d_X)\rightarrow (G,d_
 \draw[->] (S) to node {id} (S*);
 \end{tikzpicture}
 \end{center}
-より，$f^\prime=f\circ\mathrm{id}=f$ が成立する．bilipschitz equivalence の合成写像は bilipschitz equivalence なので，あとは $\mathrm{id}$ が bilipschitz equivalence であることを示せばよい．$c$ を，
-$$c:=\underset{s\in S\cup S^{-1}}{\mathrm{max}}d_{S^\prime}(e,s)$$
+より，$f^\prime=f\circ\id=f$ が成立する．bilipschitz equivalence の合成写像は bilipschitz equivalence なので，あとは $\id$ が bilipschitz equivalence であることを示せばよい．$c$ を，
+$$c\coloneqq\underset{s\in S\cup S^{-1}}{\max}d_{S^\prime}(e,s)$$
 とすると，$S$ は有限なのでこれは有限値である．$g,h\in G$ をとり，$d_S(g,h)=n$ とし，$g^{-1}h=s_1s_2\cdots s_{n-1} s_n$ ($s_1,s_2,\ldots,s_{n-1},s_n\in S\cup S^{-1}$) と表せられるとする．このとき，$S^\prime$ 上での $g,h$ の word metric は，
 \begin{align*}
   d_{S^\prime}(g,h)&=d_{S^\prime}(g,s_1s_2\cdots s_nh)\\
@@ -265,24 +270,24 @@ $\mathbb{R}^n\setminus\{0\}$ は，$(1,\epsilon)$-測地的である($\epsilon>0
 \begin{lem}\label{svarc}
 $G$ を群とし，$(c,b)$-測地的な距離空間 $(X,d_X)$ 上に等長な群作用があるとする．もしある部分集合 $B\subset X$ が存在し，
    \begin{enumerate}
-   \item[(a)] $\mathrm{diam}B:=\underset{x,y\in B}{\mathrm{sup}}d(x,y)<\infty,$
+   \item[(a)] $\diam B\coloneqq\underset{x,y\in B}{\sup}d(x,y)<\infty,$
    \item[(b)] $\bigcup_{g\in G}g\cdot B=X,$
-   \item[(c)] 集合 $S:=\{g\in G\mid g\cdot B^\prime \cap B^\prime \neq \emptyset\}$ が有限．
+   \item[(c)] 集合 $S\coloneqq\{g\in G\mid g\cdot B^\prime \cap B^\prime \neq \emptyset\}$ が有限．
    \end{enumerate}
  を満たすならば，
  \begin{enumerate}
   \item $S$ は $G$ の有限生成系である．\label{S_is_generating_set}
 \item 任意の $x\in X$ に対して定まる写像 $\varphi\colon G\rightarrow X\;;\; g\mapsto gx$ によって，$G$ と $X$ は擬等長．\label{G~X}
  \end{enumerate}
-ただし，$B^\prime :=\{x\in X\mid y\in X，d_X(x,y)\leq 2b\}$ と定める．
+ただし，$B^\prime \coloneqq\{x\in X\mid y\in X，d_X(x,y)\leq 2b\}$ と定める．
 \end{lem}
 
 \begin{proof}
 \eqref{S_is_generating_set} の証明：\\
-$g\in G$ を任意にとる．$x\in B$ としたとき，$X$ の仮定から $\gamma(0)=x$，$\gamma(L)=g\cdot x$ なる $(c,b)$-擬測地線 $\gamma$ が存在する．$[0,L]$ をおおよそ $n:=\lceil L\cdot c/b \rceil$ 等分した点列を $t_i (0\leq i\leq n)$ とする．厳密には，
-$$t_i:=i\cdot b/c\;(0\leq i\leq n-1)，t_n:=L$$
+$g\in G$ を任意にとる．$x\in B$ としたとき，$X$ の仮定から $\gamma(0)=x$，$\gamma(L)=g\cdot x$ なる $(c,b)$-擬測地線 $\gamma$ が存在する．$[0,L]$ をおおよそ $n\coloneqq\lceil L\cdot c/b \rceil$ 等分した点列を $t_i (0\leq i\leq n)$ とする．厳密には，
+$$t_i\coloneqq i\cdot b/c\;(0\leq i\leq n-1)，t_n\coloneqq L$$
 と定める．この点列と対応するように，$\mathrm{Im}\gamma$ に点列 $x_i \in X (0\leq i \leq n)$ をとる．つまり，
-$$x_i:=\gamma(t_i)　(0\leq i\leq n)$$
+$$x_i\coloneqq\gamma(t_i)　(0\leq i\leq n)$$
 である．$B$ の仮定より，各 $x_i$ に対して，$x_i\in g_i\cdot B$ となるような $g_i\in G$ を選ぶことができる(図\ref{syoumei}参照)．
 
 \begin{figure}[h]
@@ -307,7 +312,7 @@ $$d(x_{i-1},x_i)\leq c|t_{i-1}-t_i|+b=c\cdot b/c+b=2b$$
   g_i\cdot B^\prime \cap g_{i-1}\cdot B^\prime &\neq\emptyset,\\
   (g_{i-1}^{-1}\cdot g_i)\cdot B^\prime \cap B^\prime &\neq \emptyset.
 \end{align*}
-よって，$(g_{i-1})^{-1}\cdot g_i \in S$ であり，$s_i:=(g_{i-1})^{-1}\cdot g_i\in S$ とすれば， $g$ は $g=g_n=e(g_0^{-1}g_1)(g_1^{-1}g_2)\cdots(g_{n-1}^{-1}g_n)=es_1s_2\cdots s_n$ と $S$ の元で表すことができる．\\
+よって，$(g_{i-1})^{-1}\cdot g_i \in S$ であり，$s_i\coloneqq(g_{i-1})^{-1}\cdot g_i\in S$ とすれば， $g$ は $g=g_n=e(g_0^{-1}g_1)(g_1^{-1}g_2)\cdots(g_{n-1}^{-1}g_n)=es_1s_2\cdots s_n$ と $S$ の元で表すことができる．\\
 
 \eqref{2} の証明：\\
 $B$ の仮定より，任意の $x\in X$ は $B$ に含まれていると考えてよい($x\in g\cdot B$ となる $g\cdot B$ を改めて $B$ とすればよいため)．
@@ -320,8 +325,8 @@ $B$ の仮定より，任意の $x\in X$ は $B$ に含まれていると考え�
 \noindent
 ［1］ $\varphi$ が quasi-dense image であること：\\
 任意の $x^\prime \in X$ に関して，$x^\prime\in g^\prime\cdot B$ となる $g^\prime \in G$ がとれるため，
-$$d_X(x^\prime,\varphi(g^\prime))=d_X(x^\prime,g^\prime\cdot x)\leq \mathrm{diam}(g^\prime \cdot B)=\mathrm{diam}B.$$
-仮定より $\mathrm{diam}B$ は有限なので，$\varphi$ が quasi-dense image であることが示された．\\
+$$d_X(x^\prime,\varphi(g^\prime))=d_X(x^\prime,g^\prime\cdot x)\leq \diam (g^\prime \cdot B)=\diam B.$$
+仮定より $\diam B$ は有限なので，$\varphi$ が quasi-dense image であることが示された．\\
 
 \noindent
 ［2］ $\varphi$ が 擬等長埋め込みであること：\\
@@ -352,7 +357,7 @@ $$\frac{1}{C}d_S(e,g)-B\leq d_X(\varphi(e),\varphi(g))\leq Cd_S(e,g)+B$$
 \noindent
 ［$2-2$］ $d_X(\varphi(e),\varphi(g))\leq Cd_S(e,g)+B$ が成立すること：\\
 任意に $g\in G$ をとる．$d_S(e,g)=n$ とし，$g=s_1s_2\cdots s_n$ と表せられるとする．このとき，各 $s_i\in S\cup S^{-1}$ ($1\leq i\leq n$) に対して，$S$ の定義 $B^\prime\cap s_i\cdot B^\prime\neq\emptyset$ より，
-$$d_X(x,s_i\cdot x)\leq \mathrm{diam}B+2b+\mathrm{diam}B=2(\mathrm{diam}B+b)$$
+$$d_X(x,s_i\cdot x)\leq \diam B+2b+\diam B=2(\diam B+b)$$
 が成立する(図 \ref{2diamB+2b} 参照)．
 
 \begin{figure}[h]
@@ -368,8 +373,8 @@ $$d_X(x,s_i\cdot x)\leq \mathrm{diam}B+2b+\mathrm{diam}B=2(\mathrm{diam}B+b)$$
   d_X(\varphi(e),\varphi(g))=d_X(x,g\cdot x)&=d_X(x,s_1s_2\cdots s_nx)\\
   & \leq d_X(x,s_1x)+d_X(s_1x,s_1s_2x)+\cdots+d_X(s_1s_2\cdots s_{n-1}x,s_1s_2\cdots s_nx)\\
   & = d_X(x,s_1x)+d_X(x,s_2x)+\cdots+d_X(x,s_nx)\\
-  & \leq 2(\mathrm{diam}B+b)\cdot n\\
-  & =2(\mathrm{diam}B+b)\cdot d_S(e,g)
+  & \leq 2(\diam B+b)\cdot n\\
+  & =2(\diam B+b)\cdot d_S(e,g)
 \end{align*}
 を得る．
 \end{proof}
@@ -405,7 +410,7 @@ Lemma \ref{svarc} は，群作用が等長でなくても成立する．つま�
 証明は，以下のLemma \ref{lem1}--\ref{lem3} より与えらえる．
 
 \begin{lem}\label{lem1}
-  Lemma \ref{svarc} の証明において，群作用が $(c^\prime,b^\prime)$-擬等長な作用でも $x_i\in g_{i-1}\cdot B^\prime$ が成立する．ただし，$B^\prime :=\{x\in X\mid y\in X，d_X(x,y)\leq 2bc^\prime+b^\prime\}$ とする．
+  Lemma \ref{svarc} の証明において，群作用が $(c^\prime,b^\prime)$-擬等長な作用でも $x_i\in g_{i-1}\cdot B^\prime$ が成立する．ただし，$B^\prime \coloneqq\{x\in X\mid y\in X，d_X(x,y)\leq 2bc^\prime+b^\prime\}$ とする．
 \end{lem}
 \begin{proof}
   群作用が $(c^\prime,b^\prime)$-擬等長なので，
@@ -422,19 +427,19 @@ Lemma \ref{svarc} は，群作用が等長でなくても成立する．つま�
 \end{proof}
 
 \begin{lem}\label{lem2}
-  Lemma \ref{svarc} の証明において，群作用が $(c^\prime,b^\prime)$-擬等長な作用でも $\mathrm{diam}(g^\prime\cdot B)< \infty$ である． 
+  Lemma \ref{svarc} の証明において，群作用が $(c^\prime,b^\prime)$-擬等長な作用でも $\diam (g^\prime\cdot B)< \infty$ である． 
 \end{lem}
 \begin{proof}
    群作用が $(c^\prime,b^\prime)$-擬等長なので，
       $$d_X(g\cdot x,g\cdot y)\leq c^\prime d_X(x,y)+b^\prime$$
     が成立する．よって，
   \begin{align*}
-    \mathrm{diam}(g^\prime\cdot B)&=\underset{x,y\in g^\prime\cdot B}{\mathrm{sup}}d_X(x,y)\\
-    &=\underset{x^\prime,y^\prime\in B}{\mathrm{sup}}d_X(g\cdot x^\prime,g\cdot y^\prime)\\
-    &\leq \underset{x^\prime,y^\prime\in B}{\mathrm{sup}} c^\prime d_X(x^\prime,y^\prime)+b^\prime\\
-    &\leq c^\prime \mathrm{diam}B+b^\prime
+    \diam (g^\prime\cdot B)&=\underset{x,y\in g^\prime\cdot B}{\sup}d_X(x,y)\\
+    &=\underset{x^\prime,y^\prime\in B}{\sup}d_X(g\cdot x^\prime,g\cdot y^\prime)\\
+    &\leq \underset{x^\prime,y^\prime\in B}{\sup} c^\prime d_X(x^\prime,y^\prime)+b^\prime\\
+    &\leq c^\prime \diam B+b^\prime
   \end{align*}
-    となり，$\mathrm{diam}(g^\prime\cdot B)$ は有限値．
+    となり，$\diam (g^\prime\cdot B)$ は有限値．
 \end{proof}
 
 \begin{lem}\label{lem3}
@@ -518,7 +523,7 @@ $\mathbb{R}$ に $\mathbb{Z}$ が加法で群作用をしているとき，こ�
 \begin{proof}
 $X$ は擬測地的であるので，Lemma \ref{svarc} の仮定を満足するような $B\subset X$ をみつければよい．以下，$X$ は $(1,b)$-quasi-geodesic であるとする($b>0$)．自然な射影 $\pi\colon X\rightarrow G\backslash X$ は開写像であるので，開球 $B_1(x)=\{y\in X\mid d_X(x,y)<1\}$ の像 $\pi(B_1(x))$ は $G\backslash X$ 上の開集合である．また，$\pi(X)=G\backslash X$ より，$\{\pi(B_1(x))\}_{x\in X}$ は $G\backslash X$ の開被覆である．$G\backslash X$ のコンパクト性より，これらから有限個 $\{\pi(B_1(x_k))\}_{1\leq k\leq n}$ の開被覆で $G\backslash X$ を覆うことができる．各開球 $B_1(x_k)$ の閉包 $\overline{B_1(x_k)}$ を考え，$$B=\bigcup_{k=1}^n\overline{B_1(x_k)}$$ とすれば，
 \begin{enumerate}
-  \item[(a)] $\mathrm{diam}B<\infty$.
+  \item[(a)] $\diam B<\infty$.
   \item[(b)] $\bigcup_{g\in G}g\cdot B=X$.
 \end{enumerate}
 \noindent
@@ -539,7 +544,7 @@ $X$ は擬測地的であるので，Lemma \ref{svarc} の仮定を満足する�
 点 $\tilde{x}\in\widetilde{M}$ における $p\colon\widetilde{M}\rightarrow M$ の微分を
 $$ dp_{\tilde{x}}\colon T_{\tilde{x}}(\widetilde{M})\rightarrow T_{p(\tilde{x})}(M) $$
 とし，$\widetilde{M}$ 上の点 $\tilde{x}$ におけるリーマン計量 $\tilde{g}_{\tilde{x}}$ を，
-$$\tilde{g}_{\tilde{x}}(u,v):=g_{p(\tilde{x})}(dp_{\tilde{x}}(u),dp_{\tilde{x}}(v))$$
+$$\tilde{g}_{\tilde{x}}(u,v)\coloneqq g_{p(\tilde{x})}(dp_{\tilde{x}}(u),dp_{\tilde{x}}(v))$$
 とすることで，$\widetilde{M}$ に距離が入る．\\
 \textcolor{red}{$\widetilde{M}$ が proper かつ測地的な距離空間であること：}\\
 
@@ -584,7 +589,7 @@ $$g\cdot K\cap K\subset g\cdot \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)\cap \B
 以下，$G$ を群として，$S$ をその生成系とする．
 
 \begin{dfn}\label{cayley}
-  生成系 $S$ による群 $G$ の \textbf{cayleyグラフ (cayley graph)} とは，以下のようなグラフである．このグラフを $\mathrm{Cay}(G,S)$ と表記する．
+  生成系 $S$ による群 $G$ の \textbf{cayleyグラフ (cayley graph)} とは，以下のようなグラフである．このグラフを $\Cay(G,S)$ と表記する．
   \begin{enumerate}
     \item 頂点集合を $G$ とする．
     \item 辺集合を $\{\{g,g\cdot s\}\mid g\in G，s\in(S\cup S^{-1})\setminus\{e\}\}$ とする．
@@ -604,13 +609,13 @@ $\mathbb{Z}^2$ の生成系 $\{(1,0),(0,1)\}$ と，$\{(1,1),(0,1)\}$ に関す�
 \end{ex}
 
 \begin{thm}\label{-tree}
- $F$ が自由群であり，$S$ がその生成系の場合，$\mathrm{Cay}(F,S)$ は treeである．
+ $F$ が自由群であり，$S$ がその生成系の場合，$\Cay(F,S)$ は treeである．
 \end{thm}
 
 Cayleyグラフにサイクルがある場合，そのサイクルに沿って $S\cup S^{-1}$ の元を演算することで，非自明なリレーションが得られる．よって，非自明なリレーションがない，つまり自由群の場合，Cayleyグラフ上にはサイクルができないので，tree となる．一方この逆は一般には成り立たない．Cayleyグラフ上にサイクルがなかったとしても，$s\cdot s^\prime= e$ のような，二元からなる非自明なリレーションが存在するケースもあるためである．
 
 \begin{thm}\label{tree-}
- $\mathrm{Cay}(G,S)$ が tree であり，任意の $s,s^\prime\in S$ に対して $s\cdot s^\prime \neq e$ のとき，$G$ は自由群である．
+ $\Cay(G,S)$ が tree であり，任意の $s,s^\prime\in S$ に対して $s\cdot s^\prime \neq e$ のとき，$G$ は自由群である．
 \end{thm}
 
 \subsection{Group Actions}
@@ -626,7 +631,7 @@ Cayleyグラフにサイクルがある場合，そのサイクルに沿って $
 \end{dfn}
 
 \begin{rem}
-$g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に対し，$g\cdot A:=\{g\cdot x\mid x\in A\}$ とする．
+$g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に対し，$g\cdot A\coloneqq\{g\cdot x\mid x\in A\}$ とする．
 \end{rem}
 
 \begin{dfn}
@@ -634,7 +639,7 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \end{dfn}
 
 \begin{ex}
-  群 $\mathbb{Z}^2$ の集合 $\mathbb{R}^2$ への加法での群作用は自由である．しかし，回転群 $\mathrm{SO}(2):=\{A\in \mathrm{GL}_2(\mathbb{R})\mid \mathrm{det}A=1\}$ の $\mathbb{R}^2$ への群作用は自由でない．点 $(0,0)\in \mathbb{R}^2$ は$\mathrm{SO}(2)$ のいかなる元を作用させても不動だからである．
+  群 $\mathbb{Z}^2$ の集合 $\mathbb{R}^2$ への加法での群作用は自由である．しかし，回転群 $\mathrm{SO}(2)\coloneqq\{A\in \mathrm{GL}_2(\mathbb{R})\mid \mathrm{det}A=1\}$ の $\mathbb{R}^2$ への群作用は自由でない．点 $(0,0)\in \mathbb{R}^2$ は$\mathrm{SO}(2)$ のいかなる元を作用させても不動だからである．
 \end{ex}
 
 \begin{dfn}
@@ -661,32 +666,32 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \end{dfn}
 
 %\begin{prop}
-%  群 $G$ の生成系を $S$ とする．$\mathrm{Cay}(G,S)$ への左群作用が free であることと，位数が2である元が $S$ に存在しないことは同値． 
+%  群 $G$ の生成系を $S$ とする．$\Cay(G,S)$ への左群作用が free であることと，位数が2である元が $S$ に存在しないことは同値． 
 %\end{prop}
 
 \begin{dfn}\label{orbit_quotient}
  群 $G$ が 集合 $X$ に群作用しているとする．元 $x\in X$ における，この群作用による\textbf{軌道 (orbit)} とは，集合
- $$G\cdot x:=\{g\cdot x\mid g\in G\}\subset X$$
+ $$G\cdot x\coloneqq\{g\cdot x\mid g\in G\}\subset X$$
  のことである．また，この群作用による $X$ の \textbf{商空間 (quotient)} とは，集合
- $$G\backslash X:=\{G\cdot x\mid x\in X\}\subset 2^X$$
+ $$G\backslash X\coloneqq\{G\cdot x\mid x\in X\}\subset 2^X$$
  のことである．
 \end{dfn}
 
 % \begin{dfn}
 %   群 $G$ が 集合 $X$ に群作用しているとする．元 $x\in X$ における，この群作用による\textbf{安定化群 (stabiliser group)} とは，群
-%   $$G_x:=\{g\in G\mid g\cdot x=x\}\subset G$$
+%   $$G_x\coloneqq\{g\in G\mid g\cdot x=x\}\subset G$$
 %   のことである．また，元 $g\in G$ における \textbf{固定点集合 (fixed point set)} とは，集合
-%   $$X^g:=\{x\in X\mid g\cdot x=x\}\subset X$$
+%   $$X^g\coloneqq\{x\in X\mid g\cdot x=x\}\subset X$$
 %   のことである．
 % \end{dfn}
 
 \subsection{Fundamental Groups}\label{fundamentalgroup}
 以下，$X$ を位相空間とする．
 \begin{dfn}\label{homotopy}
-  $X$ を位相空間とする．$I:=[0,1]$ として，連続写像 $f\colon I\rightarrow X$ を \textbf{パス (path)} といい，$f(0)=f(1)$ のときを特に \textbf{ループ (loop)} という．また，パスの族 $f_t\colon I\rightarrow X\;(0\leq t\leq 1)$ が \textbf{ホモトピー (homotopy)} であるとは，以下の二条件：
+  $X$ を位相空間とする．$I\coloneqq[0,1]$ として，連続写像 $f\colon I\rightarrow X$ を \textbf{パス (path)} といい，$f(0)=f(1)$ のときを特に \textbf{ループ (loop)} という．また，パスの族 $f_t\colon I\rightarrow X\;(0\leq t\leq 1)$ が \textbf{ホモトピー (homotopy)} であるとは，以下の二条件：
   \begin{enumerate}
     \item $f_t(0)=x_0$，$f_t(1)=x_1$ が $t\in I$ に依らない．
-    \item $F(s,t):=f_t(s)$ が，$s,t$ に関して連続．
+    \item $F(s,t)\coloneqq f_t(s)$ が，$s,t$ に関して連続．
   \end{enumerate}
   が成り立つときをいう．このとき，パス $f_0$ と $f_1$ を \textbf{ホモトピック (homotopic)} であるといい，$f_0\simeq f_1$ と表記する．
 \end{dfn}
@@ -698,14 +703,14 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \begin{dfn}
   パス $f,g\colon I\rightarrow X$ に関して，$f(1)=g(0)$ のとき， $f$ と $g$ の演算を
   \begin{align*}
-    f\cdot g :=
+    f\cdot g \coloneqq
     \begin{cases}
            f(2s) \qquad ( s\in [0,1/2] )\\
            g(2s-1) \qquad ( s\in [1/2,1] )
        \end{cases}
   \end{align*}
   とする．$x_0\in X$ を基点としたループの集合を Definition \ref{homotopy} の同値関係 $\simeq$ で割り，演算
-  $$[f][g]:=[f\cdot g]$$
+  $$[f][g]\coloneqq[f\cdot g]$$
   を導入することで群ができる．この群を \textbf{基本群 (fundamental group)} といい，\bm{$\pi_1(X,x_0)$} と表記する．
 \end{dfn}
 
@@ -714,7 +719,7 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \end{ex}
 
 \begin{rem}
-  $X$ が弧状連結のとき，$X$ による基本群は基点に依らない．そこで，$X$ が弧状連結のときは，基点を省略して単に $\pi_1(X)$ と表記する．
+  $X$ が弧状連結のとき，$X$ による基本群は基点に依らない．そこで，$X$ が弧状連結のときは，基点を省略して単に $\pi_1(X)$ と表記する．なお，$X$ が弧状連結とは，任意の二点 $x,y\in X$ に対し，$\gamma(0)=x,\gamma(1)=y$ となるようなパスが取れるときをいう．
 \end{rem}
 
 \subsection{Covering Spaces}\label{coveringspace}
@@ -734,7 +739,7 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \begin{figure}[h]
 \centering
 \includegraphics[width=6cm]{../picture/coveringspace.png}
-\caption{$S^2$ の被覆空間}
+\caption{$S^2$ の被覆空間の例}
 \label{S2coveringspace}
 \end{figure}
 \end{ex}
@@ -773,7 +778,13 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \end{dfn}
 
 \begin{ex}
-  \textcolor{red}{何か書く}
+  $S^2$ の被覆空間 $\mathbb{R}$ の被覆変換は 図\ref{decktrans} などがある．これは，$p\colon \mathbb{R}\rightarrow S^2\subset \mathbb{R}^2\;;\; t\mapsto (\cos2\pi t,\sin2\pi t)$ としたとき，$f\colon \mathbb{R}\rightarrow \mathbb{R}\; ;\; t\mapsto t+2\pi k\; (k\in\mathbb{Z})$ などが挙げられる．
+\begin{figure}[h]
+\centering
+\includegraphics[width=6cm]{../picture/decktransformation.png}
+\caption{$S^2$ の被覆変換の例}
+\label{decktrans}
+\end{figure}
 \end{ex}
 
 \begin{lem}\label{deck_lemma}
@@ -785,15 +796,15 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \begin{dfn}
   $M$ を位相多様体とする．各点 $p\in M$ における接空間 $T_p(M)$ 上の内積 $g_p$ があり，それが $M$ 全体で $C^\infty$ 級のとき，$(M,\{g_p\}_{p\in M})$ を \textbf{リーマン多様体 (Riemannian manifolds)} という．また，$p\in M$ における接空間 $T_p(M)$ 上のベクトル $u\in T_p(M)$ に関して，
   \begin{equation*}
-    \|u\|:=\sqrt{g_p(u,u)}
+    \|u\|\coloneqq\sqrt{g_p(u,u)}
   \end{equation*}
   を，$u$ における \textbf{ノルム (norm)} という．さらに，曲線 $\gamma:[a,b]\rightarrow M$ に対し，
   \begin{equation*}
-    L(\gamma):=\int_{a}^{b}\Bigl\|\frac{d\gamma}{dt}\Bigr\|dt
+    L(\gamma)\coloneqq\int_{a}^{b}\Bigl\|\frac{d\gamma}{dt}\Bigr\|dt
   \end{equation*}
   を曲線 $\gamma$ の \textbf{長さ (length)} といい，二点間 $x_0,x_1\in M$ の距離 $d_M$ を，
   \begin{equation*}
-    d_M(x_0,x_1):=\mathrm{inf}\{L(\gamma)\mid \gamma(a)=x_0,\gamma(b)=x_1\}
+    d_M(x_0,x_1)\coloneqq\inf\{L(\gamma)\mid \gamma(a)=x_0,\gamma(b)=x_1\}
   \end{equation*}
   と定める．
 \end{dfn}
@@ -801,7 +812,7 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \textcolor{red}{めんどくさがらず参考文献かけ．}
 \begin{thebibliography}{9}
 \bibitem{1} Clara Löh, \textit{Geometric Group Theory}, Springer, 2018, 404 
-\bibitem{2} 
+\bibitem{2} Allen Hatcher, \textit{Algebraic Topology}, Cambridge University Press, 2001, 556
 \end{thebibliography}
 
 \end{document}

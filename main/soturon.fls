@@ -163,6 +163,10 @@ INPUT c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandler
 INPUT c:/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 INPUT c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 INPUT c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+INPUT c:/texlive/2025/texmf-dist/tex/latex/mathtools/mathtools.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/mathtools/mathtools.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/mathtools/mhsetup.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/mathtools/mhsetup.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 INPUT c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 INPUT ./soturon.aux
@@ -242,4 +246,8 @@ INPUT ../picture/coveringspace.png
 INPUT ../picture/coveringspace.png
 INPUT ../picture/coveringspace.png
 INPUT extractbb -B cropbox -O ../picture/coveringspace.png
+INPUT ../picture/decktransformation.png
+INPUT ../picture/decktransformation.png
+INPUT ../picture/decktransformation.png
+INPUT extractbb -B cropbox -O ../picture/decktransformation.png
 INPUT soturon.aux
