@@ -62,7 +62,7 @@
 \label{cayleyZ2}
 \end{figure}
 
-Cayleyグラフとは，群の元を頂点とし，生成系の元で辺を結ぶことで得られるグラフであり，生成系によってグラフの形は変わるものの，生成系込みでの群の構造を可視化することに長けている．特に自由群に関しては相性が良く，そのCayleyグラフは tree になることが知られている．逆に，適切な条件下であれば，群と生成系に関するCayleyグラフが tree のとき群は自由群であることも知られている．また，Cayleyグラフは群が作用する空間の代表例と言える．実際，群は自身のCayleyグラフの頂点集合に対して，左からの演算で群作用をなす．この群作用は，サイクルなどのグラフの構造を保つため，Cayleyグラフの構造を群作用を通して理解することもできる．また，自由群が作用する場合，群作用が自由になることから，自由群の部分群が自由群になるスマートな証明も与えらえる．幾何学的群論ではしばしば群作用に着目することが多い．
+Cayleyグラフとは，群の元を頂点とし，生成系の元で辺を結ぶことで得られるグラフであり，生成系によってグラフの形は変わるものの，生成系込みでの群の構造を可視化するこができる．特に自由群に関しては相性が良く，そのCayleyグラフは tree になることが知られている．逆に，適切な条件下であれば，群と生成系に関するCayleyグラフが tree のとき群は自由群であることも知られている．また，Cayleyグラフは群が作用する空間の代表例と言える．実際，群は自身のCayleyグラフの頂点集合に対して，左からの演算で群作用をなす．この群作用は，サイクルなどのグラフの構造を保つため，Cayleyグラフの構造を群作用を通して理解することもできる．また，自由群が作用する場合，群作用が自由になることから，自由群の部分群が自由群になるスマートな証明も与えらえる．幾何学的群論ではしばしば群作用に着目することが多い．
 
 一般に群作用とは，とある集合の自己同型写像として群が振る舞うことであり，群の代数的構造を空間の幾何学的な構造として表現するものである．群を直接調べるのではなく，どのような空間にどのように作用しているかを観察することで，幾何学的な特徴や性質を通して群を調べることを可能としている．例えば，群 $\mathbb{Z}^2$ による，空間 $\mathbb{R}^2$ への加法の群作用を考えると，$\mathbb{R}^2$ は一辺が1の正方形を $\mathbb{Z}^2$ の作用によって敷き詰められた空間であることが分かり，逆に $\mathbb{Z}^2$ という群は $\mathbb{R}^2$ のような広がりのある群構造を持つことが分かる．このことは上の図 \ref{cayleyZ2} のようなCayleyグラフを用いても確かめることができる．群 $\mathbb{Z}^2$ のCayleyグラフが，空間 $\mathbb{R}^2$ のような広がりを持っていることが分かるだろう．
 
@@ -70,7 +70,7 @@ Cayleyグラフから得られる距離を群に導入することで，群を�
 
 そこで，一定誤差のズレを許容する“大雑把に粗く見積もる視点”を導入し，局所的な違いを無視することで，大局的な部分だけを見比べ，群の本質的な構造を抽出することができる．擬等長写像(quasi-isometric)とは，距離空間から距離空間への写像であり，送った先の二点間の距離が，送る前の二点間の距離の定数倍と定数項で抑えられるようなものを指す．これによって二つの距離空間の大局的な構造のみを見比べることができ，Cayleyグラフの生成系に依存してしまう問題を解決できる．
 
-Švarc-Milnor Lemma とは，「群が“よい”距離空間によい群作用をしているとき，その群の有限生成系が分かり，群の構造と距離空間の構造が“大雑把に”等しい」という主張であり，その内容から「幾何学的群論の基本補題」とも言われている．一般に，群が与えられたとき，その群が有限生成であるかどうかの判別は難しい場合が多いのだが，この補題では有限生成系が分かるだけでなく，作用している空間の持つ構造と群の持つ構造が大雑把に等しいことまで分かる．群のことを知りたければ，よく知られている距離空間への作用を考えればよく，逆に距離空間のことを知りたければ，よく知られている群の作用を考えればよい．まさに群と幾何を繋ぐ補題であるといえるだろう．
+Švarc-Milnor Lemma とは，「群がよい距離空間によい群作用をしているとき，その群の有限生成系が分かり，群の構造と距離空間の構造が“大雑把に”等しい」という主張であり，その内容から「幾何学的群論の基本補題」とも言われている．一般に，群が与えられたとき，その群が有限生成であるかどうかの判別は難しい場合が多いのだが，この補題では有限生成系が分かるだけでなく，作用している空間の持つ構造と群の持つ構造が大雑把に等しいことまで分かる．群のことを知りたければ，よく知られている距離空間への作用を考えればよく，逆に距離空間のことを知りたければ，よく知られている群の作用を考えればよい．まさに群と幾何を繋ぐ補題であるといえるだろう．
 
 本論文では \cite{1} の議論をもとに，Švarc-Milnor Lemma の証明と，その補題を位相空間論の視点で言い換えた主張の証明を与えることを主目的としている．\ref{sec_jyunbi} 章にて必要な用語の定義を行い，\ref{sec_hodai} 章にて Švarc-Milnor Lemma の証明，\ref{sec_ouyou} 章にて，主補題の位相空間論版を紹介，証明を行う．なお，幾何学的群論におけるCayleyグラフなどの基本的概念は付録としてまとめているので，そちらを参照されたい．
 
@@ -165,10 +165,10 @@ $$d_Y(f(x),y)=d_Y((f\circ g)(y),y)\leq c$$
 ［1］,［2］を満たすならば Definition \ref{QI} を満たすことの証明：\\ 
 仮定より，ある定数 $c\in\mathbb{R}_{>0}$ が存在し，
 \begin{enumerate}
-  \item 任意の $x,x^\prime \in X$ に対し，$\frac{1}{c}d_X(x,x^\prime)-c \leq d_Y(f(x),f(x^\prime)) \leq cd_X(x,x^\prime)+c.$\label{1}
-  \item 任意の $y\in Y$ に対しある $x\in X$ が存在し，$d_Y(f(x),y)\leq c.$\label{2}
+  \item 任意の $x,x^\prime \in X$ に対し，$\frac{1}{c}d_X(x,x^\prime)-c \leq d_Y(f(x),f(x^\prime)) \leq cd_X(x,x^\prime)+c,$\label{1}
+  \item 任意の $y\in Y$ に対しある $x\in X$ が存在し，$d_Y(f(x),y)\leq c$\label{2}
 \end{enumerate}
-\eqref{2} と選択公理を用いて，$y\in Y$ に対し，$d_Y(f(x_y),y)\leq c$ を満たすような $x_y\in X$ を選ぶ． 写像 $g\colon Y\rightarrow X$ を，$y\mapsto x_y$ と定めると，$g\circ f$，$f\circ g$ ともに finite distance となる．実際に，任意の $x\in X$ に対して，
+が成り立つ．\eqref{2} と選択公理を用いて，$y\in Y$ に対し，$d_Y(f(x_y),y)\leq c$ を満たすような $x_y\in X$ を選ぶ． 写像 $g\colon Y\rightarrow X$ を，$y\mapsto x_y$ と定めると，$g\circ f$，$f\circ g$ ともに finite distance となる．実際に，任意の $x\in X$ に対して，
 \begin{align*}
   d_X((g\circ f)(x),x)&=d_X(x_{f(x)},x)\\
   &\leq c\cdot d_Y(f(x_{f(x)}),f(x)) +c^2\\
@@ -247,7 +247,7 @@ $$c\coloneqq\underset{s\in S\cup S^{-1}}{\max}d_{S^\prime}(e,s)$$
 \end{rem}
 
 \subsection{Quasi-Geodesic}
-本節では，\ref{intro} 章でも記した，“よい”距離空間について述べる．一般に距離空間では，二点が与えられたときに二点間の距離を計算できるが，その距離の長さ通りのパスを距離空間上に作ることができるとは限らない．そのようなことが可能であるような距離空間を測地的といい，その条件をさらに緩めたものを擬測地的という．擬測地的な距離空間では，二点間のパスの長さが，二点間の距離の定数倍と定数項で抑えられるような条件さえ満たせればよい．
+本節では，\ref{intro} 章でも記した，よい距離空間について述べる．一般に距離空間では，二点が与えられたときに二点間の距離を計算できるが，その距離の長さ通りのパスを距離空間上に作ることができるとは限らない．そのようなことが可能であるような距離空間を測地的といい，その条件をさらに緩めたものを擬測地的という．
 \begin{dfn}
 距離空間 $X$ 上の長さ $L\in\mathbb{R}_{>0}$ の \textbf{測地線 (geodesic)} とは，$[0,L]\subset\mathbb{R}$ から $X$ への等長埋め込み，$\gamma\colon[0,L]\rightarrow X$ のことである．また，$X$ が \textbf{測地的 (geodesic)} であるとは，任意の $x,x^\prime\in X$ において，$\gamma(0)=x$，$\gamma(L)=x^\prime$ となるような 等長埋め込み $\gamma$ がとれるときをいう．
 \end{dfn}
@@ -268,15 +268,15 @@ $\mathbb{R}^n\setminus\{0\}$ は，$(1,\epsilon)$-測地的である($\epsilon>0
 本論文の主補題となる，Švarc-Milnor Lemma と，それに関連する主張について紹介する．
 \subsection{Švarc-Milnor Lemma}
 \begin{lem}\label{svarc}
-$G$ を群とし，$(c,b)$-測地的な距離空間 $(X,d_X)$ 上に等長な群作用があるとする．もしある部分集合 $B\subset X$ が存在し，
+$G$ を群とし，$(c,b)$-測地的な距離空間 $(X,d_X)$ 上に等長な群作用があるとする ($b,c>0$)．もしある部分集合 $B\subset X$ が存在し，
    \begin{enumerate}
    \item[(a)] $\diam B\coloneqq\underset{x,y\in B}{\sup}d(x,y)<\infty,$
    \item[(b)] $\bigcup_{g\in G}g\cdot B=X,$
-   \item[(c)] 集合 $S\coloneqq\{g\in G\mid g\cdot B^\prime \cap B^\prime \neq \emptyset\}$ が有限．
+   \item[(c)] 集合 $S\coloneqq\{g\in G\mid g\cdot B^\prime \cap B^\prime \neq \emptyset\}$ が有限
    \end{enumerate}
  を満たすならば，
  \begin{enumerate}
-  \item $S$ は $G$ の有限生成系である．\label{S_is_generating_set}
+  \item $S$ は $G$ の有限生成系であり，\label{S_is_generating_set}
 \item 任意の $x\in X$ に対して定まる写像 $\varphi\colon G\rightarrow X\;;\; g\mapsto gx$ によって，$G$ と $X$ は擬等長．\label{G~X}
  \end{enumerate}
 ただし，$B^\prime \coloneqq\{x\in X\mid y\in X，d_X(x,y)\leq 2b\}$ と定める．
@@ -310,22 +310,22 @@ $$d(x_{i-1},x_i)\leq c|t_{i-1}-t_i|+b=c\cdot b/c+b=2b$$
 を得る．$x_i\in g_i\cdot B \subset g_i\cdot B^\prime$ でもあるので，
 \begin{align*}
   g_i\cdot B^\prime \cap g_{i-1}\cdot B^\prime &\neq\emptyset,\\
-  (g_{i-1}^{-1}\cdot g_i)\cdot B^\prime \cap B^\prime &\neq \emptyset.
+  (g_{i-1}^{-1}\cdot g_i)\cdot B^\prime \cap B^\prime &\neq \emptyset．
 \end{align*}
 よって，$(g_{i-1})^{-1}\cdot g_i \in S$ であり，$s_i\coloneqq(g_{i-1})^{-1}\cdot g_i\in S$ とすれば， $g$ は $g=g_n=e(g_0^{-1}g_1)(g_1^{-1}g_2)\cdots(g_{n-1}^{-1}g_n)=es_1s_2\cdots s_n$ と $S$ の元で表すことができる．\\
 
 \eqref{2} の証明：\\
 $B$ の仮定より，任意の $x\in X$ は $B$ に含まれていると考えてよい($x\in g\cdot B$ となる $g\cdot B$ を改めて $B$ とすればよいため)．
 \begin{enumerate}
-  \item[［1］] 写像 $\varphi(g)=g\cdot x$ に関して，quasi-dense image であること．
-  \item[［2］] 擬等長埋め込みであること．
+  \item[［1］] 写像 $\varphi(g)=g\cdot x$ に関して，quasi-dense image であること，
+  \item[［2］] 擬等長埋め込みであること
 \end{enumerate}
 の二点を示す．\\
 
 \noindent
 ［1］ $\varphi$ が quasi-dense image であること：\\
 任意の $x^\prime \in X$ に関して，$x^\prime\in g^\prime\cdot B$ となる $g^\prime \in G$ がとれるため，
-$$d_X(x^\prime,\varphi(g^\prime))=d_X(x^\prime,g^\prime\cdot x)\leq \diam (g^\prime \cdot B)=\diam B.$$
+$$d_X(x^\prime,\varphi(g^\prime))=d_X(x^\prime,g^\prime\cdot x)\leq \diam (g^\prime \cdot B)=\diam B$$
 仮定より $\diam B$ は有限なので，$\varphi$ が quasi-dense image であることが示された．\\
 
 \noindent
@@ -334,7 +334,7 @@ $$d_X(x^\prime,\varphi(g^\prime))=d_X(x^\prime,g^\prime\cdot x)\leq \diam (g^\pr
 $$\frac{1}{C}d_S(g,h)-B\leq d_X(\varphi(g),\varphi(h))\leq Cd_S(g,h)+B.$$
 であることを示せばいいが，word metric の定義と $G$ が等長に作用していることから，
 \begin{align*}
-  d_S(g,h)&=d_S(e,g^{-1}h)\\
+  d_S(g,h)&=d_S(e,g^{-1}h),\\
   d_X(\varphi(g),\varphi(h))&=d_X(g\cdot x,h\cdot x)\\
   &=d_X(x,(g^{-1}h)\cdot x)\\
   &=d_X(\varphi(e),\varphi(g^{-1}h))
@@ -352,7 +352,7 @@ $$\frac{1}{C}d_S(e,g)-B\leq d_X(\varphi(e),\varphi(g))\leq Cd_S(e,g)+B$$
   &\geq \frac{1}{c}\frac{b(n-1)}{c}-b=\frac{b}{c^2}n-b-\frac{b}{c^2}\\
   &\geq \frac{1}{c^2}d_S(e,g)-b-\frac{b}{c^2}
 \end{align*}
-とすることで，下からの不等式が得られる．\\
+とすることで，目的の不等式が得られる．\\
 
 \noindent
 ［$2-2$］ $d_X(\varphi(e),\varphi(g))\leq Cd_S(e,g)+B$ が成立すること：\\
@@ -382,7 +382,7 @@ $$d_X(x,s_i\cdot x)\leq \diam B+2b+\diam B=2(\diam B+b)$$
 \begin{ex}
 通常の距離が入った距離空間 $\mathbb{R}^2$ に群 $\mathbb{Z}^2$ が，
 \begin{align*}
-  (1,0)\cdot (x,y) = (x+1,y)\\
+  (1,0)\cdot (x,y) = (x+1,y),\\
   (0,1)\cdot (x,y) = (x,y+1)
 \end{align*}
 からなる作用をしているとする．作用の仕方からこれは等長な群作用である．$\mathbb{R}^2$ を $(1,1/4)$-擬測地的距離空間とし，部分集合 $B\subset \mathbb{R}^2$ を，
@@ -457,7 +457,7 @@ word metric の定義から，
 が成立し，群作用が$(c^\prime,b^\prime)$-擬等長なことから，
 \begin{align}
   d_X(\varphi(e),\varphi(g^{-1}h))&=d_X(x,(g^{-1}h)\cdot x)\nonumber\\
-  &\leq c^\prime d_X(g\cdot x,h\cdot x)+c^\prime b^\prime=c^\prime d_X(\varphi(g),\varphi(h))+c^\prime b^\prime\label{lem3.5.2}\\
+  &\leq c^\prime d_X(g\cdot x,h\cdot x)+c^\prime b^\prime=c^\prime d_X(\varphi(g),\varphi(h))+c^\prime b^\prime,\label{lem3.5.2}\\
   d_X(\varphi(e),\varphi(g^{-1}h))&=d_X(x,(g^{-1}h)\cdot x)\nonumber\\
   &\geq\frac{1}{c^\prime}d_X(g\cdot x,h\cdot x)-\frac{b^\prime}{c^\prime}=\frac{1}{c^\prime}d_X(\varphi(g),\varphi(h))-\frac{b^\prime}{c^\prime}\label{lem3.5.3}
 \end{align}
@@ -469,14 +469,14 @@ word metric の定義から，
 \begin{align*}
   \frac{1}{C}d_S(g,h)-B&=\frac{1}{C}d_S(e,g^{-1}h)-B \qquad \eqref{lem3.5.1} より\\
   &\leq d_X(\varphi(e),\varphi(g^{-1}h)) \qquad \eqref{lem3.5.4} より\\
-  &\leq c^\prime d_X(\varphi(g),\varphi(h))+c^\prime b^\prime \qquad \eqref{lem3.5.2} より\\
+  &\leq c^\prime d_X(\varphi(g),\varphi(h))+c^\prime b^\prime, \qquad \eqref{lem3.5.2} より\\
   \frac{1}{Cc^\prime}d_S(g,h)-\frac{B+c^\prime b^\prime}{c^\prime}&\leq d_X(\varphi(g),\varphi(h))
 \end{align*}
 が得られ，もう一方も
 \begin{align*}
   Cd_S(g,h)+B&=Cd_S(e,g^{-1}h)+B \qquad \eqref{lem3.5.1} より\\
   &\geq d_X(\varphi(e),\varphi(g^{-1}h)) \qquad \eqref{lem3.5.4} より\\
-  &\geq \frac{1}{c^\prime} d_X(\varphi(g),\varphi(h))-\frac{b^\prime}{c^\prime} \qquad \eqref{lem3.5.3} より\\
+  &\geq \frac{1}{c^\prime} d_X(\varphi(g),\varphi(h))-\frac{b^\prime}{c^\prime}, \qquad \eqref{lem3.5.3} より\\
   Cc^\prime d_S(g,h)+(Bc^\prime +b^\prime)&\geq d_X(\varphi(g),\varphi(h))
 \end{align*}
 が得られ，目的の不等式が成立する．
@@ -523,8 +523,8 @@ $\mathbb{R}$ に $\mathbb{Z}$ が加法で群作用をしているとき，こ�
 \begin{proof}
 $X$ は擬測地的であるので，Lemma \ref{svarc} の仮定を満足するような $B\subset X$ をみつければよい．以下，$X$ は $(1,b)$-quasi-geodesic であるとする($b>0$)．自然な射影 $\pi\colon X\rightarrow G\backslash X$ は開写像であるので，開球 $B_1(x)=\{y\in X\mid d_X(x,y)<1\}$ の像 $\pi(B_1(x))$ は $G\backslash X$ 上の開集合である．また，$\pi(X)=G\backslash X$ より，$\{\pi(B_1(x))\}_{x\in X}$ は $G\backslash X$ の開被覆である．$G\backslash X$ のコンパクト性より，これらから有限個 $\{\pi(B_1(x_k))\}_{1\leq k\leq n}$ の開被覆で $G\backslash X$ を覆うことができる．各開球 $B_1(x_k)$ の閉包 $\overline{B_1(x_k)}$ を考え，$$B=\bigcup_{k=1}^n\overline{B_1(x_k)}$$ とすれば，
 \begin{enumerate}
-  \item[(a)] $\diam B<\infty$.
-  \item[(b)] $\bigcup_{g\in G}g\cdot B=X$.
+  \item[(a)] $\diam B<\infty$,
+  \item[(b)] $\bigcup_{g\in G}g\cdot B=X$
 \end{enumerate}
 \noindent
 をみたす．また，$B$ はコンパクト集合である($X$ の proper 性から各 $\overline{B_1(x_k)}$ はコンパクトであり，$B$ はそれらの有限和のため)．同様の議論として，$B^\prime=\{x\in X\mid y\in B，d_X(x,y)\leq 2b\}$ とすれば，これはコンパクト集合である．そして群作用が properly discontinuous であることから，
@@ -624,8 +624,8 @@ Cayleyグラフにサイクルがある場合，そのサイクルに沿って $
 \begin{dfn}
 群 $G$ が集合 $X$ 上に\textbf{作用する(group action)}とは, 各 $g\in G$ に対して $X$ から $X$ への全単射な写像が存在し, その写像も $g$ と表すとき, 
 \begin{enumerate}
-  \item 全ての $g, h\in G$ と $x\in X$ に対し,  $h(g(x))=(hg)(x)$.  
-  \item $e(x)=x$. 
+  \item 任意の $g, h\in G$ と $x\in X$ に対し,  $h(g(x))=(hg)(x)$,
+  \item $e(x)=x$
 \end{enumerate}
 が成立することである. ただし, $e$ は単位元である.
 \end{dfn}
@@ -643,31 +643,41 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \end{ex}
 
 \begin{dfn}
-  $(V,E),(V^\prime,E^\prime)$ をグラフとする．$f\colon (V,E)\rightarrow(V^\prime,E^\prime)$ が \textbf{グラフ準同型 (graph homomorphism)} であるとは，二条件
+  $(V,E),(V^\prime,E^\prime)$ をグラフとする．$f\colon (V,E)\rightarrow(V^\prime,E^\prime)$ が \textbf{グラフ準同型 (graph homomorphism)} であるとは，以下の二条件が成り立つときをいう．
   \begin{enumerate}
     \item $f\colon V\rightarrow V^\prime$ が写像.
     \item $\{v,v^\prime\}\in E\Rightarrow \{f(v),f(v^\prime)\}\in E^\prime.$   
   \end{enumerate}
-  が成り立つときをいう．また，$f$ が \textbf{グラフ同型 (graph isomorphism)} であるとは，二条件
+  また，$f$ が \textbf{グラフ同型 (graph isomorphism)} であるとは，以下の二条件が成り立つときをいう．
   \begin{enumerate}
     \item $f\colon V\rightarrow V$ が全単射.
     \item $\{v,v^\prime\}\in E\Leftrightarrow \{f(v),f(v^\prime)\}\in E^\prime.$   
   \end{enumerate}
-  が成り立つときをいう．
+  
 \end{dfn}
 
 \begin{dfn}
-  群 $G$ がグラフ $(V,E)$ にグラフ同型に作用しているとする．この作用が \textbf{自由 (free)} であるとは，任意の $g\in G\setminus \{e\}$ に対して，以下の二条件
+  群 $G$ がグラフ $(V,E)$ にグラフ同型に作用しているとする．この作用が \textbf{自由 (free)} であるとは，任意の $g\in G\setminus \{e\}$ に対して，以下の二条件が成り立つときをいう．
   \begin{enumerate}
-   \item 任意の $v\in V$ に対して，$g(v)\neq v$ が成り立つ．
-   \item 任意の $v,v^\prime \in V$ に対して，$\{g(v),g(v^\prime)\}\neq\{v,v^\prime\}$ が成り立つ．
+   \item 任意の $v\in V$ に対して，$g(v)\neq v$．
+   \item 任意の $v,v^\prime \in V$ に対して，$\{g(v),g(v^\prime)\}\neq\{v,v^\prime\}$．
   \end{enumerate}
-  が成立することをいう．
 \end{dfn}
 
 %\begin{prop}
 %  群 $G$ の生成系を $S$ とする．$\Cay(G,S)$ への左群作用が free であることと，位数が2である元が $S$ に存在しないことは同値． 
 %\end{prop}
+
+\begin{thm}\label{freeactiongroup}
+  群 $G$ が自由群であることと，$G$ が自由に作用するような，(空でない) tree が存在することは同値．
+\end{thm}
+
+\begin{prop}
+  自由群の部分群は自由群である．
+\end{prop}
+\begin{proof}
+  $G$ を自由群とすると，Theorem \ref{freeactiongroup} より，$G$ が自由に作用する tree が存在する．$G$ の部分群もこの tree に自由に作用するため，Theorem \ref{freeactiongroup} より，$G$ の部分群は自由群である．
+\end{proof}
 
 \begin{dfn}\label{orbit_quotient}
  群 $G$ が 集合 $X$ に群作用しているとする．元 $x\in X$ における，この群作用による\textbf{軌道 (orbit)} とは，集合
@@ -688,12 +698,12 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \subsection{Fundamental Groups}\label{fundamentalgroup}
 以下，$X$ を位相空間とする．
 \begin{dfn}\label{homotopy}
-  $X$ を位相空間とする．$I\coloneqq[0,1]$ として，連続写像 $f\colon I\rightarrow X$ を \textbf{パス (path)} といい，$f(0)=f(1)$ のときを特に \textbf{ループ (loop)} という．また，パスの族 $f_t\colon I\rightarrow X\;(0\leq t\leq 1)$ が \textbf{ホモトピー (homotopy)} であるとは，以下の二条件：
+  $X$ を位相空間とする．$I\coloneqq[0,1]$ として，連続写像 $f\colon I\rightarrow X$ を \textbf{パス (path)} といい，$f(0)=f(1)$ のときを特に \textbf{ループ (loop)} という．また，パスの族 $f_t\colon I\rightarrow X\;(0\leq t\leq 1)$ が \textbf{ホモトピー (homotopy)} であるとは，以下の二条件が成り立つときをいう．
   \begin{enumerate}
     \item $f_t(0)=x_0$，$f_t(1)=x_1$ が $t\in I$ に依らない．
     \item $F(s,t)\coloneqq f_t(s)$ が，$s,t$ に関して連続．
   \end{enumerate}
-  が成り立つときをいう．このとき，パス $f_0$ と $f_1$ を \textbf{ホモトピック (homotopic)} であるといい，$f_0\simeq f_1$ と表記する．
+ このとき，パス $f_0$ と $f_1$ を \textbf{ホモトピック (homotopic)} であるといい，$f_0\simeq f_1$ と表記する．
 \end{dfn}
  
 \begin{rem}
@@ -701,11 +711,11 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \end{rem}
 
 \begin{dfn}
-  パス $f,g\colon I\rightarrow X$ に関して，$f(1)=g(0)$ のとき， $f$ と $g$ の演算を
+  パス $f,g\colon I\rightarrow X$ に関して，$f(1)=g(0)$ のとき， $f$ と $g$ の演算を，
   \begin{align*}
     f\cdot g \coloneqq
     \begin{cases}
-           f(2s) \qquad ( s\in [0,1/2] )\\
+           f(2s) \qquad ( s\in [0,1/2] ),\\
            g(2s-1) \qquad ( s\in [1/2,1] )
        \end{cases}
   \end{align*}
@@ -724,17 +734,17 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 
 \subsection{Covering Spaces}\label{coveringspace}
 \begin{dfn}
-   $X,\widetilde{X}$ を位相空間，$p\colon\widetilde{X}\rightarrow X$ を連続写像とする．任意の $x\in X$ に対し，開近傍 $U\subset X$ と 開集合族 $\{\widetilde{U}_\lambda\}_{\lambda\in\Lambda}\subset 2^{\widetilde{X}}$ が存在し，三条件
+   $X,\widetilde{X}$ を位相空間，$p\colon\widetilde{X}\rightarrow X$ を連続写像とする．任意の $x\in X$ に対し，開近傍 $U\subset X$ と 開集合族 $\{\widetilde{U}_\lambda\}_{\lambda\in\Lambda}\subset 2^{\widetilde{X}}$ が存在し，三条件：
   \begin{enumerate}
     \item $\alpha,\beta\in\Lambda$ に関して，$\alpha\neq\beta$ ならば $\widetilde{U}_\alpha\cap\widetilde{U}_\beta=\emptyset$．
     \item $p^{-1}(U)=\bigsqcup_{\lambda\in\Lambda}\widetilde{U}_\lambda$．
     \item 全ての $\lambda\in\Lambda$ に対し， $p|_\lambda$ によって $\widetilde{U}_\lambda$ と $U$ は同相．
   \end{enumerate}
-  が成り立つとき，$\widetilde{X}$ と $p$ の組 $(\widetilde{X},p)$ を $X$ の \textbf{被覆空間 (covering space)} という．
+  が成り立つとき，$\widetilde{X}$ と $p$ の組 $(\widetilde{X},p)$ を $X$ の \textbf{被覆空間 (covering space)} という．また，$p$ を省略し，$\widetilde{X}$ のみを被覆空間ということもある．
 \end{dfn}
 
 \begin{ex}
-  $S^2$ の被覆空間は様々あるが，その中の一つに $\mathbb{R}$ がある(図\ref{S2coveringspace}参照)． 
+  $\mathbb{R}$ は $S^2$ の被覆空間である (図\ref{S2coveringspace}参照)．
 
 \begin{figure}[h]
 \centering
@@ -766,11 +776,11 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 % \end{lem}
 
 \begin{dfn}
-  位相空間 $X$ の 被覆空間 $\widetilde{X}$ が \textbf{普遍被覆 (universal cover)} であるとは，$\widetilde{X}$ が弧状連結かつ $\pi_1(\widetilde{X})$ が自明群であることをいう．また，$p$ を省略し，単に $\widetilde{X}$ だけを普遍被覆ともいうこともある．
+  位相空間 $X$ の 被覆空間 $\widetilde{X}$ が \textbf{普遍被覆 (universal cover)} であるとは，$\widetilde{X}$ が弧状連結かつ $\pi_1(\widetilde{X})$ が自明群であることをいう．
 \end{dfn}
 
 \begin{ex}
-  図\ref{S2coveringspace} より，$\mathbb{R}^2$ は $S^2$ の普遍被覆である．
+  図\ref{S2coveringspace} より，$\mathbb{R}$ は $S^2$ の普遍被覆である．
 \end{ex}
 
 \begin{dfn}\label{def_deck}
@@ -778,7 +788,7 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \end{dfn}
 
 \begin{ex}
-  $S^2$ の被覆空間 $\mathbb{R}$ の被覆変換は 図\ref{decktrans} などがある．これは，$p\colon \mathbb{R}\rightarrow S^2\subset \mathbb{R}^2\;;\; t\mapsto (\cos2\pi t,\sin2\pi t)$ としたとき，$f\colon \mathbb{R}\rightarrow \mathbb{R}\; ;\; t\mapsto t+2\pi k\; (k\in\mathbb{Z})$ などが挙げられる．
+  $S^2$ の被覆空間 $\mathbb{R}$ をとる．$p\colon \mathbb{R}\rightarrow S^2\subset \mathbb{R}^2\;;\; t\mapsto (\cos2\pi t,\sin2\pi t)$ としたとき，$f\colon \mathbb{R}\rightarrow \mathbb{R}\; ;\; t\mapsto t+2\pi k\; (k\in\mathbb{Z})$ は被覆変換である (図\ref{decktrans} 参照)．
 \begin{figure}[h]
 \centering
 \includegraphics[width=6cm]{../picture/decktransformation.png}
