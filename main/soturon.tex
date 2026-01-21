@@ -28,18 +28,20 @@
 \newtheorem{lem}[dfn]{Lemma}
 \def\labelenumi{(\theenumi)}
 
-\setlength{\textwidth}{\paperwidth}
-\addtolength{\textwidth}{-40truemm}
-\setlength{\textheight}{\paperheight}
-\addtolength{\textheight}{-45truemm}
-%余白の調節
-\setlength{\topmargin}{-10.4truemm}
-\setlength{\evensidemargin}{-5.44truemm}
-\setlength{\oddsidemargin}{-5.44truemm}
-\setlength{\headheight}{17pt}
-\setlength{\headsep}{10mm}
-\addtolength{\headsep}{-17pt}
-\setlength{\footskip}{5mm}
+% \setlength{\textwidth}{\paperwidth}
+% \addtolength{\textwidth}{-40truemm}
+% \setlength{\textheight}{\paperheight}
+% \addtolength{\textheight}{-45truemm}
+% %余白の調節
+% \setlength{\topmargin}{-10.4truemm}
+% \setlength{\evensidemargin}{-5.44truemm}
+% \setlength{\oddsidemargin}{-5.44truemm}
+% \setlength{\headheight}{17pt}
+% \setlength{\headsep}{10mm}
+% \addtolength{\headsep}{-17pt}
+% \setlength{\footskip}{5mm}
+
+\usepackage[top=35mm, bottom=35mm, left=25mm, right=25mm]{geometry}
 
 \begin{document}
 %\fontsize{9pt}{14pt}\selectfont
@@ -292,7 +294,7 @@ $$x_i\coloneqq\gamma(t_i)　(0\leq i\leq n)$$
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=17cm]{../picture/syoumei}
+\includegraphics[width=16cm]{../picture/syoumei}
 \caption{$t_i,x_i,g_i$ の関係}
 \label{syoumei}
 \end{figure}
@@ -754,7 +756,7 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=6cm]{../picture/coveringspace.png}
+\includegraphics[width=5.5cm]{../picture/coveringspace.png}
 \caption{$S^2$ の被覆空間の例}
 \label{S2coveringspace}
 \end{figure}
@@ -795,9 +797,10 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 
 \begin{ex}
   $S^2$ の被覆空間 $\mathbb{R}$ をとる．$p\colon \mathbb{R}\rightarrow S^2\subset \mathbb{R}^2\;;\; t\mapsto (\cos2\pi t,\sin2\pi t)$ としたとき，$f\colon \mathbb{R}\rightarrow \mathbb{R}\; ;\; t\mapsto t+2\pi k\; (k\in\mathbb{Z})$ は被覆変換である (図\ref{decktrans} 参照)．
+
 \begin{figure}[h]
 \centering
-\includegraphics[width=6cm]{../picture/decktransformation.png}
+\includegraphics[width=5.5cm]{../picture/decktransformation.png}
 \caption{$S^2$ の被覆変換の例}
 \label{decktrans}
 \end{figure}
@@ -827,8 +830,9 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 
 \textcolor{red}{参考文献のページ書く}
 \begin{thebibliography}{9}
-\bibitem{1} Clara Löh, \textit{Geometric Group Theory}, Springer, 2018, 404 
-\bibitem{2} Allen Hatcher, \textit{Algebraic Topology}, Cambridge University Press, 2001, 556
+\bibitem{1} Clara Löh, \textit{Geometric Group Theory}, Springer, 2018, 404, pp53--141
+\bibitem{2} Allen Hatcher, \textit{Algebraic Topology}, Cambridge University Press, 2001, 556, pp21--82
+
 \end{thebibliography}
 
 \end{document}

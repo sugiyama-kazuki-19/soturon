@@ -1,18 +1,18 @@
 \contentsline {section}{\numberline {1}導入}{3}{}%
 \contentsline {section}{\numberline {2}準備}{4}{}%
 \contentsline {subsection}{\numberline {2.1}Quasi-Isometry of Meric Spaces}{4}{}%
-\contentsline {subsection}{\numberline {2.2}Quasi-Isometry of Groups}{6}{}%
-\contentsline {subsection}{\numberline {2.3}Quasi-Geodesic}{8}{}%
-\contentsline {section}{\numberline {3}主補題}{8}{}%
-\contentsline {subsection}{\numberline {3.1}^^c5^^a0varc-Milnor Lemma}{8}{}%
-\contentsline {subsection}{\numberline {3.2}^^c5^^a0varc-Milnor Lemma の拡張}{12}{}%
-\contentsline {section}{\numberline {4}主補題 位相空間論 版}{14}{}%
-\contentsline {subsection}{\numberline {4.1}準備}{14}{}%
-\contentsline {subsection}{\numberline {4.2}^^c5^^a0varc-Milnor Lemma (位相空間論 版)}{15}{}%
-\contentsline {subsection}{\numberline {4.3}応用例}{16}{}%
-\contentsline {section}{\numberline {A}付録}{17}{}%
-\contentsline {subsection}{\numberline {A.1}Cayley Graphs}{17}{}%
-\contentsline {subsection}{\numberline {A.2}Group Actions}{18}{}%
-\contentsline {subsection}{\numberline {A.3}Fundamental Groups}{19}{}%
-\contentsline {subsection}{\numberline {A.4}Covering Spaces}{20}{}%
-\contentsline {subsection}{\numberline {A.5}Riemannian Manifolds}{21}{}%
+\contentsline {subsection}{\numberline {2.2}Quasi-Isometry of Groups}{7}{}%
+\contentsline {subsection}{\numberline {2.3}Quasi-Geodesic}{9}{}%
+\contentsline {section}{\numberline {3}主補題}{9}{}%
+\contentsline {subsection}{\numberline {3.1}^^c5^^a0varc-Milnor Lemma}{9}{}%
+\contentsline {subsection}{\numberline {3.2}^^c5^^a0varc-Milnor Lemma の拡張}{13}{}%
+\contentsline {section}{\numberline {4}主補題 位相空間論 版}{16}{}%
+\contentsline {subsection}{\numberline {4.1}準備}{16}{}%
+\contentsline {subsection}{\numberline {4.2}^^c5^^a0varc-Milnor Lemma (位相空間論 版)}{17}{}%
+\contentsline {subsection}{\numberline {4.3}応用例}{18}{}%
+\contentsline {section}{\numberline {A}付録}{19}{}%
+\contentsline {subsection}{\numberline {A.1}Cayley Graphs}{19}{}%
+\contentsline {subsection}{\numberline {A.2}Group Actions}{20}{}%
+\contentsline {subsection}{\numberline {A.3}Fundamental Groups}{21}{}%
+\contentsline {subsection}{\numberline {A.4}Covering Spaces}{22}{}%
+\contentsline {subsection}{\numberline {A.5}Riemannian Manifolds}{23}{}%

@@ -1,10 +1,10 @@
 # Fdb version 4
-["dvipdf"] 1768955120.58261 "soturon.dvi" "soturon.pdf" "soturon" 1768955123.98754 0
-  "soturon.dvi" 1768955120 94456 7ef2050f88bfdcf861bc85f814d44791 "latex"
+["dvipdf"] 1768964019.36268 "soturon.dvi" "soturon.pdf" "soturon" 1768964023.27326 0
+  "soturon.dvi" 1768964018 95416 2f5d2c4f607aa960f63e321dd4e6f4e5 "latex"
   (generated)
   "soturon.pdf"
   (rewritten before read)
-["latex"] 1768955115.21331 "c:/Users/kazus/github/soturon/main/soturon.tex" "soturon.dvi" "soturon" 1768955123.96601 0
+["latex"] 1768964015.57863 "c:/Users/kazus/github/soturon/main/soturon.tex" "soturon.dvi" "soturon" 1768964023.24165 0
   "../cover/cover.pdf" 1768543076 17672 58f5be726f38bd0a801314a11980b021 ""
   "../picture/2diamB+2b.png" 1767355390 61501 12935ed222188c6ee606d7633a936641 ""
   "../picture/R2Z2.png" 1767531748 33247 726306d2c9d9903c0490a0a3deb4e6f0 ""
@@ -14,7 +14,7 @@
   "../picture/coveringspace.png" 1768757063 64392 9fdf57bc9d62575b682cd5b4b476e67a ""
   "../picture/decktransformation.png" 1768809289 40722 73b1b3a6740d5e3558bed46947aaedba ""
   "../picture/syoumei.png" 1767431132 39150 7df34a2aa95a73c2c5638049527a1a81 ""
-  "c:/Users/kazus/github/soturon/main/soturon.tex" 1768875153 55227 ccf6112bcd55066478eb92a5603b9de8 ""
+  "c:/Users/kazus/github/soturon/main/soturon.tex" 1768964013 55350 86d8fb990b65c1459bff752490a4dc17 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1764496659 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1764496659 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1764496659 1004 54797486969f23fa377b128694d548df ""
@@ -39,6 +39,7 @@
   "c:/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-h.tfm" 1764497836 812 52bd92aa20c58a398601cda6dd62c8d1 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm" 1764497836 536 5f2475e9deb198c23894800d3c5eed00 ""
   "c:/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty" 1764497108 7984 7dbb9280f03c0a315425f1b4f35d43ee ""
+  "c:/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty" 1764497108 1057 525c2192b5febbd8c1f662c9468335bb ""
   "c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex" 1764497575 1016 1c2b89187d12a2768764b83b4945667c ""
   "c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex" 1764497575 43906 06058dc09064474303f3b5dd62d982c0 ""
   "c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex" 1764497575 19324 f4e4c6403dd0f1605fd20ed22fa79dea ""
@@ -105,6 +106,7 @@
   "c:/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty" 1764497275 5525 1593ca62a2554dd7423fc8a4e5a82125 ""
   "c:/texlive/2025/texmf-dist/tex/latex/eso-pic/eso-pic.sty" 1764496909 11876 6ef493863ae0d7a984706973240c2237 ""
   "c:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1764496919 46885 8953c67ffba03252c6090aa19568b8ba ""
+  "c:/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty" 1764497017 41601 9cf6c5257b1bc7af01a58859749dd37a ""
   "c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1764497028 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1764497028 1224 978390e9c2234eab29404bc21b268d1e ""
   "c:/texlive/2025/texmf-dist/tex/latex/graphics-def/dvipdfmx.def" 1764497030 12466 254cda60ce262fd4e1f9dbb063f46499 ""
@@ -140,9 +142,9 @@
   "c:/texlive/2025/texmf-dist/web2c/texmf.cnf" 1764496606 42213 4e2ca030e8e2640502016e9e45868dcb ""
   "c:/texlive/2025/texmf-var/web2c/euptex/uplatex.fmt" 1764498180 2371685 a01da38a0aee414faf9a5cffd5c909e5 ""
   "c:/texlive/2025/texmf.cnf" 1764497938 713 e69b156964470283e0530f5060668171 ""
-  "soturon.aux" 1768955120 4966 f345be64c95fd73214a16e0aa63d9201 "latex"
-  "soturon.tex" 1768875153 55227 ccf6112bcd55066478eb92a5603b9de8 ""
-  "soturon.toc" 1768955120 1247 b216d6a5adca7f59e7ce506b93e6d7c3 "latex"
+  "soturon.aux" 1768964018 4968 df253a74464cffee0ea2341e4594c90b "latex"
+  "soturon.tex" 1768964013 55350 86d8fb990b65c1459bff752490a4dc17 ""
+  "soturon.toc" 1768964018 1247 e096f5cfaab5f043f939292c8d098b15 "latex"
   (generated)
   "soturon.aux"
   "soturon.dvi"

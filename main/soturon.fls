@@ -167,6 +167,12 @@ INPUT c:/texlive/2025/texmf-dist/tex/latex/mathtools/mathtools.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/mathtools/mathtools.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/mathtools/mhsetup.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/mathtools/mhsetup.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT c:/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+INPUT c:/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+INPUT c:/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT c:/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 INPUT c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 INPUT ./soturon.aux
@@ -178,8 +184,6 @@ INPUT c:/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT c:/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT c:/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/graphics/lscape.sty
 INPUT ../cover/cover.pdf
 INPUT ../cover/cover.pdf
