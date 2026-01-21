@@ -14,5 +14,5 @@
 \contentsline {subsection}{\numberline {A.1}Cayley Graphs}{17}{}%
 \contentsline {subsection}{\numberline {A.2}Group Actions}{18}{}%
 \contentsline {subsection}{\numberline {A.3}Fundamental Groups}{19}{}%
-\contentsline {subsection}{\numberline {A.4}Covering Spaces}{19}{}%
-\contentsline {subsection}{\numberline {A.5}Riemannian Manifolds}{20}{}%
+\contentsline {subsection}{\numberline {A.4}Covering Spaces}{20}{}%
+\contentsline {subsection}{\numberline {A.5}Riemannian Manifolds}{21}{}%

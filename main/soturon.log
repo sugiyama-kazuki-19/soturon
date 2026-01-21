@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.11.30)  20 JAN 2026 10:54
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.11.30)  20 JAN 2026 11:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -556,10 +556,10 @@ LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
  [16]
 File: ../picture/cayleyZ2_2.png Graphic file (type bmp)
 <../picture/cayleyZ2_2.png>
- [17]
+ [17] [18]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 679.
- [18] [19]
+(Font)              No change on input line 693.
+ [19]
 File: ../picture/coveringspace.png Graphic file (type bmp)
 <../picture/coveringspace.png>
 File: ../picture/decktransformation.png Graphic file (type bmp)
@@ -570,9 +570,9 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [20]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 824.
+(Font)              No change on input line 830.
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 825.
+(Font)              No change on input line 831.
  [21] (./soturon.aux)
  ***********
 pLaTeX2e <2023-02-14u04>+1, based on
@@ -583,10 +583,10 @@ L3 programming layer <2025-11-14>
 Here is how much of TeX's memory you used:
  15019 strings out of 469647
  295978 string characters out of 5472212
- 685649 words of memory out of 5000000
+ 685647 words of memory out of 5000000
  43529 multiletter control sequences out of 15000+600000
  636948 words of font info for 84 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  84i,14n,94p,1187b,769s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on soturon.dvi (21 pages, 94060 bytes).
+Output written on soturon.dvi (21 pages, 94856 bytes).
