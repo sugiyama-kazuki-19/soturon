@@ -1,11 +1,11 @@
 # Fdb version 4
-["dvipdf"] 1768968995.89689 "soturon.dvi" "soturon.pdf" "soturon" 1768969000.53068 0
-  "soturon.dvi" 1768968995 94688 20446c579cf6b66b84ecc68e8445a69c "latex"
+["dvipdf"] 1768970483.6675 "soturon.dvi" "soturon.pdf" "soturon" 1768970486.0594 0
+  "soturon.dvi" 1768970483 94688 3c169da5f9c3bf1e74e0443efd5f98b6 "latex"
   (generated)
   "soturon.pdf"
   (rewritten before read)
-["latex"] 1768968991.49647 "c:/Users/kazus/github/soturon/main/soturon.tex" "soturon.dvi" "soturon" 1768969000.50006 0
-  "../cover/cover.pdf" 1768543076 17672 58f5be726f38bd0a801314a11980b021 ""
+["latex"] 1768970479.85515 "c:/Users/kazus/github/soturon/main/soturon.tex" "soturon.dvi" "soturon" 1768970486.04745 0
+  "../cover/cover.pdf" 1768970467 17289 808fc6e7c162d8fe25fa3df51f267961 ""
   "../picture/2diamB+2b.png" 1767355390 61501 12935ed222188c6ee606d7633a936641 ""
   "../picture/R2Z2.png" 1767531748 33247 726306d2c9d9903c0490a0a3deb4e6f0 ""
   "../picture/benzu.png" 1767278203 55168 e67991185dd4a336eea132cba95c175c ""
@@ -142,9 +142,9 @@
   "c:/texlive/2025/texmf-dist/web2c/texmf.cnf" 1764496606 42213 4e2ca030e8e2640502016e9e45868dcb ""
   "c:/texlive/2025/texmf-var/web2c/euptex/uplatex.fmt" 1764498180 2371685 a01da38a0aee414faf9a5cffd5c909e5 ""
   "c:/texlive/2025/texmf.cnf" 1764497938 713 e69b156964470283e0530f5060668171 ""
-  "soturon.aux" 1768968995 4968 cd2916321e4ab2a70e058a1c4c7b955a "latex"
+  "soturon.aux" 1768970483 4968 cd2916321e4ab2a70e058a1c4c7b955a "latex"
   "soturon.tex" 1768968977 55510 fa9f82665b9bcf95a258c64f80f6d872 ""
-  "soturon.toc" 1768968995 1247 e096f5cfaab5f043f939292c8d098b15 "latex"
+  "soturon.toc" 1768970483 1247 e096f5cfaab5f043f939292c8d098b15 "latex"
   (generated)
   "soturon.aux"
   "soturon.dvi"
