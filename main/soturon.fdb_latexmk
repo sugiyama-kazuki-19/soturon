@@ -1,20 +1,20 @@
 # Fdb version 4
-["dvipdf"] 1768964019.36268 "soturon.dvi" "soturon.pdf" "soturon" 1768964023.27326 0
-  "soturon.dvi" 1768964018 95416 2f5d2c4f607aa960f63e321dd4e6f4e5 "latex"
+["dvipdf"] 1768968995.89689 "soturon.dvi" "soturon.pdf" "soturon" 1768969000.53068 0
+  "soturon.dvi" 1768968995 94688 20446c579cf6b66b84ecc68e8445a69c "latex"
   (generated)
   "soturon.pdf"
   (rewritten before read)
-["latex"] 1768964015.57863 "c:/Users/kazus/github/soturon/main/soturon.tex" "soturon.dvi" "soturon" 1768964023.24165 0
+["latex"] 1768968991.49647 "c:/Users/kazus/github/soturon/main/soturon.tex" "soturon.dvi" "soturon" 1768969000.50006 0
   "../cover/cover.pdf" 1768543076 17672 58f5be726f38bd0a801314a11980b021 ""
   "../picture/2diamB+2b.png" 1767355390 61501 12935ed222188c6ee606d7633a936641 ""
   "../picture/R2Z2.png" 1767531748 33247 726306d2c9d9903c0490a0a3deb4e6f0 ""
   "../picture/benzu.png" 1767278203 55168 e67991185dd4a336eea132cba95c175c ""
   "../picture/cayleyZ2.png" 1768541823 56249 2f17bf7b3028c2b8771d045b0c5285e0 ""
   "../picture/cayleyZ2_2.png" 1768716304 55099 c803b00420aaef7ddfc709a83037a7fe ""
-  "../picture/coveringspace.png" 1768757063 64392 9fdf57bc9d62575b682cd5b4b476e67a ""
-  "../picture/decktransformation.png" 1768809289 40722 73b1b3a6740d5e3558bed46947aaedba ""
+  "../picture/coveringspace.png" 1768965003 37692 06bf3e7c048b21a00bb1d28b97e25923 ""
+  "../picture/decktransformation.png" 1768964796 40241 3ae70103195a39b00c9cba9915eab04b ""
   "../picture/syoumei.png" 1767431132 39150 7df34a2aa95a73c2c5638049527a1a81 ""
-  "c:/Users/kazus/github/soturon/main/soturon.tex" 1768964013 55350 86d8fb990b65c1459bff752490a4dc17 ""
+  "c:/Users/kazus/github/soturon/main/soturon.tex" 1768968977 55510 fa9f82665b9bcf95a258c64f80f6d872 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1764496659 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1764496659 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1764496659 1004 54797486969f23fa377b128694d548df ""
@@ -142,9 +142,9 @@
   "c:/texlive/2025/texmf-dist/web2c/texmf.cnf" 1764496606 42213 4e2ca030e8e2640502016e9e45868dcb ""
   "c:/texlive/2025/texmf-var/web2c/euptex/uplatex.fmt" 1764498180 2371685 a01da38a0aee414faf9a5cffd5c909e5 ""
   "c:/texlive/2025/texmf.cnf" 1764497938 713 e69b156964470283e0530f5060668171 ""
-  "soturon.aux" 1768964018 4968 df253a74464cffee0ea2341e4594c90b "latex"
-  "soturon.tex" 1768964013 55350 86d8fb990b65c1459bff752490a4dc17 ""
-  "soturon.toc" 1768964018 1247 e096f5cfaab5f043f939292c8d098b15 "latex"
+  "soturon.aux" 1768968995 4968 cd2916321e4ab2a70e058a1c4c7b955a "latex"
+  "soturon.tex" 1768968977 55510 fa9f82665b9bcf95a258c64f80f6d872 ""
+  "soturon.toc" 1768968995 1247 e096f5cfaab5f043f939292c8d098b15 "latex"
   (generated)
   "soturon.aux"
   "soturon.dvi"

@@ -97,7 +97,7 @@ Cayleyグラフから得られる距離を群に導入することで，群を�
 \begin{dfn}\label{bi-Lip}
 写像 $f\colon X\rightarrow Y$ が \textbf{bilipschitz埋め込み (bilipschitz embedding)} であるとは，ある定数 $c\in\mathbb{R}_{>0}$ が存在し，任意の $x,x^\prime\in X$ に対して，
  $$\frac{1}{c}d_X(x,x^\prime)\leq d_Y(f(x),f(x^\prime))\leq cd_X(x,x^\prime)$$
- が成り立つことをいう．また，$f$ が \textbf{bilipschitz equivalence} であるとは，以下の二条件を満たすときをいう．
+ が成り立つことをいう．また，$f$ が \textbf{bilipschitz equivalence (bi-Lip)} であるとは，以下の二条件を満たすときをいう．
  \begin{enumerate}
    \item $f$ がbilipschitz埋め込みである．
    \item あるbilipschitz埋め込み $g\colon Y\rightarrow X$ が存在し，$f\circ g=\id_Y$，$g\circ f=\id_X$ を満たす．
@@ -149,7 +149,7 @@ bilipschitz埋め込み は単射な連続写像である．よって，bilipsch
   等長埋め込み同士の合成写像は等長埋め込みであり，bilipschitz埋め込み同士の合成写像はbilipschitz埋め込みであり，擬等長埋め込み同士の合成は擬等長埋め込みである．
 \end{rem}
 
-定数倍と定数分のズレを許してしまうという，擬等長の“大雑把な視点”が幾何学的群論では大切なのだが，その擬等長に関する定義について，それと同値なものを紹介する．
+定数倍と定数分のズレを許してしまうという，擬等長の“大雑把な視点”が幾何学的群論では重要なのだが，その擬等長に関する定義について，それと同値なものを紹介する．
 
 \begin{prop}\label{dense image}
 Definition \ref{QI} の 擬等長写像における二条件は，以下の二条件と同値．
@@ -213,7 +213,7 @@ $G$ を有限生成群としたとき，$G$ が距離空間 $X$ に \textbf{bili
   群 $\mathbb{Z}^2$ とその生成系 $S=\{(0,1),(1,0)\}$ からなる距離空間 $(\mathbb{Z}^2,d_S)$ は，距離空間 $\mathbb{R}^2$ と擬等長である．
 \end{ex}
 
-群に導入する距離関数を word metric にした場合，その定義からこの距離空間は生成系に大きく依存するため，距離空間と群が同じ構造を持つかどうかの議論が難しくなる．しかし，擬等長という“大雑把な視点”で見ると，生成系に依らずに議論することが可能である．
+群に導入する距離関数を word metric にした場合，その定義からこの距離空間は生成系に大きく依存するため，距離空間と群が同じ構造を持つかどうかの議論が難しくなる．しかし，擬等長 (bi-Lip) という“大雑把な視点”で見ると，生成系に依らずに議論することが可能である．
 
 \begin{prop}\label{Sprime}
   $S$,$S^\prime$ をともに群 $G$ の有限な生成系 としたとき，距離空間 $(G,d_S)$ が 距離空間 $(X,d_X)$ と $f$ で bilipschitz equivalent ならば，$(G,d_{S^\prime})$ と $(X,d_X)$ も $f$ で bilipschitz equivalent である．
@@ -255,7 +255,7 @@ $$c\coloneqq\underset{s\in S\cup S^{-1}}{\max}d_{S^\prime}(e,s)$$
 \end{dfn}
 
 \begin{ex}
-$\mathbb{R}^n$ は測地的だが，$\mathbb{R}^n\setminus\{0\}$ は測地的でない．実際，$(1,0)$ と $(-1,0)$ 間の距離は $2$ だが，この測地線は原点を通ってしまう．一般に，$\mathbb{R}^n$ 上の凸集合は測地的である．
+通常の距離が入った $\mathbb{R}^n$ は測地的だが，$\mathbb{R}^n\setminus\{0\}$ は測地的でない．実際，$(1,0)$ と $(-1,0)$ 間の距離は $2$ だが，この測地線は原点を通ってしまう．一般に，$\mathbb{R}^n$ 上の凸集合は測地的である．
 \end{ex}
 
 \begin{dfn}
@@ -263,11 +263,11 @@ $\mathbb{R}^n$ は測地的だが，$\mathbb{R}^n\setminus\{0\}$ は測地的で
 \end{dfn}
 
 \begin{ex}
-$\mathbb{R}^n\setminus\{0\}$ は，$(1,\epsilon)$-測地的である($\epsilon>0$)．これは，原点中心で十分小さい半径の円で原点を迂回すれば，擬測地線が得られるからである．
+通常の距離が入った $\mathbb{R}^n\setminus\{0\}$ は，$(1,\epsilon)$-測地的である($\epsilon>0$)．これは，原点中心で十分小さい半径の円で原点を迂回すれば，擬測地線が得られるからである．
 \end{ex}
 
 \section{主補題}\label{sec_hodai}
-本論文の主補題となる，Švarc-Milnor Lemma と，それに関連する主張について紹介する．
+本論文の主補題となる Švarc-Milnor Lemma と，それに関連する主張について紹介する．
 \subsection{Švarc-Milnor Lemma}
 \begin{lem}\label{svarc}
 $G$ を群とし，$(c,b)$-測地的な距離空間 $(X,d_X)$ 上に等長な群作用があるとする ($b,c>0$)．もしある部分集合 $B\subset X$ が存在し，
@@ -572,10 +572,11 @@ $f\in\pi_1(M)$ とする．リーマン多様体における距離の定義よ�
 被覆空間の定義より，$\pi_1(M)\backslash \widetilde{M}$ は $M$ と同相である．仮定より $M$ はコンパクトなので，$\pi_1(M)\backslash \widetilde{M}$ もそうである．\\
 
 \noindent
-群作用が properly discontinuous であること：\\
-任意のコンパクトな集合 $K\subset \widetilde{M}$ をとる．この $K$ の十分小さい有限個の開被覆 $\{\widetilde{U}_k\}_{1\leq k\leq n}$ に関して，被覆変換の一意性( Lemma \ref{deck_lemma} )により $g\cdot\widetilde{U}_k\cap\widetilde{U}_l$ を満たすような $g\in G$ は，$(k,l)$ のペアに対し高々一個である．したがって，
-$$g\cdot K\cap K\subset g\cdot \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)\cap \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)$$
-が空でないような $g\in G$ は有限個である．
+\textcolor{red}{群作用が properly discontinuous であること：}\\
+% 任意のコンパクトな集合 $K\subset \widetilde{M}$ をとる．この $K$ の十分小さい有限個の開被覆 $\{\widetilde{U}_k\}_{1\leq k\leq n}$ に関して，被覆変換の一意性( Lemma \ref{deck_lemma} )により $g\cdot\widetilde{U}_k\cap\widetilde{U}_l$ を満たすような $g\in G$ は，$(k,l)$ のペアに対し高々一個である．したがって，
+% $$g\cdot K\cap K\subset g\cdot \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)\cap \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)$$
+% が空でないような $g\in G$ は有限個である．
+十分小さい開被覆を取れば良さそう．
 \end{proof}
 
 \begin{ex}
@@ -591,7 +592,7 @@ $$g\cdot K\cap K\subset g\cdot \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)\cap \B
 以下，$G$ を群として，$S$ をその生成系とする．
 
 \begin{dfn}\label{cayley}
-  生成系 $S$ による群 $G$ の \textbf{cayleyグラフ (cayley graph)} とは，以下のようなグラフである．このグラフを $\Cay(G,S)$ と表記する．
+  生成系 $S$ による群 $G$ の \textbf{Cayleyグラフ (Cayley graph)} とは，以下のようなグラフである．このグラフを $\Cay(G,S)$ と表記する．
   \begin{enumerate}
     \item 頂点集合を $G$ とする．
     \item 辺集合を $\{\{g,g\cdot s\}\mid g\in G，s\in(S\cup S^{-1})\setminus\{e\}\}$ とする．
@@ -686,7 +687,7 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
   群 $G$ が自由群であることと，$G$ が自由に作用するような，(空でない) tree が存在することは同値．
 \end{thm}
 
-自由群に対して， tree に自由に作用することができる，という特徴づけを行うこともできる．この定理を認めれば，自由群の部分群が自由群であることを以下のように示すことができる．
+以上の Theorem より自由群に対しては， tree に自由に作用することができる，という特徴づけを行うこともできる．この定理を認めれば，自由群の部分群が自由群であることを以下のように示すことができる．
 
 \begin{prop}
   自由群の部分群は自由群である．
@@ -733,7 +734,7 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \end{dfn}
 
 \begin{ex}
-  $S^1\subset \mathbb{R}^2$ の，基点 $(1,0)$ に関する基本群は，$\pi_1(S^2,(1,0))\cong \mathbb{Z}$ である．
+  $S^1\subset \mathbb{R}^2$ の，基点 $(1,0)$ に関する基本群は，$\pi_1(S^1,(1,0))\cong \mathbb{Z}$ である．
 \end{ex}
 
 \begin{rem}
@@ -752,12 +753,12 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \end{dfn}
 
 \begin{ex}
-  $\mathbb{R}$ は $S^2$ の被覆空間である (図\ref{S2coveringspace}参照)．
+  $\mathbb{R}$ は $S^1$ の被覆空間である (図\ref{S2coveringspace}参照)．
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=5.5cm]{../picture/coveringspace.png}
-\caption{$S^2$ の被覆空間の例}
+\caption{$S^1$ の被覆空間の例}
 \label{S2coveringspace}
 \end{figure}
 \end{ex}
@@ -788,7 +789,7 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \end{dfn}
 
 \begin{ex}
-  図\ref{S2coveringspace} より，$\mathbb{R}$ は $S^2$ の普遍被覆である．
+  図\ref{S2coveringspace} より，$\mathbb{R}$ は $S^1$ の普遍被覆である．
 \end{ex}
 
 \begin{dfn}\label{def_deck}
@@ -796,12 +797,12 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \end{dfn}
 
 \begin{ex}
-  $S^2$ の被覆空間 $\mathbb{R}$ をとる．$p\colon \mathbb{R}\rightarrow S^2\subset \mathbb{R}^2\;;\; t\mapsto (\cos2\pi t,\sin2\pi t)$ としたとき，$f\colon \mathbb{R}\rightarrow \mathbb{R}\; ;\; t\mapsto t+2\pi k\; (k\in\mathbb{Z})$ は被覆変換である (図\ref{decktrans} 参照)．
+  $S^1$ の被覆空間 $\mathbb{R}$ をとる．$p\colon \mathbb{R}\rightarrow S^1\subset \mathbb{R}^2\;;\; t\mapsto (\cos2\pi t,\sin2\pi t)$ としたとき，$f\colon \mathbb{R}\rightarrow \mathbb{R}\; ;\; t\mapsto t+2\pi k\; (k\in\mathbb{Z})$ は被覆変換である (図\ref{decktrans} 参照)．
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=5.5cm]{../picture/decktransformation.png}
-\caption{$S^2$ の被覆変換の例}
+\caption{$S^1$ の被覆変換の例}
 \label{decktrans}
 \end{figure}
 \end{ex}
@@ -813,7 +814,7 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \subsection{Riemannian Manifolds}
 
 \begin{dfn}
-  $M$ を位相多様体とする．各点 $p\in M$ における接空間 $T_p(M)$ 上の内積 $g_p$ があり，それが $M$ 全体で $C^\infty$ 級のとき，$(M,\{g_p\}_{p\in M})$ を \textbf{リーマン多様体 (Riemannian manifolds)} という．また，$p\in M$ における接空間 $T_p(M)$ 上のベクトル $u\in T_p(M)$ に関して，
+  $M$ を位相多様体とする．各点 $p\in M$ における接空間 $T_p(M)$ 上の内積 $g_p$ があり，それが $M$ 全体で $C^\infty$ 級のとき\textcolor{red}{←まだ}，$(M,\{g_p\}_{p\in M})$ を \textbf{リーマン多様体 (Riemannian manifolds)} という．また，$p\in M$ における接空間 $T_p(M)$ 上のベクトル $u\in T_p(M)$ に関して，
   \begin{equation*}
     \|u\|\coloneqq\sqrt{g_p(u,u)}
   \end{equation*}
@@ -828,11 +829,10 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
   と定める．
 \end{dfn}
 
-\textcolor{red}{参考文献のページ書く}
 \begin{thebibliography}{9}
-\bibitem{1} Clara Löh, \textit{Geometric Group Theory}, Springer, 2018, 404, pp53--141
-\bibitem{2} Allen Hatcher, \textit{Algebraic Topology}, Cambridge University Press, 2001, 556, pp21--82
-
+\bibitem{1} Clara Löh, \textit{Geometric Group Theory}, Springer, 2018
+\bibitem{2} Allen Hatcher, \textit{Algebraic Topology}, Cambridge University Press, 2001
+\textcolor{red}{他の文献も書く}
 \end{thebibliography}
 
 \end{document}
