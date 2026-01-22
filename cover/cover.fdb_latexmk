@@ -1,11 +1,11 @@
 # Fdb version 4
-["dvipdf"] 1768970467.1283 "cover.dvi" "cover.pdf" "cover" 1768970467.53397 0
-  "cover.dvi" 1768970467 880 6c3c0af58b66a5d963dd785eb06eaaa8 "latex"
+["dvipdf"] 1768978946.67624 "cover.dvi" "cover.pdf" "cover" 1768978947.17016 0
+  "cover.dvi" 1768978946 928 0e96757b7c00ef9c2ad98b728926562e "latex"
   (generated)
   "cover.pdf"
   (rewritten before read)
-["latex"] 1768970466.76879 "c:/Users/kazus/github/soturon/cover/cover.tex" "cover.dvi" "cover" 1768970467.5316 0
-  "c:/Users/kazus/github/soturon/cover/cover.tex" 1768970464 880 9aa5baeaca5be9be334f688cdd09a488 ""
+["latex"] 1768978946.29274 "c:/Users/kazus/github/soturon/cover/cover.tex" "cover.dvi" "cover" 1768978947.16813 0
+  "c:/Users/kazus/github/soturon/cover/cover.tex" 1768978942 925 0e3392b1ba2d7e39fac6ff9cb88a9017 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1764496798 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1764496798 1288 655e228510b4c2a1abe905c368440826 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1764496798 1292 296a67155bdbfc32aa9c636f21e91433 ""
@@ -19,8 +19,8 @@
   "c:/texlive/2025/texmf-dist/web2c/texmf.cnf" 1764496606 42213 4e2ca030e8e2640502016e9e45868dcb ""
   "c:/texlive/2025/texmf-var/web2c/euptex/uplatex.fmt" 1764498180 2371685 a01da38a0aee414faf9a5cffd5c909e5 ""
   "c:/texlive/2025/texmf.cnf" 1764497938 713 e69b156964470283e0530f5060668171 ""
-  "cover.aux" 1768970467 32 3985256e7290058c681f74d7a3565a19 "latex"
-  "cover.tex" 1768970464 880 9aa5baeaca5be9be334f688cdd09a488 ""
+  "cover.aux" 1768978946 32 3985256e7290058c681f74d7a3565a19 "latex"
+  "cover.tex" 1768978942 925 0e3392b1ba2d7e39fac6ff9cb88a9017 ""
   (generated)
   "cover.aux"
   "cover.dvi"
