@@ -2,7 +2,7 @@
 \documentclass[dvipdfmx]{ujarticle}
 
 \usepackage{setspace}
-\setstretch{1.15} % ここで倍率を指定（1.3〜1.5程度がおすすめ）
+\setstretch{1.10} % ここで倍率を指定（1.3〜1.5程度がおすすめ）
 
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -53,9 +53,9 @@
 \tableofcontents
 \clearpage
 \section{導入}\label{intro}
-幾何学的群論とは，群から幾何学的対象を構成する，あるいは他の幾何学的対象への群作用をみることで，群の構造や代数的・幾何学的性質を考察する分野である．\textcolor{red}{(図の挿入場所を変えました)}
+幾何学的群論とは，群から幾何学的対象を構成する，あるいは他の幾何学的対象への群作用をみることで，群の構造や代数的・幾何学的性質を考察する分野である．
 
-群から幾何学的対象を構成する代表的な例としては，\textcolor{red}{群の生成系に関するCayleyグラフ}が挙げられる．Cayleyグラフとは，群の元を頂点とし，\textcolor{red}{生成系の元を演算することで移る頂点間を辺で結ぶことで}得られるグラフであり，生成系によってグラフの形は変わるものの，生成系込みでの群の構造を可視化するこができる．特に自由群に関しては相性が良く，そのCayleyグラフは無限の tree になることが知られている．逆に，適切な条件下であれば，群と生成系に関するCayleyグラフが tree のとき群は自由群であることも知られている．また，Cayleyグラフは群が作用する空間の代表例と言える．実際，群は自身のCayleyグラフに対して，\textcolor{red}{頂点集合には左からの演算で，辺集合には頂点の作用から導かれる作用で，}群作用をなす．この群作用は，サイクルなどのグラフの構造を保つため，Cayleyグラフの構造を群作用を通して理解することもできる．また，\textcolor{red}{自由群が作用する場合は作用が自由になるため，自由群の部分群が自由群になるという定理のスマートな証明も与えらえる}．幾何学的群論ではしばしば群作用に着目することが多い．
+群から幾何学的対象を構成する代表的な例としては，群の生成系に関するCayleyグラフが挙げられる．Cayleyグラフとは，群の元を頂点とし，生成系の元を演算することで移る頂点間を辺で結ぶことで得られるグラフであり，生成系によってグラフの形は変わるものの，生成系込みでの群の構造を可視化するこができる．特に自由群に関しては相性が良く，そのCayleyグラフは無限の tree になることが知られている．逆に，適切な条件下であれば，群と生成系に関するCayleyグラフが tree のとき群は自由群であることも知られている．また，Cayleyグラフは群が作用する空間の代表例と言える．実際，群は自身のCayleyグラフに対して，頂点集合には左からの演算で，辺集合には頂点の作用から導かれる作用で，群作用をなす．この群作用は，サイクルなどのグラフの構造を保つため，Cayleyグラフの構造を群作用を通して理解することもできる．また，自由群が作用する場合は作用が自由になるため，自由群の部分群が自由群になるという定理のスマートな証明も与えらえる．幾何学的群論ではしばしば群作用に着目することが多い．
 
 \begin{figure}[h]
 \centering
@@ -66,14 +66,13 @@
 
 一般に群作用とは，ある集合の自己同型写像として群が振る舞うことであり，群の代数的構造を空間の幾何学的な構造として表現するものである．群を直接調べるのではなく，どのような空間にどのように作用しているかを観察することで，空間の幾何学的な特徴や性質を通して群を調べることを可能としている．例えば，群 $\mathbb{Z}^2$ による，空間 $\mathbb{R}^2$ への加法の群作用を考えると，$\mathbb{R}^2$ は一辺が1の正方形を $\mathbb{Z}^2$ の作用によって敷き詰めた空間であることが分かり，逆に $\mathbb{Z}^2$ という群は $\mathbb{R}^2$ のような広がりのある群構造を持つことが分かる．このことは上の図 \ref{cayleyZ2} のようなCayleyグラフを用いても確かめることができる．群 $\mathbb{Z}^2$ のCayleyグラフが，空間 $\mathbb{R}^2$ のような広がりを持っていることが分かるだろう．
 
-\textcolor{red}{Cayleyグラフの一辺を長さ1として見ることで得られる距離}を群に導入することで，群を距離空間として捉えることができ，群と空間が似ていることの定式化が可能となる．距離を入れた群の，他の距離空間への群作用を考えることで，群と空間の類似性を議論することができる．しかしこのとき，Cayleyグラフの構造は選んだ生成系に依存してしまうため，群に導入した距離関数も生成系に依存してしまう．
+Cayleyグラフの一辺を長さ1として見ることで得られる距離を群に導入することで，群を距離空間として捉えることができ，群と空間が似ていることの定式化が可能となる．距離を入れた群の，他の距離空間への群作用を考えることで，群と空間の類似性を議論することができる．しかしこのとき，Cayleyグラフの構造は選んだ生成系に依存してしまうため，群に導入した距離関数も生成系に依存してしまう．
 
-そこで，一定誤差のズレを許容する“大雑把な視点”を導入し局所的な違いを無視することで，大局的な部分だけを見比べ，群の本質的な構造を抽出することができる．擬等長写像(quasi-isometric)とは，距離空間から距離空間への写像であり，\textcolor{red}{送った先の二点間の距離が，送る前の二点間の距離の定数倍と定数項で，点に依らず一様に抑えられるようなものを指す}．これによって二つの距離空間の大局的な構造のみを見比べることができ，Cayleyグラフの生成系に依存してしまう問題を解決できる．
+そこで，一定誤差のズレを許容する“大雑把な視点”を導入し局所的な違いを無視することで，大局的な部分だけを見比べ，群の本質的な構造を抽出することができる．擬等長写像(quasi-isometric)とは，距離空間から距離空間への写像であり，送った先の二点間の距離が，送る前の二点間の距離の定数倍と定数項で，点に依らず一様に抑えられるようなものを指す．これによって二つの距離空間の大局的な構造のみを見比べることができ，Cayleyグラフの生成系に依存してしまう問題を解決できる．
 
-Švarc-Milnor Lemma とは，「群がよい距離空間によい群作用をしているとき，その群の有限生成系が分かり，群の構造と距離空間の構造が“大雑把に”等しい」という主張であり，その内容から「幾何学的群論の基本補題」とも言われている．一般に，群が与えられたとき，その群が有限生成であるかどうかの判別は\textcolor{red}{難しいことがあるのだが}，この補題では有限生成系が分かるだけでなく，作用している空間の持つ構造と群の持つ構造が大雑把に等しいことまで分かる．群のことを知りたければ，\textcolor{red}{よく知られている距離空間へのうまい作用さえ考えればよい．}
+Švarc-Milnor Lemma とは，「群がよい距離空間によい群作用をしているとき，その群の有限生成系が分かり，群の構造と距離空間の構造が“大雑把に”等しい」という主張であり，その内容から「幾何学的群論の基本補題」とも言われている．一般に，群が与えられたとき，その群が有限生成であるかどうかの判別は難しいことがあるのだが，この補題では有限生成系が分かるだけでなく，作用している空間の持つ構造と群の持つ構造が大雑把に等しいことまで分かる．群のことを知りたければ，よく知られている距離空間へのうまい作用さえ考えればよい．
 
-\textcolor{red}{追記箇所：}
-この補題は，50年代初頭にソビエト連邦の学生 Švarc の論文にて用いられたものの\cite{3}，当時の冷戦下という社会背景により他国にこの結果はほとんど知られておらず，その後60年代に Milnor が Švarc とは独立して発見した \cite{4}．その後，Švarc の先行研究を知った Milnor は “Švarc の論文にすでに多くのアイデアが含まれていた” と自身の論文にて述べている\cite{5}．
+この補題は，1955年に Švarc の論文にて用いられ\cite{3}，その後1968年に Milnor が Švarc とは独立して発見した \cite{4}．その後，Švarc の先行研究を知った Milnor は “Švarc の論文にすでに多くのアイデアが含まれていた” と自身の論文にて述べている\cite{5}．
 
 本論文では \cite{1} の議論をもとに，Švarc-Milnor Lemma の証明と，その補題を位相空間論の視点で言い換えた主張の証明を与えることを主目的としている．\ref{sec_jyunbi} 章にて必要な用語の定義を行い，\ref{sec_hodai} 章にて Švarc-Milnor Lemma の証明，\ref{sec_ouyou} 章にて，主補題の位相空間論版を紹介，証明を行う．なお，幾何学的群論におけるCayleyグラフなどの基本的概念は付録としてまとめているので，そちらを参照されたい．
 
@@ -190,7 +189,7 @@ Proposition \ref{dense image} の条件［2］を $f$ が満たすとき，$f$ �
 \end{dfn}
 
 \subsection{Quasi-Isometry of Groups}
-\ref{subsec_QI_of_Metric} 節では距離空間同士を大雑把にみることについて述べたが，本節では群に距離を導入して距離空間に拡張し，群に対しても定義を行う．群に入れる距離は，Cayleyグラフの一辺を長さ1として見ることで得られる距離であり，これはCayleyグラフと相性が良いものの，選ぶ生成系に依存してしまう．しかし，\textcolor{red}{\ref{subsec_QI_of_Metric} 節で述べた bilipschitz equivalent や，擬等長といった“大雑把な視点”では，} Proposition \ref{Sprime} により生成系に依らずに群と距離空間が同じ構造を持つかどうかの議論が可能となる．
+\ref{subsec_QI_of_Metric} 節では距離空間同士を大雑把にみることについて述べたが，本節では群に距離を導入して距離空間に拡張し，群に対しても定義を行う．群に入れる距離は，Cayleyグラフの一辺を長さ1として見ることで得られる距離であり，これはCayleyグラフと相性が良いものの，選ぶ生成系に依存してしまう．しかし，\ref{subsec_QI_of_Metric} 節で述べた bilipschitz equivalent や，擬等長といった“大雑把な視点”では， Proposition \ref{Sprime} により生成系に依らずに群と距離空間が同じ構造を持つかどうかの議論が可能となる．
 
 以下，$G$ を群として，$S$ をその生成系とする．
 \begin{dfn}
@@ -251,7 +250,7 @@ $$c\coloneqq\underset{s\in S\cup S^{-1}}{\max}d_{S^\prime}(e,s)$$
 \end{rem}
 
 \subsection{Quasi-Geodesic Metric Spaces}
-本節では，\ref{intro} 章でも記した，よい距離空間について述べる．一般に距離空間では，二点が与えられたときに二点間の距離が定まるが，\textcolor{red}{その距離に沿ったパスが距離空間上に存在する}とは限らない．そのようなことが可能であるような距離空間を測地的といい，その条件をさらに緩めたものを擬測地的という．
+本節では，\ref{intro} 章でも記した，よい距離空間について述べる．一般に距離空間では，二点が与えられたときに二点間の距離が定まるが，その距離に沿ったパスが距離空間上に存在するとは限らない．そのようなことが可能であるような距離空間を測地的といい，その条件をさらに緩めたものを擬測地的という．
 \begin{dfn}
 距離空間 $X$ 上の長さ $L\in\mathbb{R}_{>0}$ の \textbf{測地線 (geodesic)} とは，$[0,L]\subset\mathbb{R}$ から $X$ への等長埋め込み，$\gamma\colon[0,L]\rightarrow X$ のことである．また，$X$ が \textbf{測地的 (geodesic)} であるとは，任意の $x,x^\prime\in X$ において，$\gamma(0)=x$，$\gamma(L)=x^\prime$ となるような 等長埋め込み $\gamma$ がとれるときをいう．
 \end{dfn}
@@ -406,7 +405,7 @@ $$B=\{(x,y)\in\mathbb{R}^2\mid -1/2\leq x\leq 1/2，-1/2\leq y\leq 1/2\}$$
 \end{figure}
 
 \end{ex}
-\subsection{Švarc-Milnor Lemma の拡張}
+\subsection{Švarc-Milnor Lemma I の拡張}
 Lemma \ref{svarc} は，群作用が等長でなくても成立する．つまり，以下のとおりである．
 \begin{lem}
   Lemma \ref{svarc} は，群 $G$ が距離空間 $X$ に等長な群作用だけでなく，擬等長な群作用としても成り立つ．
@@ -547,20 +546,27 @@ $X$ は擬測地的であるので，Lemma \ref{svarc} の仮定を満足する�
 \begin{proof}
 点 $\tilde{x}\in\widetilde{M}$ における $p\colon\widetilde{M}\rightarrow M$ の微分を
 $$ dp_{\tilde{x}}\colon T_{\tilde{x}}(\widetilde{M})\rightarrow T_{p(\tilde{x})}(M) $$
-とし，$\widetilde{M}$ 上の点 $\tilde{x}$ におけるリーマン計量 $\tilde{g}_{\tilde{x}}$ を，
+とする．$p$ は局所的に同相写像なので，$dp_{\tilde{x}}$ は特に単射である． $\widetilde{M}$ 上の点 $\tilde{x}$ におけるリーマン計量 $\tilde{g}_{\tilde{x}}$ を，
 $$\tilde{g}_{\tilde{x}}(u,v)\coloneqq g_{p(\tilde{x})}(dp_{\tilde{x}}(u),dp_{\tilde{x}}(v))$$
 とすることで，$\widetilde{M}$ に距離が入る．\\
-\textcolor{red}{$\widetilde{M}$ が proper かつ測地的な距離空間であること：}\\
-
-とりあえず，\\
-$M$ がコンパクトな距離空間⇒完備である (距離空間の性質)\\
-$M$ が距離空間として完備⇒測地的完備 (Hopf-Rinow の定理)\\
-$M$ が測地的完備⇒$\widetilde{M}$ も測地的完備 (測地線の持ち上げ)\\
-$\widetilde{M}$ が測地的完備⇒$\widetilde{M}$ 上の有界閉集合がコンパクト,$\widetilde{M}$ が測地的である (Hopf-Rinow の定理)\\
-という流れであることは理解した．\\
 
 \noindent
-群作用が等長であること：\\
+$\widetilde{M}$ が proper かつ測地的な距離空間であること：
+
+$M$ はコンパクトな距離空間のため完備である．Hopf-Rinow の定理より，完備な距離空間は測地的完備であるので，$M$ は測地的完備である．
+
+$\widetilde{M}$ が測地的完備であることを示すために，任意の $\tilde{x}\in\widetilde{M}$ と $v\in T_{\tilde{x}}(\widetilde{M})$ をとる．$M$ が測地的完備なので，$\gamma(0)=p(\tilde{x})\in M$，$\gamma^\prime(0)=dp_{\tilde{x}}(v)\in T_{p(\tilde{x})}(M) $ となる測地線 $\gamma\colon\mathbb{R}\rightarrow \widetilde{M}$ が存在する．より，$\gamma$ のリフト $\tilde{\gamma}\colon\mathbb{R}\rightarrow \widetilde{M}$ であり，$\tilde{\gamma}(0)=\tilde{x}$ となるようなものが存在する．このリフトは，$dp_{\tilde{x}}(\tilde{\gamma}^\prime(0))=\gamma^\prime(0)=dp_{\tilde{x}}(v)$ と $dp_{\tilde{x}}$ の単射性から $\tilde{\gamma}^\prime(0)=v$ である．このことから，$\widetilde{M}$ の測地的完備性が従う．
+
+Hopf-Rinowの定理より，測地的完備な空間は proper かつ測地的であるので $\widetilde{M}$ もそうである．\\
+
+% $M$ がコンパクトな距離空間⇒完備である (距離空間の性質)\\
+% $M$ が距離空間として完備⇒測地的完備 (Hopf-Rinow の定理)\\
+% $M$ が測地的完備⇒$\widetilde{M}$ も測地的完備 (測地線の持ち上げ)\\
+% $\widetilde{M}$ が測地的完備⇒$\widetilde{M}$ 上の有界閉集合がコンパクト,$\widetilde{M}$ が測地的である (Hopf-Rinow の定理)\\
+% という流れであることは理解した．\\
+\noindent
+群作用が等長であること：
+
 $f\in\pi_1(M)$ とする．リーマン多様体における距離の定義より，$f$ でベクトルを送る前と送った後で内積の値が一致することを示せば十分である． $p\circ f=p$ より，任意の $\tilde{x}\in\widetilde{M}$ において，微分 $dp_{f(\tilde{x})}\circ df_{\tilde{x}}=dp_{\tilde{x}}$ が成立する．$u,v\in T_{\tilde{x}}(\widetilde{M})$ を $f$ で送った $df_{\tilde{x}}(u),df_{\tilde{x}}(v)$ の内積は，
 \begin{align*}
   \tilde{g}_{f(\tilde{x})}(df_{\tilde{x}}(u),df_{\tilde{x}}(v))&=g_{p(f(\tilde{x}))}(dp_{f(\tilde{x})}(df_{\tilde{x}}(u)),dp_{f(\tilde{x})}(df_{\tilde{x}}(v)))\\
@@ -570,11 +576,12 @@ $f\in\pi_1(M)$ とする．リーマン多様体における距離の定義よ�
 となり，$f$ で送る前の $u,v$ の内積と一致する．\\
 
 \noindent
-群作用が余コンパクトであること：\\
+群作用が余コンパクトであること：
+
 被覆空間の定義より，$\pi_1(M)\backslash \widetilde{M}$ は $M$ と同相である．仮定より $M$ はコンパクトなので，$\pi_1(M)\backslash \widetilde{M}$ もそうである．\\
 
 \noindent
-\textcolor{red}{群作用が properly discontinuous であること：}\\
+\textcolor{red}{群作用が properly discontinuous であること：}
 % 任意のコンパクトな集合 $K\subset \widetilde{M}$ をとる．この $K$ の十分小さい有限個の開被覆 $\{\widetilde{U}_k\}_{1\leq k\leq n}$ に関して，被覆変換の一意性( Lemma \ref{deck_lemma} )により $g\cdot\widetilde{U}_k\cap\widetilde{U}_l$ を満たすような $g\in G$ は，$(k,l)$ のペアに対し高々一個である．したがって，
 % $$g\cdot K\cap K\subset g\cdot \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)\cap \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)$$
 % が空でないような $g\in G$ は有限個である．
@@ -712,23 +719,24 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
   $X$ を位相空間とする．$I\coloneqq[0,1]$ として，連続写像 $f\colon I\rightarrow X$ を \textbf{パス (path)} といい，$f(0)=f(1)$ のときを特に \textbf{ループ (loop)} という．また，パスの族 $f_t\colon I\rightarrow X\;(0\leq t\leq 1)$ が \textbf{ホモトピー (homotopy)} であるとは，以下の二条件が成り立つときをいう．
   \begin{enumerate}
     \item $f_t(0)=x_0$，$f_t(1)=x_1$ が $t\in I$ に依らない．
-    \item \textcolor{red}{$F\colon I\times I\rightarrow X\;;\;(s,t)\mapsto f_t(s)$ が連続写像．}
+    \item $F\colon I\times I\rightarrow X\;;\;(s,t)\mapsto f_t(s)$ が連続写像．
   \end{enumerate}
  このとき，パス $f_0$ と $f_1$ を \textbf{ホモトピック (homotopic)} であるといい，$f_0\simeq f_1$ と表記する．
 \end{dfn}
  
 \begin{rem}
-  Definition \ref{homotopy} における $\simeq$ は，\textcolor{red}{始点と終点が一致しているパス集合上の}同値関係である．
+  Definition \ref{homotopy} における $\simeq$ は，始点と終点が一致しているパス集合上の同値関係である．
 \end{rem}
 
 \begin{dfn}
-  パス $f,g\colon I\rightarrow X$ に関して，$f(1)=g(0)$ のとき， $f$ と $g$ の演算を，\textcolor{red}{謎スペースは未解決}
-  \begin{equation*}
-    f\cdot g \coloneqq \begin{cases}
-           f(2s) &( s\in [0,1/2] ),\\
-           g(2s-1) &( s\in [1/2,1] )
-       \end{cases}
-  \end{equation*}
+  パス $f,g\colon I\rightarrow X$ に関して，$f(1)=g(0)$ のとき， $f$ と $g$ の演算を，
+\[
+f \cdot g := 
+\begin{cases}
+    f(2s) \vphantom{g} & (s \in [0, 1/2]), \\
+    g(2s - 1) & (s \in [1/2, 1])
+\end{cases}
+\]
   とする．$x_0\in X$ を基点としたループの集合を Definition \ref{homotopy} の同値関係 $\simeq$ で割り，演算
   $$[f][g]\coloneqq[f\cdot g]$$
   を導入することで群ができる．この群を \textbf{基本群 (fundamental group)} といい，\bm{$\pi_1(X,x_0)$} と表記する．
@@ -815,7 +823,9 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \subsection{Riemannian Manifolds}
 
 \begin{dfn}
-  $M$ を位相多様体とする．各点 $p\in M$ における接空間 $T_p(M)$ 上の内積 $g_p$ があり，それが $M$ 全体で $C^\infty$ 級のとき\textcolor{red}{←まだ}，$(M,\{g_p\}_{p\in M})$ を \textbf{リーマン多様体 (Riemannian manifolds)} という．また，$p\in M$ における接空間 $T_p(M)$ 上のベクトル $u\in T_p(M)$ に関して，
+  $M$ を位相多様体とする．各点 $p\in M$ における接空間 $T_p(M)$ 上の内積 $g_p$ があり，それが $M$ 全体で $C^\infty$ 級のとき，$(M,\{g_p\}_{p\in M})$ を \textbf{リーマン多様体 (Riemannian manifolds)} という．ただし，$g_p$ が $M$ 全体で $C^\infty$ 級であるというのは，任意のベクトル場 $X=\{X_p\}_{p\in M},Y=\{Y_p\}_{p\in M}$ に対し，$M\rightarrow \mathbb{R}\;;\;p\mapsto g_p(X_p,Y_p)$ が $C^\infty$ 級関数であるときをいう．
+  
+  また，$p\in M$ における接空間 $T_p(M)$ 上のベクトル $u\in T_p(M)$ に関して，
   \begin{equation*}
     \|u\|\coloneqq\sqrt{g_p(u,u)}
   \end{equation*}

@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.11.30)  23 JAN 2026 16:01
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.11.30)  26 JAN 2026 16:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -553,71 +553,80 @@ File: ../picture/cayleyZ2.png Graphic file (type bmp)
 
 ]
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 81.
+(Font)              scaled to size 11.54663pt on input line 80.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 81.
+(Font)              scaled to size 11.54663pt on input line 80.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 81.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 80.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 81.
+(Font)              scaled to size 11.54663pt on input line 80.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 81.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 80.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 81.
- [4] [5]
+(Font)              scaled to size 11.54663pt on input line 80.
+ [4]
 File: ../picture/benzu.png Graphic file (type bmp)
 <../picture/benzu.png>
-LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 165.
- [6] [7]
-LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 225.
- [8]
-LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 290.
- [9]
-File: ../picture/syoumei.png Graphic file (type bmp)
-<../picture/syoumei.png>
- [10]
-Overfull \hbox (9.50243pt too wide) in paragraph at lines 318--320
-\JY2/mc/m/n/10 よ って ， $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 g[]\OT1/cmr/m/n/10 )[] \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 g[] \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 S$ \JY2/mc/m/n/10 であり ， $\OML/cmm/m/it/10 s[] [][]\OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 g[]\OT1/cmr/m/n/10 )[] \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 g[] \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 S$ \JY2/mc/m/n/10 とすれば ，  $\OML/cmm/m/it/10 g$ \JY2/mc/m/n/10 は $\OML/cmm/m/it/10 g \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 g[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 e\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 g[]g[]\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 g[]g[]\OT1/cmr/m/n/10 ) [] (\OML/cmm/m/it/10 g[]g[]\OT1/cmr/m/n/10 ) =
- []
-
-[11]
-File: ../picture/2diamB+2b.png Graphic file (type bmp)
-<../picture/2diamB+2b.png>
- [12]
-File: ../picture/R2Z2.png Graphic file (type bmp)
-<../picture/R2Z2.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[5]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 420.
-[13]
+(Font)              No change on input line 164.
+ [6] [7]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 437.
+(Font)              No change on input line 224.
+ [8]
+LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
+(Font)              No change on input line 289.
+File: ../picture/syoumei.png Graphic file (type bmp)
+<../picture/syoumei.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9]
+Overfull \hbox (9.50243pt too wide) in paragraph at lines 317--319
+\JY2/mc/m/n/10 よ って ， $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 g[]\OT1/cmr/m/n/10 )[] \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 g[] \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 S$ \JY2/mc/m/n/10 であり ， $\OML/cmm/m/it/10 s[] [][]\OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 g[]\OT1/cmr/m/n/10 )[] \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 g[] \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 S$ \JY2/mc/m/n/10 とすれば ，  $\OML/cmm/m/it/10 g$ \JY2/mc/m/n/10 は $\OML/cmm/m/it/10 g \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 g[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 e\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 g[]g[]\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 g[]g[]\OT1/cmr/m/n/10 ) [] (\OML/cmm/m/it/10 g[]g[]\OT1/cmr/m/n/10 ) =
+ []
+
+[10]
+File: ../picture/2diamB+2b.png Graphic file (type bmp)
+<../picture/2diamB+2b.png>
+ [11]
+File: ../picture/R2Z2.png Graphic file (type bmp)
+<../picture/R2Z2.png>
+ [12]
+LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
+(Font)              No change on input line 419.
+ [13]
+LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
+(Font)              No change on input line 436.
+LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
+(Font)              No change on input line 456.
  [14]
-LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 457.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 6.73553pt on input line 478.
+(Font)              scaled to size 6.73553pt on input line 477.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 4.8111pt on input line 478.
- [15] [16]
+(Font)              scaled to size 4.8111pt on input line 477.
+ [15]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 528.
+(Font)              No change on input line 527.
+ [16]
+LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
+(Font)              No change on input line 547.
  [17]
-LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 548.
- [18]
 File: ../picture/cayleyZ2_2.png Graphic file (type bmp)
 <../picture/cayleyZ2_2.png>
- [19] [20]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[18] [19]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 698.
- [21]
+(Font)              No change on input line 705.
+ [20]
 File: ../picture/coveringspace.png Graphic file (type bmp)
 <../picture/coveringspace.png>
 
@@ -629,19 +638,19 @@ File: ../picture/decktransformation.png Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22]
+[21]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 834.
+(Font)              No change on input line 844.
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 835.
+(Font)              No change on input line 845.
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 836.
+(Font)              No change on input line 846.
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 837.
- [23]
+(Font)              No change on input line 847.
+ [22]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 838.
- [24] (./soturon.aux)
+(Font)              No change on input line 848.
+ [23] (./soturon.aux)
  ***********
 pLaTeX2e <2023-02-14u04>+1, based on
 LaTeX2e <2025-11-01>
@@ -651,10 +660,10 @@ L3 programming layer <2025-11-14>
 Here is how much of TeX's memory you used:
  15507 strings out of 469647
  303388 string characters out of 5472212
- 696832 words of memory out of 5000000
+ 697832 words of memory out of 5000000
  44011 multiletter control sequences out of 15000+600000
  636948 words of font info for 84 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 84i,14n,94p,1513b,769s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,14n,94p,1445b,769s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on soturon.dvi (24 pages, 96664 bytes).
+Output written on soturon.dvi (23 pages, 97040 bytes).
