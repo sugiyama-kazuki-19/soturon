@@ -1,10 +1,10 @@
 # Fdb version 4
-["dvipdf"] 1769508717.74388 "soturon.dvi" "soturon.pdf" "soturon" 1769508720.09047 0
-  "soturon.dvi" 1769508717 101864 4901f63f808d1dc4096cdd258989e3f4 "latex"
+["dvipdf"] 1769535128.02255 "soturon.dvi" "soturon.pdf" "soturon" 1769535129.32732 0
+  "soturon.dvi" 1769535127 107616 bf95fce7d09737fbd61d4b61a68ad7a0 "latex"
   (generated)
   "soturon.pdf"
   (rewritten before read)
-["latex"] 1769508714.14762 "c:/Users/kazus/github/soturon/main/soturon.tex" "soturon.dvi" "soturon" 1769508720.07962 0
+["latex"] 1769535126.10929 "c:/Users/kazus/github/soturon/main/soturon.tex" "soturon.dvi" "soturon" 1769535129.3179 0
   "../cover/cover.pdf" 1768978947 20076 f9caadb23aa802534c44dde127947141 ""
   "../picture/2diamB+2b.png" 1767355390 61501 12935ed222188c6ee606d7633a936641 ""
   "../picture/R2Z2.png" 1767531748 33247 726306d2c9d9903c0490a0a3deb4e6f0 ""
@@ -14,7 +14,7 @@
   "../picture/coveringspace.png" 1768965003 37692 06bf3e7c048b21a00bb1d28b97e25923 ""
   "../picture/decktransformation.png" 1768964796 40241 3ae70103195a39b00c9cba9915eab04b ""
   "../picture/syoumei.png" 1767431132 39150 7df34a2aa95a73c2c5638049527a1a81 ""
-  "c:/Users/kazus/github/soturon/main/soturon.tex" 1769508708 58300 0f34342611ed09ed8c2c367ddef602bc ""
+  "c:/Users/kazus/github/soturon/main/soturon.tex" 1769535121 61335 68c7aad5ab7f2dec5ca5d2b3c09e93e5 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1764496659 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1764496659 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1764496659 1004 54797486969f23fa377b128694d548df ""
@@ -142,9 +142,9 @@
   "c:/texlive/2025/texmf-dist/web2c/texmf.cnf" 1764496606 42213 4e2ca030e8e2640502016e9e45868dcb ""
   "c:/texlive/2025/texmf-var/web2c/euptex/uplatex.fmt" 1764498180 2371685 a01da38a0aee414faf9a5cffd5c909e5 ""
   "c:/texlive/2025/texmf.cnf" 1764497938 713 e69b156964470283e0530f5060668171 ""
-  "soturon.aux" 1769508717 5150 17b064fe94ae58b044b9a5788eda3891 "latex"
-  "soturon.tex" 1769508708 58300 0f34342611ed09ed8c2c367ddef602bc ""
-  "soturon.toc" 1769508717 1241 8998d5096cf8b5038946d4e163daeaec "latex"
+  "soturon.aux" 1769535127 5319 58f56d7179215082867a3ebe3bb2e4ee "latex"
+  "soturon.tex" 1769535121 61335 68c7aad5ab7f2dec5ca5d2b3c09e93e5 ""
+  "soturon.toc" 1769535127 1241 7af8ad49f63387867bba5ccbe2deaee2 "latex"
   (generated)
   "soturon.aux"
   "soturon.dvi"

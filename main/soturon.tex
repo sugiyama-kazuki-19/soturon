@@ -76,7 +76,8 @@ Cayleyグラフの一辺を長さ1として見ることで得られる距離を�
 
 本論文では \cite[Section 5]{1} の議論をもとに，Švarc-Milnor Lemma の証明と，その補題を言い換えた主張の証明を与えることを主目的としている．\ref{sec_jyunbi} 章にて必要な用語の定義を行い，\ref{sec_hodai} 章にて Švarc-Milnor Lemma の証明，\ref{sec_ouyou} 章にて，主補題のいいかえを紹介，証明を行う．なお，幾何学的群論におけるCayleyグラフなどの基本的概念は付録としてまとめているので，そちらを参照されたい．
 
-\textcolor{red}{謝辞}
+\section*{謝辞}
+また，指導教員である野崎雄太准教授には，日ごろの研究から本論文の完成に至るまで多大なご助言ご指導を賜りました．同ゼミの宮路宙澄氏，谷内賢翔氏にも，多くの意見や議論を通じてご支援いただきました．この場をお借りして感謝申し上げます．
 
 \section{準備}\label{sec_jyunbi}
 \subsection{Quasi-Isometry of Meric Spaces}\label{subsec_QI_of_Metric}
@@ -557,7 +558,7 @@ $\widetilde{M}$ が proper かつ測地的な距離空間であること：
 
 $M$ はコンパクトな距離空間のため完備である．Hopf-Rinow の定理より，完備な距離空間は測地的完備であるので，$M$ は測地的完備である．
 
-$\widetilde{M}$ が測地的完備であることを示すために，任意の $\tilde{x}\in\widetilde{M}$ と $v\in T_{\tilde{x}}(\widetilde{M})$ をとる．$M$ が測地的完備なので，$\gamma(0)=p(\tilde{x})\in M$，$\gamma^\prime(0)=dp_{\tilde{x}}(v)\in T_{p(\tilde{x})}(M) $ となる測地線 $\gamma\colon\mathbb{R}\rightarrow \widetilde{M}$ が存在する．より，$\gamma$ のリフト $\tilde{\gamma}\colon\mathbb{R}\rightarrow \widetilde{M}$ であり，$\tilde{\gamma}(0)=\tilde{x}$ となるようなものが存在する．このリフトは，$dp_{\tilde{x}}(\tilde{\gamma}^\prime(0))=\gamma^\prime(0)=dp_{\tilde{x}}(v)$ と $dp_{\tilde{x}}$ の単射性から $\tilde{\gamma}^\prime(0)=v$ である．このことから，$\widetilde{M}$ の測地的完備性が従う．
+$\widetilde{M}$ が測地的完備であることを示すために，任意の $\tilde{x}\in\widetilde{M}$ と $v\in T_{\tilde{x}}(\widetilde{M})$ をとる．$M$ が測地的完備なので，$\gamma(0)=p(\tilde{x})\in M$，$\gamma^\prime(0)=dp_{\tilde{x}}(v)\in T_{p(\tilde{x})}(M) $ となる測地線 $\gamma\colon\mathbb{R}\rightarrow \widetilde{M}$ が存在する．リフトの存在性 (Lemma \ref{lift_lem}) より，$\gamma|_{[0,1]}$ のリフト $\tilde{\gamma}\colon[0,1]\rightarrow \widetilde{M}$ であり，$\tilde{\gamma}(0)=\tilde{x}$ となるようなものが存在する．このリフトを $\gamma$ の定義域で繰り返し得ることで，定義域を $\mathbb{R}$ まで拡張することができる．このリフトは，$dp_{\tilde{x}}(\tilde{\gamma}^\prime(0))=\gamma^\prime(0)=dp_{\tilde{x}}(v)$ と $dp_{\tilde{x}}$ の単射性から $\tilde{\gamma}^\prime(0)=v$ である．このことから，$\widetilde{M}$ の測地的完備性が従う．
 
 Hopf-Rinowの定理より，測地的完備な空間は proper かつ測地的であるので $\widetilde{M}$ もそうである．\\
 
@@ -583,11 +584,17 @@ $f\in\pi_1(M)$ とする．リーマン多様体における距離の定義よ�
 被覆空間の定義より，$\pi_1(M)\backslash \widetilde{M}$ は $M$ と同相である．仮定より $M$ はコンパクトなので，$\pi_1(M)\backslash \widetilde{M}$ もそうである．\\
 
 \noindent
-\textcolor{red}{群作用が properly discontinuous であること：}
-% 任意のコンパクトな集合 $K\subset \widetilde{M}$ をとる．この $K$ の十分小さい有限個の開被覆 $\{\widetilde{U}_k\}_{1\leq k\leq n}$ に関して，被覆変換の一意性( Lemma \ref{deck_lemma} )により $g\cdot\widetilde{U}_k\cap\widetilde{U}_l$ を満たすような $g\in G$ は，$(k,l)$ のペアに対し高々一個である．したがって，
-% $$g\cdot K\cap K\subset g\cdot \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)\cap \Bigl(\bigcup_{k=1}^n\widetilde{U}_k\Bigr)$$
-% が空でないような $g\in G$ は有限個である．
-十分小さい開被覆を取れば良さそう．
+群作用が properly discontinuous であること：
+
+任意のコンパクトな集合 $\widetilde{K}\subset\widetilde{M}$ をとる．積空間 $\widetilde{K}\times\widetilde{K}$ 上の点 $(\tilde{x},\tilde{y})$ を覆う開集合を以下のように定める．
+\begin{enumerate}
+  \item $p(\tilde{x})\neq p(\tilde{y})$ のときは，($M$ のハウスドルフ性から) 互いに素であるような $p(\tilde{x}),p(\tilde{y})$ の開集合 $U_{p(\tilde{x})}$，$U_{p(\tilde{y})}$ が取れるので，それらを引き戻した $\widetilde{U}_{\tilde{x}}\ni \tilde{x},\widetilde{U}_{\tilde{y}}\ni \tilde{y}$ の直積．\label{case1}
+  \item $p(\tilde{x})= p(\tilde{y})$ のときは，$p(\tilde{x})=p(\tilde{y})$ の近傍 $U$ の逆像 $p^{-1}(U)$ から，$\tilde{x},\tilde{y}$ を含むようにそれぞれ選んだ開集合 $\widetilde{U}_{\tilde{x}},\widetilde{U}_{\tilde{y}}$ の直積．\label{case2}
+\end{enumerate}
+
+このとき，\eqref{case1} の開集合 $\widetilde{U}_{\tilde{x}}$，$\widetilde{U}_{\tilde{y}}$ では，任意の $g\in\pi_1(M)$ に対し $p(g\cdot\widetilde{U}_{\tilde{x}})\cap p(\widetilde{U}_{\tilde{y}})=p(\widetilde{U}_{\tilde{x}})\cap p(\widetilde{U}_{\tilde{y}})=\emptyset$ となるため， $g\cdot\widetilde{U}_{\tilde{x}}\cap \widetilde{U}_{\tilde{y}}=\emptyset$ である．また，\eqref{case2} の開集合 $\widetilde{U}_{\tilde{x}}$，$\widetilde{U}_{\tilde{y}}$ では，$g\cdot\tilde{x}=\tilde{y}$ となるので，被覆変換の一意性 (Lemma \ref{deck_lemma}) より $g\cdot\widetilde{U}_{\tilde{x}}\cap \widetilde{U}_{\tilde{y}}\neq\emptyset$ となる $g\in\pi_1(M)$ は高々一個である．
+
+$\widetilde{K}\times\widetilde{K}$ はコンパクトなので，以上の開集合からなる開被覆のうち，有限個で $\widetilde{K}\times\widetilde{K}$ を覆うことができる．各開集合で $g\cdot\widetilde{U}_{\tilde{x}}\cap \widetilde{U}_{\tilde{y}}\neq\emptyset$ となる $g\in\pi_1(M)$ は高々一個であるので，$\{g\in\pi_1(M)\mid g\cdot \widetilde{K}\cap\widetilde{K}\neq\emptyset\}$ は有限集合である．
 \end{proof}
 
 \begin{ex}
@@ -741,7 +748,7 @@ f \cdot g :=
 \]
   とする．$x_0\in X$ を基点としたループの集合を Definition \ref{homotopy} の同値関係 $\simeq$ で割り，演算
   $$[f][g]\coloneqq[f\cdot g]$$
-  を導入することで群ができる．この群を \textbf{基本群 (fundamental group)} といい，\bm{$\pi_1(X,x_0)$} と表記する．
+  を導入することで群ができる．この群を \textbf{基本群 (fundamental group)} といい，$\pi_1(X,x_0)$ と表記する．
 \end{dfn}
 
 \begin{ex}
@@ -791,7 +798,9 @@ f \cdot g :=
 
 \end{dfn}
 
-\textcolor{red}{リフトの存在性}
+\begin{lem}\label{lift_lem}
+任意の連続写像 $f\colon [0,1] \rightarrow X$ と任意の $\tilde{x}\in p^{-1}(f(0))$ に対して，$f$ のリフト $\tilde{f}\colon [0,1]\rightarrow \widetilde{X}$ かつ，$\tilde{f}(0)=\tilde{x}$ なるものが存在する．
+\end{lem}
 
 % \begin{lem}
 %   $X$ を位相空間，$(\widetilde{X},p)$ を $X$ の被覆空間とし，$Y$ は連結な空間，写像 $f\colon Y\rightarrow X$ は連続とする．$f$ のリフト $\tilde{f}_1,\tilde{f}_2$ が存在し，ある一点 $y\in Y$ において $\tilde{f}_1(y)=\tilde{f}_2(y)$ であれば，$\tilde{f}_1=\tilde{f}_2$ である．
@@ -844,7 +853,20 @@ f \cdot g :=
   と定める．
 \end{dfn}
 
-\textcolor{red}{測地的完備の定義、Hopf-Rinowの定理}
+\begin{dfn}
+  多様体 $M$ が \textbf{測地的完備} であるとは，任意の極大測地線 $\gamma\colon I\rightarrow M$ に対して，$I=\mathbb{R}$ が成り立つことをいう．
+\end{dfn}
+
+\begin{thm}[Hopf-Rinow の定理]
+  $M$ をリーマン多様体とすると，次の(1)--(3)は同値である．\\
+  \begin{enumerate}
+    \item $M$ の有界閉集合はコンパクトである．
+    \item $M$ は距離空間として完備である．
+    \item $M$ は測地的完備である．
+  \end{enumerate}
+
+  また，測地的完備なリーマン多様体は測地的である．
+\end{thm}
 
 \begin{thebibliography}{9}
   \bibitem{3} A.S. Švarc, \textit{A volume invariant of coverings}, Doklady Akademii Nauk SSSR, vol.105, 1955, pp.32-34.
@@ -853,7 +875,9 @@ f \cdot g :=
   \bibitem{4} J. Milnor, \textit{A note on curvature and fundamental group}, Journal Of Differential Geometry, vol.2, No.1, 1968, pp.1-7.
   \bibitem{5} J. Milnor, \textit{Growth of finitely generated solvable groups}, Journal Of Differential Geometry, vol.2, No.1, 1968, pp.447-449.
   \bibitem{6} V.A. Efremovič, \textit{The proximity geometry of Riemannian manifolds}, Uspekhi Matematicheskikh Nauk 8, No.5, 1953, pp.189–191.
-  \textcolor{red}{参考文献}
+  \bibitem{7} 河野 俊丈，測地線と完備性など, https://www.ms.u-tokyo.ac.jp/~kohno/lectures/dg9.pdf (2026/1/24 閲覧)．
+  \bibitem{9} 佐藤 隆夫，基本群と被覆空間，裳華房，2023．
+  \bibitem{8} 正井 秀俊，群と幾何をみる，日本評論社，2023．
 \end{thebibliography}
 
 \end{document}
