@@ -55,7 +55,7 @@
 \section{導入}\label{intro}
 幾何学的群論とは，群から幾何学的対象を構成する，あるいは他の幾何学的対象への群作用をみることで，群の構造や代数的・幾何学的性質を考察する分野である．
 
-群から幾何学的対象を構成する代表的な例としては，群の生成系に関するCayleyグラフが挙げられる．Cayleyグラフとは，群の元を頂点とし，生成系の元を演算することで移る頂点間を辺で結ぶことで得られるグラフであり，生成系によってグラフの形は変わるものの，生成系込みでの群の構造を可視化するこができる．特に自由群に関しては相性が良く，そのCayleyグラフは無限の tree になることが知られている．逆に，適切な条件下であれば，群と生成系に関するCayleyグラフが tree のとき群は自由群であることも知られている．また，Cayleyグラフは群が作用する空間の代表例と言える．実際，群は自身のCayleyグラフに対して，頂点集合には左からの演算で，辺集合には頂点の作用から導かれる作用で，群作用をなす．この群作用は，サイクルなどのグラフの構造を保つため，Cayleyグラフの構造を群作用を通して理解することもできる．また，自由群が作用する場合は作用が自由になるため，自由群の部分群が自由群になるという定理のスマートな証明も与えらえる．幾何学的群論ではしばしば群作用に着目することが多い．
+群から幾何学的対象を構成する代表的な例としては，群の生成系に関するCayleyグラフが挙げられる．Cayleyグラフとは，群の元を頂点とし，生成系の元を演算することで移る頂点間を辺で結ぶことで得られるグラフであり，生成系によってグラフの形は変わるものの，生成系込みでの群の構造を可視化するこができる．特に自由群に関しては相性が良く，そのCayleyグラフは無限の tree になることが知られている．逆に，適切な条件下であれば，群と生成系に関するCayleyグラフが tree のとき群は自由群であることも知られている．また，Cayleyグラフは群が作用する空間の代表例と言える．実際，群は自身のCayleyグラフに対して，頂点集合には左からの演算で，辺集合には頂点の作用から導かれる作用で，群作用をなす．この群作用は，サイクルなどのグラフの構造を保つため，Cayleyグラフの構造を群作用を通して理解することもできる．また，群が自由に作用する tree が存在することと，群が自由群であることが同値であることから，自由群の部分群が自由群になるという定理のスマートな証明も与えらえる．幾何学的群論ではしばしば群作用に着目することが多い．
 
 \begin{figure}[h]
 \centering
@@ -66,22 +66,22 @@
 
 一般に群作用とは，ある集合の自己同型写像として群が振る舞うことであり，群の代数的構造を空間の幾何学的な構造として表現するものである．群を直接調べるのではなく，どのような空間にどのように作用しているかを観察することで，空間の幾何学的な特徴や性質を通して群を調べることを可能としている．例えば，群 $\mathbb{Z}^2$ による，空間 $\mathbb{R}^2$ への加法の群作用を考えると，$\mathbb{R}^2$ は一辺が1の正方形を $\mathbb{Z}^2$ の作用によって敷き詰めた空間であることが分かり，逆に $\mathbb{Z}^2$ という群は $\mathbb{R}^2$ のような広がりのある群構造を持つことが分かる．このことは上の図 \ref{cayleyZ2} のようなCayleyグラフを用いても確かめることができる．群 $\mathbb{Z}^2$ のCayleyグラフが，空間 $\mathbb{R}^2$ のような広がりを持っていることが分かるだろう．
 
-Cayleyグラフの一辺を長さ1として見ることで得られる距離を群に導入することで，群を距離空間として捉えることができ，群と空間が似ていることの定式化が可能となる．距離を入れた群の，他の距離空間への群作用を考えることで，群と空間の類似性を議論することができる．しかしこのとき，Cayleyグラフの構造は選んだ生成系に依存してしまうため，群に導入した距離関数も生成系に依存してしまう．
+群の二点間の距離を，Cayleyグラフの一辺を長さ1として見ることで得られる距離を群に導入することで，群を距離空間として捉えることができ，群と空間が似ていることの定式化が可能となる．距離を入れた群の，他の距離空間への群作用を考えることで，群と空間の類似性を議論することができる．しかしこのとき，Cayleyグラフの構造は選んだ生成系に依存してしまうため，群に導入した距離関数も生成系に依存してしまう．
 
-そこで，一定誤差のズレを許容する“大雑把な視点”を導入し局所的な違いを無視することで，大局的な部分だけを見比べ，群の本質的な構造を抽出することができる．擬等長写像(quasi-isometric)とは，距離空間から距離空間への写像であり，送った先の二点間の距離が，送る前の二点間の距離の定数倍と定数項で，点に依らず一様に抑えられるようなものを指す．これによって二つの距離空間の大局的な構造のみを見比べることができ，Cayleyグラフの生成系に依存してしまう問題を解決できる．
+そこで，一定誤差のズレを許容する``大雑把な視点''を導入し局所的な違いを無視することで，大局的な部分だけを見比べ，群の本質的な構造を抽出することができる．擬等長写像(quasi-isometric)とは，距離空間から距離空間への写像であり，送った先の二点間の距離が，送る前の二点間の距離の定数倍と定数項で，点に依らず一様に抑えられるようなものを指す．これによって二つの距離空間の大局的な構造のみを見比べることができ，Cayleyグラフの生成系に依存してしまう問題を解決できる．
 
-Švarc-Milnor Lemma とは，「群がよい距離空間によい群作用をしているとき，その群の有限生成系が分かり，群の構造と距離空間の構造が“大雑把に”等しい」という主張であり，その内容から「幾何学的群論の基本補題」とも言われている．一般に，群が与えられたとき，その群が有限生成であるかどうかの判別は難しいことがあるのだが，この補題では有限生成系が分かるだけでなく，作用している空間の持つ構造と群の持つ構造が大雑把に等しいことまで分かる．群のことを知りたければ，よく知られている距離空間へのうまい作用さえ考えればよい．
+Švarc-Milnor Lemma とは，「群がよい距離空間によい群作用をしているとき，その群の有限生成系が分かり，群の構造と距離空間の構造が``大雑把に''等しい」という主張であり，その内容から「幾何学的群論の基本補題」とも言われている．一般に，群が与えられたとき，その群が有限生成であるかどうかの判別は難しいことがあるのだが，この補題では有限生成であることが証明できる．それだけでなく，有限生成系が分かる他，作用している空間の持つ構造と群の持つ構造が大雑把に等しいことまで分かる．群のことを知りたければ，よく知られている距離空間へのうまい作用さえ見つけることができればよい．
 
-1953年，この補題の先駆けとなるアイデアが Efremovich の論文にて発表され \cite{6}，1955年に Švarc の論文にて主補題が用いられた \cite{3}．その後1968年に Milnor が Švarc とは独立して本補題を見つけ応用した \cite[Theorem 2]{4}．その後，Švarc の先行研究を知った Milnor は “Švarc の論文にすでに多くのアイデアが含まれていた” と自身の論文にて述べている\cite{5}．
+1953年，この補題の先駆けとなるアイデアが Efremovich の論文にて発表され ~\cite{6}，1955年に Švarc の論文にて主補題が用いられた ~\cite{3}．その後1968年に Milnor が Švarc とは独立して本補題を見つけ応用した ~\cite[Theorem 2]{4}．その後，Švarc の先行研究を知った Milnor は ``Švarc の論文にすでに多くのアイデアが含まれていた'' と自身の論文にて述べている~\cite{5}．
 
-本論文では \cite[Section 5]{1} の議論をもとに，Švarc-Milnor Lemma の証明と，その補題を言い換えた主張の証明を与えることを主目的としている．\ref{sec_jyunbi} 章にて必要な用語の定義を行い，\ref{sec_hodai} 章にて Švarc-Milnor Lemma の証明，\ref{sec_ouyou} 章にて，主補題のいいかえを紹介，証明を行う．なお，幾何学的群論におけるCayleyグラフなどの基本的概念は付録としてまとめているので，そちらを参照されたい．
+本論文では Löh~\cite[Section 5]{1} の議論をもとに，Švarc-Milnor Lemma の証明と，その補題をいいかえた主張の証明を与えることを主目的としている．\ref{sec_jyunbi}~節にて必要な用語の定義を行い，\ref{sec_hodai}~節にて Švarc-Milnor Lemma の証明，\ref{sec_ouyou}~節にて，主補題のいいかえを紹介，証明を行う．なお，幾何学的群論におけるCayleyグラフなどの基本的概念は付録としてまとめているので，そちらを参照されたい．
 
 \section*{謝辞}
 また，指導教員である野崎雄太准教授には，日ごろの研究から本論文の完成に至るまで多大なご助言ご指導を賜りました．同ゼミの宮路宙澄氏，谷内賢翔氏にも，多くの意見や議論を通じてご支援いただきました．この場をお借りして感謝申し上げます．
 
 \section{準備}\label{sec_jyunbi}
 \subsection{Quasi-Isometry of Meric Spaces}\label{subsec_QI_of_Metric}
-この節では，距離空間同士の類似を測るための道具となる写像について述べる．条件の厳しい等長写像から始まり，その条件を少しずつ緩めることによって，幾何学的群論における“大雑把な視点”を得ることができる．
+この節では，距離空間同士の類似を測るための道具となる写像について述べる．条件の厳しい等長写像から始まり，その条件を少しずつ緩めることによって，幾何学的群論における``大雑把な視点''を得ることができる．
 
 以下，$(X,d_X)$ を距離空間とし，省略して $X$ と表記する．
 \begin{dfn}\label{isom}
@@ -153,10 +153,10 @@ bilipschitz埋め込み は単射な連続写像である．よって，bilipsch
   等長埋め込み同士の合成写像は等長埋め込みであり，bilipschitz埋め込み同士の合成写像はbilipschitz埋め込みであり，擬等長埋め込み同士の合成は擬等長埋め込みである．
 \end{rem}
 
-定数倍と定数分のズレを許してしまうという，擬等長の“大雑把な視点”が幾何学的群論では重要なのだが，その擬等長に関する定義について，それと同値なものを紹介する．
+定数倍と定数分のズレを許してしまうという，擬等長の``大雑把な視点''が幾何学的群論では重要なのだが，その擬等長に関する定義について，それと同値なものを紹介する．
 
 \begin{prop}\label{dense image}
-Definition \ref{QI} の 擬等長写像における二条件は，以下の二条件と同値．
+Definition~\ref{QI} の 擬等長写像における二条件は，以下の二条件と同値．
 \begin{enumerate}
   \item[［1］] $f$ が擬等長埋め込みである．
   \item[［2］] ある定数 $c\in\mathbb{R}_{>0}$ が存在し，任意の $y\in Y$ に対してある $x\in X$ をとると，$d_Y(f(x),y)\leq c$ を満たす．
@@ -164,11 +164,11 @@ Definition \ref{QI} の 擬等長写像における二条件は，以下の二�
 \end{prop}
 
 \begin{proof}
-Definition \ref{QI} を満たすならば［1］,［2］を満たすことの証明：\\
+Definition~\ref{QI} を満たすならば［1］,［2］を満たすことの証明：\\
 ［2］を示せばよい．$f\colon X\rightarrow Y$ に対し，定義より，ある擬等長写像 $g\colon Y\rightarrow X$ が存在し，$f\circ g$ が $\id_Y$ と finite distance である．任意の $y\in Y$ をとる．$x\coloneqq g(y)$ と定めることで，
 $$d_Y(f(x),y)=d_Y((f\circ g)(y),y)\leq c$$
 を満たす．\\
-［1］,［2］を満たすならば Definition \ref{QI} を満たすことの証明：\\ 
+［1］,［2］を満たすならば Definition~\ref{QI} を満たすことの証明：\\ 
 仮定より，ある定数 $c\in\mathbb{R}_{>0}$ が存在し，
 \begin{enumerate}
   \item 任意の $x,x^\prime \in X$ に対し，$\frac{1}{c}d_X(x,x^\prime)-c \leq d_Y(f(x),f(x^\prime)) \leq cd_X(x,x^\prime)+c,$\label{1}
@@ -188,11 +188,11 @@ $$d_Y(f(x),y)=d_Y((f\circ g)(y),y)\leq c$$
 \end{proof}
 
 \begin{dfn}
-Proposition \ref{dense image} の条件［2］を $f$ が満たすとき，$f$ は \textbf{quasi-dense image} をもつという．
+Proposition~\ref{dense image} の条件［2］を $f$ が満たすとき，$f$ は \textbf{quasi-dense image} をもつという．
 \end{dfn}
 
 \subsection{Quasi-Isometry of Groups}
-\ref{subsec_QI_of_Metric} 節では距離空間同士を大雑把にみることについて述べたが，本節では群に距離を導入して距離空間に拡張し，群に対しても定義を行う．群に入れる距離は，Cayleyグラフの一辺を長さ1として見ることで得られる距離であり，これはCayleyグラフと相性が良いものの，選ぶ生成系に依存してしまう．しかし，\ref{subsec_QI_of_Metric} 節で述べた bilipschitz equivalent や，擬等長といった“大雑把な視点”では， Proposition \ref{Sprime} により生成系に依らずに群と距離空間が同じ構造を持つかどうかの議論が可能となる．
+\ref{subsec_QI_of_Metric}~節では距離空間同士を大雑把にみることについて述べた．本節では群に距離を導入して距離空間として捉え，\ref{subsec_QI_of_Metric}~節の定義を群に対しても定義を行う．群に入れる距離は，Cayleyグラフの一辺を長さ1として見ることで得られる距離であり，これは選ぶ生成系に依存してしまう．しかし，\ref{subsec_QI_of_Metric}~節で述べた bilipschitz equivalent や，擬等長といった``大雑把な視点''では， Proposition~\ref{Sprime} により生成系に依らずに群と距離空間が同じ構造を持つかどうかの議論が可能となる．
 
 以下，$G$ を群として，$S$ をその生成系とする．
 \begin{dfn}
@@ -202,11 +202,11 @@ Proposition \ref{dense image} の条件［2］を $f$ が満たすとき，$f$ �
 \end{dfn}
 
 \begin{ex}
-  群 $G$ の生成系 $S$ に関する $\Cay(G,S)$ において，グラフ上の頂点間の距離とはまさに $d_S$ のことである($\Cay(G,S)$ の定義は Definition \ref{cayley} を参照されたい)．
+  群 $G$ の生成系 $S$ に関する $\Cay(G,S)$ において，グラフ上の頂点間の距離とはまさに $d_S$ のことである($\Cay(G,S)$ の定義は Definition~\ref{cayley} を参照されたい)．
 \end{ex}
 
 \begin{dfn}\label{GQIX}
-$G$ を有限生成群としたとき，$G$ が距離空間 $X$ に \textbf{bilipschitz equivalent} であるとは，$G$ のある有限な生成系 $S$ がとれ，距離空間 $(G,d_S)$ と $X$ が bilipschitz equivalent であることをいう．また，$G$ が $X$ に \textbf{擬等長 (quasi-isometric)} であるとは，ある有限な生成系 $S$ がとれ，距離空間 $(G,d_S)$ と $X$ がquasi-isometric であることをいう．
+$G$ を有限生成群としたとき，$G$ が距離空間 $X$ に \textbf{bilipschitz equivalent} であるとは，$G$ のある有限な生成系 $S$ がとれ，距離空間 $(G,d_S)$ と $X$ が (\ref{subsec_QI_of_Metric}~節で定義した) bilipschitz equivalent であることをいう．また，$G$ が $X$ に \textbf{擬等長 (quasi-isometric)} であるとは，ある有限な生成系 $S$ がとれ，距離空間 $(G,d_S)$ と $X$ が (\ref{subsec_QI_of_Metric}~節で定義した) quasi-isometric であることをいう．
 \end{dfn}
 
 \begin{rem}
@@ -217,7 +217,7 @@ $G$ を有限生成群としたとき，$G$ が距離空間 $X$ に \textbf{bili
   群 $\mathbb{Z}^2$ とその生成系 $S=\{(0,1),(1,0)\}$ からなる距離空間 $(\mathbb{Z}^2,d_S)$ は，距離空間 $\mathbb{R}^2$ と擬等長である．
 \end{ex}
 
-群に導入する距離関数を word metric にした場合，その定義からこの距離空間は生成系に大きく依存するため，距離空間と群が同じ構造を持つかどうかの議論が難しくなる．しかし，擬等長 (より一般に，bi-Lip) という“大雑把な視点”で見ると，生成系に依らずに議論することが可能である．
+群に導入する距離関数を word metric にした場合，その定義からこの距離空間は生成系に大きく依存するため，距離空間と群が同じ構造を持つかどうかの議論が難しくなる．しかし，擬等長 (より一般に，bi-Lip) という``大雑把な視点''で見ると，生成系に依らずに議論することが可能である．
 
 \begin{prop}\label{Sprime}
   $S$,$S^\prime$ をともに群 $G$ の有限な生成系 としたとき，距離空間 $(G,d_S)$ が 距離空間 $(X,d_X)$ と $f$ で bilipschitz equivalent ならば，$(G,d_{S^\prime})$ と $(X,d_X)$ も $f$ で bilipschitz equivalent である．
@@ -235,7 +235,7 @@ $f \colon (X,d_X)\rightarrow (G,d_S)$，$f^\prime\colon (X,d_X)\rightarrow (G,d_
 \draw[->] (S) to node {id} (S*);
 \end{tikzpicture}
 \end{center}
-より，$f^\prime=f\circ\id=f$ が成立する．bilipschitz equivalence の合成写像は bilipschitz equivalence なので，あとは $\id$ が bilipschitz equivalence であることを示せばよい．$c$ を，
+より，$f^\prime=f\circ\id=f$ が成立する．bilipschitz equivalence の合成写像は bilipschitz equivalence なので，あとは $\id$ が bilipschitz equivalence であることを示せばよい．$c\in\mathbb{N}_{\geq 0}$ を，
 $$c\coloneqq\underset{s\in S\cup S^{-1}}{\max}d_{S^\prime}(e,s)$$
 とすると，$S$ は有限なのでこれは有限値である．$g,h\in G$ をとり，$d_S(g,h)=n$ とし，$g^{-1}h=s_1s_2\cdots s_{n-1} s_n$ ($s_1,s_2,\ldots,s_{n-1},s_n\in S\cup S^{-1}$) と表せられるとする．このとき，$S^\prime$ 上での $g,h$ の word metric は，
 \begin{align*}
@@ -249,11 +249,11 @@ $$c\coloneqq\underset{s\in S\cup S^{-1}}{\max}d_{S^\prime}(e,s)$$
 \end{proof}
 
 \begin{rem}
-  Definition \ref{GQIX} と Proposition \ref{Sprime} より，距離空間に bilipschitz equivalent な群(quasi-isometric な群)は，その(有限)生成系の取り方に依らない．
+  Definition~\ref{GQIX} と Proposition~\ref{Sprime} より，距離空間に bilipschitz equivalent な群(quasi-isometric な群)は，その有限生成系の取り方に依らない．
 \end{rem}
 
 \subsection{Quasi-Geodesic Metric Spaces}
-本節では，\ref{intro} 章でも記した，よい距離空間について述べる．一般に距離空間では，二点が与えられたときに二点間の距離が定まるが，その距離を道のりとした道(測地線)が距離空間上に存在するとは限らない．そのようなことが可能であるような距離空間を測地的といい，その条件をさらに緩めたものを擬測地的という．
+本節では，\ref{intro}~節でも記した，よい距離空間について述べる．一般に距離空間では，二点が与えられたときに二点間の距離が定まるが，その距離を道のりとしたパスが距離空間上に存在するとは限らない．一方で，そのようなことが可能であるような距離空間を測地的といい，その条件をさらに緩めたものを擬測地的という．
 \begin{dfn}
 距離空間 $X$ 上の長さ $L\in\mathbb{R}_{>0}$ の \textbf{測地線 (geodesic)} とは，$[0,L]\subset\mathbb{R}$ から $X$ への等長埋め込み，$\gamma\colon[0,L]\rightarrow X$ のことである．また，$X$ が \textbf{測地的 (geodesic)} であるとは，任意の $x,x^\prime\in X$ において，$\gamma(0)=x$，$\gamma(L)=x^\prime$ となるような 等長埋め込み $\gamma$ がとれるときをいう．
 \end{dfn}
@@ -283,7 +283,7 @@ $G$ を群とし，$(c,b)$-測地的な距離空間 $(X,d_X)$ 上に等長な群
  を満たすならば，
  \begin{enumerate}
   \item $S$ は $G$ の有限生成系であり，\label{S_is_generating_set}
-\item 任意の $x\in X$ に対して定まる写像 $\varphi\colon G\rightarrow X\;;\; g\mapsto gx$ によって，$G$ と $X$ は擬等長．\label{G~X}
+\item 任意の $x\in X$ に対して定まる写像 $\varphi\colon G\rightarrow X\;;\; g\mapsto g\cdot x$ によって，$G$ と $X$ は擬等長である．\label{G~X}
  \end{enumerate}
 ただし，$B^\prime \coloneqq\{x\in X\mid y\in B，d_X(x,y)\leq 2b\}$ と定める．
 \end{lem}
@@ -329,13 +329,13 @@ $B$ の仮定より，任意の $x\in X$ は $B$ に含まれていると考え�
 の二点を示す．\\
 
 \noindent
-［1］ $\varphi$ が quasi-dense image であること：\\
+［1］ $\varphi$ が quasi-dense image であることの証明：\\
 任意の $x^\prime \in X$ に関して，$x^\prime\in g^\prime\cdot B$ となる $g^\prime \in G$ がとれるため，
 $$d_X(x^\prime,\varphi(g^\prime))=d_X(x^\prime,g^\prime\cdot x)\leq \diam (g^\prime \cdot B)=\diam B$$
 仮定より $\diam B$ は有限なので，$\varphi$ が quasi-dense image であることが示された．\\
 
 \noindent
-［2］ $\varphi$ が 擬等長埋め込みであること：\\
+［2］ $\varphi$ が 擬等長埋め込みであることの証明：\\
 ある定数 $C>0,B\geq0$ が存在し， 任意の $g,h\in G$ に対して，
 $$\frac{1}{C}d_S(g,h)-B\leq d_X(\varphi(g),\varphi(h))\leq Cd_S(g,h)+B.$$
 であることを示せばいいが，word metric の定義と $G$ が等長に作用していることから，
@@ -350,7 +350,7 @@ $$\frac{1}{C}d_S(e,g)-B\leq d_X(\varphi(e),\varphi(g))\leq Cd_S(e,g)+B$$
 が成立することを示せばよい．\\
 
 \noindent
-［$2-1$］ $\frac{1}{C}d_S(e,g)-B\leq d_X(\varphi(e),\varphi(g))$ が成立すること：\\
+［$2-1$］ $\frac{1}{C}d_S(e,g)-B\leq d_X(\varphi(e),\varphi(g))$ が成立することの証明：\\
  任意に $g\in G$ をとる．このとき，$g$ に対して proof of (1) と同様の議論により $s_1,s_2,\ldots ,s_n\in S\cup S^{-1}$ がとれ，$g=s_1s_2\cdots s_n$ と表せられる．このときの $\gamma$ を用いて，
 \begin{align*}
   d_X(\varphi(e),\varphi(g))=d_X(x,g\cdot x)&=d_X(\gamma(0),\gamma(L))\\
@@ -361,7 +361,7 @@ $$\frac{1}{C}d_S(e,g)-B\leq d_X(\varphi(e),\varphi(g))\leq Cd_S(e,g)+B$$
 とすることで，目的の不等式が得られる．\\
 
 \noindent
-［$2-2$］ $d_X(\varphi(e),\varphi(g))\leq Cd_S(e,g)+B$ が成立すること：\\
+［$2-2$］ $d_X(\varphi(e),\varphi(g))\leq Cd_S(e,g)+B$ が成立することの証明：\\
 任意に $g\in G$ をとる．$d_S(e,g)=n$ とし，$g=s_1s_2\cdots s_n$ と表せられるとする．このとき，各 $s_i\in S\cup S^{-1}$ ($1\leq i\leq n$) に対して，$S$ の定義 $B^\prime\cap s_i\cdot B^\prime\neq\emptyset$ より，
 $$d_X(x,s_i\cdot x)\leq \diam B+2b+\diam B=2(\diam B+b)$$
 が成立する(図 \ref{2diamB+2b} 参照)．
@@ -393,12 +393,12 @@ $$d_X(x,s_i\cdot x)\leq \diam B+2b+\diam B=2(\diam B+b)$$
 \end{align*}
 からなる作用をしているとする．作用の仕方からこれは等長な群作用である．$\mathbb{R}^2$ を $(1,1/4)$-擬測地的距離空間とし，部分集合 $B\subset \mathbb{R}^2$ を，
 $$B=\{(x,y)\in\mathbb{R}^2\mid -1/2\leq x\leq 1/2，-1/2\leq y\leq 1/2\}$$
-とすれば，これは Lemma \ref{svarc} の条件(a),(b)を満たす．$S\subset \mathbb{Z}^2$ は，
+とすれば，これは Lemma~\ref{svarc} の条件(a),(b)を満たす．$S\subset \mathbb{Z}^2$ は，
 \begin{align*}
   S&=\{g\in\mathbb{Z}^2\mid g\cdot B^\prime\cap B^\prime\neq \emptyset\}\\
   &=\{-2,-1,0,1,2\}\times\{-2,-1,0,1,2\}
 \end{align*}
-となり，条件(c)を満たす(図\ref{R2Z2} 参照)．よって，Lemma \ref{svarc} より，$\mathbb{Z}^2$ は $S$ によって生成され，$\mathbb{R}^2$ と $\mathbb{Z}^2$ は擬等長である．
+となり，条件(c)を満たす(図\ref{R2Z2} 参照)．よって，Lemma~\ref{svarc} より，$\mathbb{Z}^2$ は $S$ によって生成され，$\mathbb{R}^2$ と $\mathbb{Z}^2$ は擬等長である．
 
 \begin{figure}[h]
 \centering
@@ -409,14 +409,14 @@ $$B=\{(x,y)\in\mathbb{R}^2\mid -1/2\leq x\leq 1/2，-1/2\leq y\leq 1/2\}$$
 
 \end{ex}
 \subsection{Švarc-Milnor Lemma I の拡張}
-Lemma \ref{svarc} は，群作用が等長でなくても成立する．つまり，以下のとおりである．
+Lemma~\ref{svarc} は，群作用が等長でなくても成立する．つまり，以下のとおりである．
 \begin{lem}
-  Lemma \ref{svarc} は，群 $G$ が距離空間 $X$ に等長な群作用だけでなく，擬等長な群作用としても成り立つ．
+  Lemma~\ref{svarc} は，群 $G$ が距離空間 $X$ に等長な群作用だけでなく，擬等長な群作用としても成り立つ．
 \end{lem}
-証明は，以下のLemma \ref{lem1}--\ref{lem3} より与えらえる．
+証明は，以下のLemma~\ref{lem1}--\ref{lem3} より与えらえる．
 
 \begin{lem}\label{lem1}
-  Lemma \ref{svarc} の証明において，群作用が $(c^\prime,b^\prime)$-擬等長な作用でも $x_i\in g_{i-1}\cdot B^\prime$ が成立する．ただし，$B^\prime \coloneqq\{x\in X\mid y\in B，d_X(x,y)\leq 2bc^\prime+b^\prime\}$ とする．
+  Lemma~\ref{svarc} の証明において，群作用が $(c^\prime,b^\prime)$-擬等長な作用でも $x_i\in g_{i-1}\cdot B^\prime$ が成立する．ただし，$B^\prime \coloneqq\{x\in X\mid y\in B，d_X(x,y)\leq 2bc^\prime+b^\prime\}$ とする．
 \end{lem}
 \begin{proof}
   群作用が $(c^\prime,b^\prime)$-擬等長なので，
@@ -433,7 +433,7 @@ Lemma \ref{svarc} は，群作用が等長でなくても成立する．つま�
 \end{proof}
 
 \begin{lem}\label{lem2}
-  Lemma \ref{svarc} の証明において，群作用が $(c^\prime,b^\prime)$-擬等長な作用でも $\diam (g^\prime\cdot B)< \infty$ である． 
+  Lemma~\ref{svarc} の証明において，群作用が $(c^\prime,b^\prime)$-擬等長な作用でも $\diam (g^\prime\cdot B)< \infty$ である． 
 \end{lem}
 \begin{proof}
    群作用が $(c^\prime,b^\prime)$-擬等長なので，
@@ -449,7 +449,7 @@ Lemma \ref{svarc} は，群作用が等長でなくても成立する．つま�
 \end{proof}
 
 \begin{lem}\label{lem3}
-  Lemma \ref{svarc} の証明において，群作用が $(c^\prime,b^\prime)$-擬等長な作用でも，定数$C>0,B\geq 0$ があり，任意の $g,h\in G$ に関しての不等式
+  Lemma~\ref{svarc} の証明において，群作用が $(c^\prime,b^\prime)$-擬等長な作用でも，定数$C>0,B\geq 0$ があり，任意の $g,h\in G$ に関しての不等式
   $$\frac{1}{C}d_S(e,g)-B\leq d_X(\varphi(e),\varphi(g))\leq Cd_S(e,g)+B$$
   が成立するならば，定数$C^\prime>0,B^\prime\geq 0$ があり，任意の $g,h\in G$ に関しての不等式
   $$\frac{1}{C^\prime}d_S(g,h)-B^\prime\leq d_X(\varphi(g),\varphi(h))\leq C^\prime d_S(g,h)+B^\prime$$
@@ -490,7 +490,7 @@ word metric の定義から，
 
 
 \section{主補題のいいかえ} \label{sec_ouyou}
-Lemma \ref{svarc} の主張を言い換えた主張が存在する．その主張に必要な用語の定義を \ref{subsec_jyunbi} 節で行った後，\ref{subsec_svarc_top} 節にて述べる．
+Lemma~\ref{svarc} の主張を言い換えた主張が存在する．その主張に必要な用語の定義を \ref{subsec_jyunbi}~節で行った後，\ref{subsec_svarc_top}~節にて述べる．
 \subsection{準備}\label{subsec_jyunbi}
 \begin{dfn}
   距離空間 $(X,d_X)$ が \textbf{proper} であるとは，任意の $x\in X$，$r\in \mathbb{R}_{>0}$ に関して，集合
@@ -515,7 +515,7 @@ $\mathbb{R}$ に $\mathbb{Z}$ が加法で群作用をしているとき，こ�
 \begin{dfn}
   群 $G$ が位相空間 $X$ に作用しているとする．この作用が \textbf{余コンパクト (cocompact)} であるとは，商集合 $G\backslash X$ がコンパクトであることをいう．言い換えると，あるコンパクトな集合 $K\subset X$ が存在し，
   $$X=\bigcup_{g\in G}g\cdot K$$
-  を満たす．商集合に関しては Definition \ref{orbit_quotient} を参照されたい．
+  を満たす．商集合に関しては Definition~\ref{orbit_quotient} を参照されたい．
 \end{dfn}
 
 \begin{ex}
@@ -527,7 +527,7 @@ $\mathbb{R}$ に $\mathbb{Z}$ が加法で群作用をしているとき，こ�
   群 $G$ が，proper かつ擬測地的な距離空間 $(X,d_X)$ に，等長に作用しているとする．この群作用が properly discontinuous かつ余コンパクトであれば，$G$ は有限生成であり，$G$ と $X$ は擬等長である．
 \end{lem}
 \begin{proof}
-$X$ は擬測地的であるので，Lemma \ref{svarc} の仮定を満足するような $B\subset X$ をみつければよい．以下，$X$ は $(1,b)$-quasi-geodesic であるとする($b>0$)．自然な射影 $\pi\colon X\rightarrow G\backslash X$ は開写像であるので，開球 $B_1(x)=\{y\in X\mid d_X(x,y)<1\}$ の像 $\pi(B_1(x))$ は $G\backslash X$ 上の開集合である．また，$\pi(X)=G\backslash X$ より，$\{\pi(B_1(x))\}_{x\in X}$ は $G\backslash X$ の開被覆である．$G\backslash X$ のコンパクト性より，これらから有限個 $\{\pi(B_1(x_k))\}_{1\leq k\leq n}$ の開被覆で $G\backslash X$ を覆うことができる．各開球 $B_1(x_k)$ の閉包 $\overline{B_1(x_k)}$ を考え，$$B=\bigcup_{k=1}^n\overline{B_1(x_k)}$$ とすれば，
+$X$ は擬測地的であるので，Lemma~\ref{svarc} の仮定を満足するような $B\subset X$ をみつければよい．以下，$X$ は $(1,b)$-quasi-geodesic であるとする($b>0$)．自然な射影 $\pi\colon X\rightarrow G\backslash X$ は開写像であるので，開球 $B_1(x)=\{y\in X\mid d_X(x,y)<1\}$ の像 $\pi(B_1(x))$ は $G\backslash X$ 上の開集合である．また，$\pi(X)=G\backslash X$ より，$\{\pi(B_1(x))\}_{x\in X}$ は $G\backslash X$ の開被覆である．$G\backslash X$ のコンパクト性より，これらから有限個 $\{\pi(B_1(x_k))\}_{1\leq k\leq n}$ の開被覆で $G\backslash X$ を覆うことができる．各開球 $B_1(x_k)$ の閉包 $\overline{B_1(x_k)}$ を考え，$$B=\bigcup_{k=1}^n\overline{B_1(x_k)}$$ とすれば，
 \begin{enumerate}
   \item[(a)] $\diam B<\infty$,
   \item[(b)] $\bigcup_{g\in G}g\cdot B=X$
@@ -541,9 +541,9 @@ $X$ は擬測地的であるので，Lemma \ref{svarc} の仮定を満足する�
 \subsection{応用例}
 この補題の応用例として，以下のような主張がある．
 \begin{cor}\label{cor}
-  $M$ をコンパクトで境界のないリーマン多様体とする．$M$ の普遍被覆 $\widetilde{M}$ に，基本群 $\pi_1(M)$ が被覆変換で群作用をしているとき， $\pi_1(M)$ は有限生成であり，$\tilde{x}\in\widetilde{M}$ によって定まる写像
+  $M$ をコンパクトで境界のないリーマン多様体とする．$M$ の普遍被覆 $\widetilde{M}$ に，基本群 $\pi_1(M)$ が被覆変換で群作用をしているとき， $\pi_1(M)$ は有限生成であり，任意の $\tilde{x}\in\widetilde{M}$ によって定まる写像
   $$\pi_1(M)\rightarrow \widetilde{M}\; ;\; g\mapsto g\cdot \tilde{x}$$
-  は擬等長写像である．被覆変換に関しては Definition \ref{def_deck} を参照されたい．
+  は擬等長写像である．被覆変換に関しては Definition~\ref{def_deck} を参照されたい．
 \end{cor}
 
 \begin{proof}
@@ -554,13 +554,13 @@ $$\tilde{g}_{\tilde{x}}(u,v)\coloneqq g_{p(\tilde{x})}(dp_{\tilde{x}}(u),dp_{\ti
 とすることで，$\widetilde{M}$ に距離が入る．\\
 
 \noindent
-$\widetilde{M}$ が proper かつ測地的な距離空間であること：
+$\widetilde{M}$ が proper かつ測地的な距離空間であることの証明：
 
-$M$ はコンパクトな距離空間のため完備である．Hopf-Rinow の定理より，完備な距離空間は測地的完備であるので，$M$ は測地的完備である．
+$M$ はコンパクトな距離空間のため(距離空間として)完備である．Hopf-Rinow の定理より，完備な距離空間は測地的完備であるので，$M$ は測地的完備である．
 
-$\widetilde{M}$ が測地的完備であることを示すために，任意の $\tilde{x}\in\widetilde{M}$ と $v\in T_{\tilde{x}}(\widetilde{M})$ をとる．$M$ が測地的完備なので，$\gamma(0)=p(\tilde{x})\in M$，$\gamma^\prime(0)=dp_{\tilde{x}}(v)\in T_{p(\tilde{x})}(M) $ となる測地線 $\gamma\colon\mathbb{R}\rightarrow \widetilde{M}$ が存在する．リフトの存在性 (Lemma \ref{lift_lem}) より，$\gamma|_{[0,1]}$ のリフト $\tilde{\gamma}\colon[0,1]\rightarrow \widetilde{M}$ であり，$\tilde{\gamma}(0)=\tilde{x}$ となるようなものが存在する．このリフトを $\gamma$ の定義域で繰り返し得ることで，定義域を $\mathbb{R}$ まで拡張することができる．このリフトは，$dp_{\tilde{x}}(\tilde{\gamma}^\prime(0))=\gamma^\prime(0)=dp_{\tilde{x}}(v)$ と $dp_{\tilde{x}}$ の単射性から $\tilde{\gamma}^\prime(0)=v$ である．このことから，$\widetilde{M}$ の測地的完備性が従う．
+$\widetilde{M}$ が測地的完備であることを示すために，任意の $\tilde{x}\in\widetilde{M}$ と $v\in T_{\tilde{x}}(\widetilde{M})$ をとる．$M$ が測地的完備なので，$\gamma(0)=p(\tilde{x})\in M$，$\gamma^\prime(0)=dp_{\tilde{x}}(v)\in T_{p(\tilde{x})}(M) $ となる測地線 $\gamma\colon\mathbb{R}\rightarrow \widetilde{M}$ が存在する．リフトの存在性 (Lemma~\ref{lift_lem}) より，$\gamma|_{[0,1]}$ のリフト $\tilde{\gamma}\colon[0,1]\rightarrow \widetilde{M}$ であり，$\tilde{\gamma}(0)=\tilde{x}$ となるようなものが存在する．このリフトを $\gamma$ の定義域で繰り返し得ることで，定義域を $\mathbb{R}$ まで拡張することができる．このリフトは，$dp_{\tilde{x}}(\tilde{\gamma}^\prime(0))=\gamma^\prime(0)=dp_{\tilde{x}}(v)$ と $dp_{\tilde{x}}$ の単射性から $\tilde{\gamma}^\prime(0)=v$ である．このことから，$\widetilde{M}$ の測地的完備性が従う．
 
-Hopf-Rinowの定理より，測地的完備な空間は proper かつ測地的であるので $\widetilde{M}$ もそうである．\\
+Hopf-Rinowの定理より，測地的完備な空間は (\ref{subsec_jyunbi}~節て定義した) proper かつ測地的であるので $\widetilde{M}$ もそうである．\\
 
 % $M$ がコンパクトな距離空間⇒完備である (距離空間の性質)\\
 % $M$ が距離空間として完備⇒測地的完備 (Hopf-Rinow の定理)\\
@@ -568,7 +568,7 @@ Hopf-Rinowの定理より，測地的完備な空間は proper かつ測地的�
 % $\widetilde{M}$ が測地的完備⇒$\widetilde{M}$ 上の有界閉集合がコンパクト,$\widetilde{M}$ が測地的である (Hopf-Rinow の定理)\\
 % という流れであることは理解した．\\
 \noindent
-群作用が等長であること：
+群作用が等長であることの証明：
 
 $f\in\pi_1(M)$ とする．リーマン多様体における距離の定義より，$f$ でベクトルを送る前と送った後で内積の値が一致することを示せば十分である． $p\circ f=p$ より，任意の $\tilde{x}\in\widetilde{M}$ において，微分 $dp_{f(\tilde{x})}\circ df_{\tilde{x}}=dp_{\tilde{x}}$ が成立する．$u,v\in T_{\tilde{x}}(\widetilde{M})$ を $f$ で送った $df_{\tilde{x}}(u),df_{\tilde{x}}(v)$ の内積は，
 \begin{align*}
@@ -579,31 +579,31 @@ $f\in\pi_1(M)$ とする．リーマン多様体における距離の定義よ�
 となり，$f$ で送る前の $u,v$ の内積と一致する．\\
 
 \noindent
-群作用が余コンパクトであること：
+群作用が余コンパクトであることの証明：
 
-被覆空間の定義より，$\pi_1(M)\backslash \widetilde{M}$ は $M$ と同相である．仮定より $M$ はコンパクトなので，$\pi_1(M)\backslash \widetilde{M}$ もそうである．\\
+被覆空間の定義より，商集合 $\pi_1(M)\backslash \widetilde{M}$ は $M$ と同相である．仮定より $M$ はコンパクトなので，商集合 $\pi_1(M)\backslash \widetilde{M}$ もそうである．\\
 
 \noindent
-群作用が properly discontinuous であること：
+群作用が properly discontinuous であることの証明：
 
 任意のコンパクトな集合 $\widetilde{K}\subset\widetilde{M}$ をとる．積空間 $\widetilde{K}\times\widetilde{K}$ 上の点 $(\tilde{x},\tilde{y})$ を覆う開集合を以下のように定める．
 \begin{enumerate}
-  \item $p(\tilde{x})\neq p(\tilde{y})$ のときは，($M$ のハウスドルフ性から) 互いに素であるような $p(\tilde{x}),p(\tilde{y})$ の開集合 $U_{p(\tilde{x})}$，$U_{p(\tilde{y})}$ が取れるので，それらを引き戻した $\widetilde{U}_{\tilde{x}}\ni \tilde{x},\widetilde{U}_{\tilde{y}}\ni \tilde{y}$ の直積．\label{case1}
-  \item $p(\tilde{x})= p(\tilde{y})$ のときは，$p(\tilde{x})=p(\tilde{y})$ の近傍 $U$ の逆像 $p^{-1}(U)$ から，$\tilde{x},\tilde{y}$ を含むようにそれぞれ選んだ開集合 $\widetilde{U}_{\tilde{x}},\widetilde{U}_{\tilde{y}}$ の直積．\label{case2}
+  \item $p(\tilde{x})\neq p(\tilde{y})$ のときは，($M$ のハウスドルフ性から) 互いに素であるような $p(\tilde{x}),p(\tilde{y})$ をそれぞれ含む開集合 $U_{p(\tilde{x})}$，$U_{p(\tilde{y})}$ が取れるので，それらを引き戻した $\widetilde{U}_{\tilde{x}}\ni \tilde{x},\widetilde{U}_{\tilde{y}}\ni \tilde{y}$ の直積．\label{case1}
+  \item $p(\tilde{x})= p(\tilde{y})$ のときは，$p(\tilde{x})=p(\tilde{y})$ の近傍 $U$ の逆像 $p^{-1}(U)$ から，$\tilde{x},\tilde{y}$ をそれぞれ含むようにそれぞれ選んだ開集合 $\widetilde{U}_{\tilde{x}},\widetilde{U}_{\tilde{y}}$ の直積．\label{case2}
 \end{enumerate}
 
-このとき，\eqref{case1} の開集合 $\widetilde{U}_{\tilde{x}}$，$\widetilde{U}_{\tilde{y}}$ では，任意の $g\in\pi_1(M)\setminus \{e\}$ に対し $p(g\cdot\widetilde{U}_{\tilde{x}})\cap p(\widetilde{U}_{\tilde{y}})=p(\widetilde{U}_{\tilde{x}})\cap p(\widetilde{U}_{\tilde{y}})=U_{p(\tilde{x})}\cap U_{p(\tilde{y})}=\emptyset$ となるため， $g\cdot\widetilde{U}_{\tilde{x}}\cap \widetilde{U}_{\tilde{y}}=\emptyset$ である．また，\eqref{case2} の開集合 $\widetilde{U}_{\tilde{x}}$，$\widetilde{U}_{\tilde{y}}$ では，$g\cdot\tilde{x}=\tilde{y}$ となるので，被覆変換の一意性 (Lemma \ref{deck_lemma}) より $g\cdot\widetilde{U}_{\tilde{x}}\cap \widetilde{U}_{\tilde{y}}\neq\emptyset$ となる $g\in\pi_1(M)\setminus\{e\}$ は高々一個である．
+このとき，\eqref{case1} の開集合 $\widetilde{U}_{\tilde{x}}$，$\widetilde{U}_{\tilde{y}}$ では，任意の $g\in\pi_1(M)\setminus \{e\}$ に対し $p(g\cdot\widetilde{U}_{\tilde{x}})\cap p(\widetilde{U}_{\tilde{y}})=p(\widetilde{U}_{\tilde{x}})\cap p(\widetilde{U}_{\tilde{y}})=U_{p(\tilde{x})}\cap U_{p(\tilde{y})}=\emptyset$ となるため， $g\cdot\widetilde{U}_{\tilde{x}}\cap \widetilde{U}_{\tilde{y}}=\emptyset$ である．また，\eqref{case2} の開集合 $\widetilde{U}_{\tilde{x}}$，$\widetilde{U}_{\tilde{y}}$ では，$g\cdot\tilde{x}=\tilde{y}$ となるので，被覆変換の一意性 (Lemma~\ref{deck_lemma}) より $g\cdot\widetilde{U}_{\tilde{x}}\cap \widetilde{U}_{\tilde{y}}\neq\emptyset$ となる $g\in\pi_1(M)\setminus\{e\}$ は高々一個である．
 
 $\widetilde{K}\times\widetilde{K}$ はコンパクトなので，以上の開集合からなる開被覆のうち，有限個で $\widetilde{K}\times\widetilde{K}$ を覆うことができる．各開集合で $g\cdot\widetilde{U}_{\tilde{x}}\cap \widetilde{U}_{\tilde{y}}\neq\emptyset$ となる $g\in\pi_1(M)\setminus\{e\}$ は高々一個であるので，$\{g\in\pi_1(M)\mid g\cdot \widetilde{K}\cap\widetilde{K}\neq\emptyset\}$ は有限集合である．
 \end{proof}
 
 \begin{ex}
-  $S^1$ の基本群は $\pi_1(S^1)\cong \mathbb{Z}$ であり，$S^1$ の普遍被覆は $\mathbb{R}$ である．よって，Corollary \ref{cor} より，$\mathbb{Z}$ と $\mathbb{R}$ は擬等長である．
+  $S^1$ の基本群は $\pi_1(S^1)\cong \mathbb{Z}$ であり，$S^1$ の普遍被覆は $\mathbb{R}$ である．よって，Corollary~\ref{cor} より，$\mathbb{Z}$ と $\mathbb{R}$ は擬等長である．
 \end{ex}
 
 \appendix
 \section{付録}
-ここでは幾何学的群論の分野にて基本的な概念となるCayleyグラフや，その周辺の事項について述べる．\ref{fundamentalgroup}--\ref{coveringspace} 節の基本群や被覆空間の概念は，\cite[Section 1]{2} を参考にした．なおここで述べるグラフとは，多重辺やループは許していないことに注意．
+ここでは幾何学的群論の分野にて基本的な概念となるCayleyグラフや，その周辺の事項について述べる．\ref{fundamentalgroup}--\ref{coveringspace}~節の基本群や被覆空間の概念は，~\cite[Section 1]{2} を参考にした．なおここで述べるグラフとは，多重辺やループは許していないことに注意．
 \subsection{Cayley Graphs}
 群とその生成系に関するCayleyグラフとは，生成系を用いて群の構造を可視化することを目的としており，幾何学的群論では幅広く用いられている．たくさんの重要な性質を持っているが，ここではその定義と特徴的な定理の紹介に留める．
 
@@ -711,7 +711,7 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
   自由群の部分群は自由群である．
 \end{prop}
 \begin{proof}
-  $G$ を自由群とすると，Theorem \ref{freeactiongroup} より，$G$ が自由に作用する tree が存在する．$G$ の部分群もこの tree に自由に作用するため，Theorem \ref{freeactiongroup} より，$G$ の部分群は自由群である．
+  $G$ を自由群とすると，Theorem~\ref{freeactiongroup} より，$G$ が自由に作用する tree が存在する．$G$ の部分群もこの tree に自由に作用するため，Theorem~\ref{freeactiongroup} より，$G$ の部分群は自由群である．
 \end{proof}
 
 % \begin{dfn}
@@ -734,19 +734,19 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
 \end{dfn}
  
 \begin{rem}
-  Definition \ref{homotopy} における $\simeq$ は，始点と終点が一致しているパス集合上の同値関係である．
+  Definition~\ref{homotopy} における $\simeq$ は，始点と終点が一致しているパス集合上の同値関係である．
 \end{rem}
 
 \begin{dfn}
   パス $f,g\colon I\rightarrow X$ に関して，$f(1)=g(0)$ のとき， $f$ と $g$ の演算を，
 \[
-f \cdot g := 
+f \cdot g \coloneqq
 \begin{cases}
     f(2s) \vphantom{g} & (s \in [0, 1/2]), \\
     g(2s - 1) & (s \in [1/2, 1])
 \end{cases}
 \]
-  とする．$x_0\in X$ を基点としたループの集合を Definition \ref{homotopy} の同値関係 $\simeq$ で割り，演算
+  とする．$x_0\in X$ を基点としたループの集合を Definition~\ref{homotopy} の同値関係 $\simeq$ で割り，演算
   $$[f][g]\coloneqq[f\cdot g]$$
   を導入することで群ができる．この群を \textbf{基本群 (fundamental group)} といい，$\pi_1(X,x_0)$ と表記する．
 \end{dfn}
@@ -842,7 +842,7 @@ f \cdot g :=
   \begin{equation*}
     \|u\|\coloneqq\sqrt{g_p(u,u)}
   \end{equation*}
-  を，$u$ における \textbf{ノルム (norm)} という．さらに，曲線 $\gamma:[a,b]\rightarrow M$ に対し，
+  を，$u$ における \textbf{ノルム (norm)} という．さらに，曲線 $\gamma\colon[a,b]\rightarrow M$ に対し，
   \begin{equation*}
     L(\gamma)\coloneqq\int_{a}^{b}\Bigl\|\frac{d\gamma}{dt}\Bigr\|dt
   \end{equation*}
@@ -868,12 +868,12 @@ f \cdot g :=
 \end{thm}
 
 \begin{thebibliography}{9}
-  \bibitem{3} A.S. Švarc, \textit{A volume invariant of coverings}, Doklady Akademii Nauk SSSR, vol.105, 1955, pp.32-34.
+  \bibitem{3} A.S. Švarc, \textit{A volume invariant of coverings}, Doklady Akademii Nauk SSSR, vol.105, 1955, pp.32--34.
   \bibitem{2} Allen Hatcher, \textit{Algebraic Topology}, Cambridge University Press, 2001.
   \bibitem{1} Clara Löh, \textit{Geometric Group Theory}, Springer, 2018.
-  \bibitem{4} J. Milnor, \textit{A note on curvature and fundamental group}, Journal Of Differential Geometry, vol.2, No.1, 1968, pp.1-7.
-  \bibitem{5} J. Milnor, \textit{Growth of finitely generated solvable groups}, Journal Of Differential Geometry, vol.2, No.1, 1968, pp.447-449.
-  \bibitem{6} V.A. Efremovič, \textit{The proximity geometry of Riemannian manifolds}, Uspekhi Matematicheskikh Nauk 8, No.5, 1953, pp.189–191.
+  \bibitem{4} J. Milnor, \textit{A note on curvature and fundamental group}, Journal of Differential Geometry, vol.2, No.1, 1968, pp.1--7.
+  \bibitem{5} J. Milnor, \textit{Growth of finitely generated solvable groups}, Journal of Differential Geometry, vol.2, No.1, 1968, pp.447--449.
+  \bibitem{6} V.A. Efremovič, \textit{The proximity geometry of Riemannian manifolds}, Uspekhi Matematicheskikh Nauk 8, No.5, 1953, pp.189--191.
   \bibitem{7} 河野 俊丈，測地線と完備性など, https://www.ms.u-tokyo.ac.jp/~kohno/lectures/dg9.pdf (2026/1/28 閲覧)．
   \bibitem{9} 佐藤 隆夫，基本群と被覆空間，裳華房，2023．
   \bibitem{8} 正井 秀俊，群と幾何をみる，日本評論社，2023．

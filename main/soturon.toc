@@ -11,8 +11,8 @@
 \contentsline {subsection}{\numberline {4.2}^^c5^^a0varc-Milnor Lemma II}{16}{}%
 \contentsline {subsection}{\numberline {4.3}応用例}{17}{}%
 \contentsline {section}{\numberline {A}付録}{18}{}%
-\contentsline {subsection}{\numberline {A.1}Cayley Graphs}{18}{}%
+\contentsline {subsection}{\numberline {A.1}Cayley Graphs}{19}{}%
 \contentsline {subsection}{\numberline {A.2}Group Actions}{19}{}%
 \contentsline {subsection}{\numberline {A.3}Fundamental Groups}{21}{}%
-\contentsline {subsection}{\numberline {A.4}Covering Spaces}{21}{}%
+\contentsline {subsection}{\numberline {A.4}Covering Spaces}{22}{}%
 \contentsline {subsection}{\numberline {A.5}Riemannian Manifolds}{23}{}%
