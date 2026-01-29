@@ -72,10 +72,9 @@
 
 そこで，一定誤差のズレを許容する``大雑把な視点''を導入し局所的な違いを無視することで，大局的な部分だけを見比べ，群の本質的な構造を抽出することができる．擬等長写像(quasi-isometric)とは，距離空間から距離空間への写像であり，送った先の二点間の距離が，送る前の二点間の距離の定数倍と定数項で，点に依らず一様に抑えられるようなものを指す．これによって二つの距離空間の大局的な構造のみを見比べることができ，Cayleyグラフの生成系に依存してしまう問題を解決できる．
 
-Švarc-Milnor Lemma とは，「群がよい距離空間によい群作用をしているとき，その群の有限生成系が分かり，群の構造と距離空間の構造が``大雑把に''等しい」という主張であり，その内容から「幾何学的群論の基本補題」とも言われている．一般に，群が与えられたとき，その群が有限生成であるかどうかの判別は難しいことがあるのだが，この補題では有限生成であることが証明できる．それだけでなく，有限生成系が分かる他，作用している空間の持つ構造と群の持つ構造が大雑把に等しいことまで分かる．群のことを知りたければ，よく知られている距離空間へのうまい作用さえ見つけることができればよい．
+Švarc-Milnor Lemma とは，「群がよい距離空間によい群作用をしているとき，その群の有限生成系が分かり，群の構造と距離空間の構造が``大雑把に''等しい」という主張であり，その内容から「幾何学的群論の基本補題」とも言われている．一般に，群が与えられたとき，その群が有限生成であるかどうかの判別は難しいことがあるのだが，この補題では有限生成であることが証明できる．それだけでなく，有限生成系が分かる他，作用している空間の持つ構造と群の持つ構造が大雑把に等しいことまで分かる．よく知られている距離空間へのうまい作用さえ見つけることができれば，群の構造を理解する足掛かりとなる．
 
-%1953年，この補題の先駆けとなるアイデアが Efremovich の論文にて発表され ~\cite{6}，
-1955年に Švarc の論文にて主補題が用いられた ~\cite{3}．その後1968年に Milnor が Švarc とは独立して本補題を見つけ応用した ~\cite[Theorem 2]{4}．その後，Švarc の先行研究を知った Milnor は ``Švarc の論文にすでに多くのアイデアが含まれていた'' と自身の論文にて述べている~\cite{5}．
+Bridson と Haefliger によると \cite{10}，1953年，この補題の先駆けとなるアイデアが Efremovich の論文 \cite{6} にて見つかっている．その後，1955年に Švarc の論文にて主補題が用いられ ~\cite{3}，1968年に Milnor が Švarc とは独立して本補題を見つけ応用した ~\cite[Theorem 2]{4}．その後，Švarc の先行研究を知った Milnor は ``Švarc の論文にすでに多くのアイデアが含まれていた'' と自身の論文にて述べている~\cite{5}．
 
 本論文では Löh~\cite[Section 5]{1} の議論をもとに，Švarc-Milnor Lemma の証明と，その補題をいいかえた主張の証明を与えることを主目的としている．\ref{sec_jyunbi}~節にて必要な用語の定義を行い，\ref{sec_hodai}~節にて Švarc-Milnor Lemma の証明，\ref{sec_ouyou}~節にて，主補題のいいかえを紹介，証明を行う．なお，幾何学的群論におけるCayleyグラフなどの基本的概念は付録としてまとめているので，そちらを参照されたい．
 
@@ -887,10 +886,11 @@ $$h_q(u,v)\coloneqq g_{p(q)}(dp_{q}(u),dp_{q}(v))$$
 \begin{thebibliography}{9}
   \bibitem{3} A.S. Švarc, \textit{A volume invariant of coverings}, Doklady Akademii Nauk SSSR, vol.105, 1955, pp.32--34.
   \bibitem{2} Allen Hatcher, \textit{Algebraic Topology}, Cambridge University Press, 2001.
+  \bibitem{10} Bridson-Haefliger, \textit{Metric Spaces of Non-Positive Curvature}, Springer, 1999.
   \bibitem{1} Clara Löh, \textit{Geometric Group Theory}, Springer, 2018.
   \bibitem{4} J. Milnor, \textit{A note on curvature and fundamental group}, Journal of Differential Geometry, vol.2, No.1, 1968, pp.1--7.
   \bibitem{5} J. Milnor, \textit{Growth of finitely generated solvable groups}, Journal of Differential Geometry, vol.2, No.1, 1968, pp.447--449.
-  %\bibitem{6} V.A. Efremovič, \textit{The proximity geometry of Riemannian manifolds}, Uspekhi Matematicheskikh Nauk 8, No.5, 1953, pp.189--191.
+  \bibitem{6} V.A. Efremovič, \textit{The proximity geometry of Riemannian manifolds}, Uspekhi Matematicheskikh Nauk 8, No.5, 1953, pp.189--191.
   \bibitem{7} 河野 俊丈，測地線と完備性など, https://www.ms.u-tokyo.ac.jp/~kohno/lectures/dg9.pdf (2026/1/28 閲覧)．
   \bibitem{9} 佐藤 隆夫，基本群と被覆空間，裳華房，2023．
   \bibitem{8} 正井 秀俊，群と幾何をみる，日本評論社，2023．
