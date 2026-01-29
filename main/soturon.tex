@@ -21,10 +21,12 @@
 \theoremstyle{definition}
 \newtheorem{dfn}{Definition}[section]
 \newtheorem{thm}[dfn]{Theorem}
-\newtheorem*{rem}{Remark}
+\newtheorem*{rem*}{Remark}
+\newtheorem{rem}[dfn]{Remark}
 \newtheorem{prop}[dfn]{Proposition}
 \newtheorem{cor}[dfn]{Corollary}
-\newtheorem*{ex}{Example}
+\newtheorem{ex}[dfn]{Example}
+\newtheorem*{ex*}{Example}
 \newtheorem{lem}[dfn]{Lemma}
 \def\labelenumi{(\theenumi)}
 
@@ -72,7 +74,8 @@
 
 Švarc-Milnor Lemma とは，「群がよい距離空間によい群作用をしているとき，その群の有限生成系が分かり，群の構造と距離空間の構造が``大雑把に''等しい」という主張であり，その内容から「幾何学的群論の基本補題」とも言われている．一般に，群が与えられたとき，その群が有限生成であるかどうかの判別は難しいことがあるのだが，この補題では有限生成であることが証明できる．それだけでなく，有限生成系が分かる他，作用している空間の持つ構造と群の持つ構造が大雑把に等しいことまで分かる．群のことを知りたければ，よく知られている距離空間へのうまい作用さえ見つけることができればよい．
 
-1953年，この補題の先駆けとなるアイデアが Efremovich の論文にて発表され ~\cite{6}，1955年に Švarc の論文にて主補題が用いられた ~\cite{3}．その後1968年に Milnor が Švarc とは独立して本補題を見つけ応用した ~\cite[Theorem 2]{4}．その後，Švarc の先行研究を知った Milnor は ``Švarc の論文にすでに多くのアイデアが含まれていた'' と自身の論文にて述べている~\cite{5}．
+%1953年，この補題の先駆けとなるアイデアが Efremovich の論文にて発表され ~\cite{6}，
+1955年に Švarc の論文にて主補題が用いられた ~\cite{3}．その後1968年に Milnor が Švarc とは独立して本補題を見つけ応用した ~\cite[Theorem 2]{4}．その後，Švarc の先行研究を知った Milnor は ``Švarc の論文にすでに多くのアイデアが含まれていた'' と自身の論文にて述べている~\cite{5}．
 
 本論文では Löh~\cite[Section 5]{1} の議論をもとに，Švarc-Milnor Lemma の証明と，その補題をいいかえた主張の証明を与えることを主目的としている．\ref{sec_jyunbi}~節にて必要な用語の定義を行い，\ref{sec_hodai}~節にて Švarc-Milnor Lemma の証明，\ref{sec_ouyou}~節にて，主補題のいいかえを紹介，証明を行う．なお，幾何学的群論におけるCayleyグラフなどの基本的概念は付録としてまとめているので，そちらを参照されたい．
 
@@ -93,9 +96,9 @@
 さらに，二つの距離空間 $X,Y$ が \textbf{等長 (isometric)} であるとは，等長写像 $f\colon X\rightarrow Y$ が存在するときをいう． 
 \end{dfn}
 
-\begin{rem}
+\begin{rem*}
  定義より，等長埋め込みならば単射な連続写像である．よって，等長写像は同相写像である．また，等長埋め込みは全射性を満たすと等長写像となる．
-\end{rem}
+\end{rem*}
 
 \begin{dfn}\label{bi-Lip}
 写像 $f\colon X\rightarrow Y$ が \textbf{bilipschitz埋め込み (bilipschitz embedding)} であるとは，ある定数 $c\in\mathbb{R}_{>0}$ が存在し，任意の $x,x^\prime\in X$ に対して，
@@ -108,13 +111,13 @@
 さらに，二つの距離空間 $X,Y$ が \textbf{bilipschitz equivalent} であるとは，bilipschitz equivalence な写像 $f\colon X\rightarrow Y$ が存在するときをいう． 
 \end{dfn}
 
-\begin{ex}
+\begin{ex*}
 通常の距離が入った距離空間 $\mathbb{Z},2\mathbb{Z}$ に対し， $f\colon\mathbb{Z}\rightarrow 2\mathbb{Z}$ を，$f(n)=2n$ とすると，これは等長埋め込みではないが bilipschitz埋め込みである．実際，この写像は $c=2$ とすれば bilipschitz埋め込み の定義を満たす．また，$g\colon2\mathbb{Z}\rightarrow \mathbb{Z}$ を，$g(m)=m/2$ とすれば，$f,g$ によって $\mathbb{Z}$ と $2\mathbb{Z}$ は bilipschitz equivalent である．
-\end{ex}
+\end{ex*}
 
-\begin{rem}
+\begin{rem*}
 bilipschitz埋め込み は単射な連続写像である．よって，bilipschitz equivalence は同相写像である．また，bilipschitz埋め込み は全射性を満たすと bilipschitz equivalence となる．
-\end{rem}
+\end{rem*}
 
 \begin{dfn}
 写像 $f\colon X\rightarrow Y$ が 写像 $f^\prime\colon X\rightarrow Y$ から\textbf{finite distance} であるとは，ある定数$c\in\mathbb{R}_{>0}$ が存在し，任意の $x\in X$ に対して，
@@ -134,13 +137,15 @@ bilipschitz埋め込み は単射な連続写像である．よって，bilipsch
 さらに，二つの距離空間 $X,Y$ が \textbf{擬等長 (quasi-isometric)} であるとは，擬等長写像 $f\colon X\rightarrow Y$ が存在するときをいう．
 \end{dfn}
 
-\begin{ex}
+\begin{ex*}
 通常の距離が入った距離空間 $\mathbb{R},\mathbb{Z}$ に対し， $f\colon\mathbb{R}\rightarrow\mathbb{Z}$ を，$f(x)=\lfloor x \rfloor$ と定めると，これは bilipschitz embedding ではないが，擬等長埋め込みである．実際，この写像は $c=1,b=1$ とすれば擬等長埋め込みの定義を満たす．また，$\mathbb{Z}$ から $\mathbb{R}$ への包含写像を考えると，$f$ と包含写像によって $\mathbb{Z}$ と $\mathbb{R}$ は擬等長である．
-\end{ex}
+\end{ex*}
 
-\begin{rem}
+擬等長の直感的な理解は，「遠くから二つの集合を眺めたときに同じ形に見えるかどうか」である．$\mathbb{R}$ や $\mathbb{Z}$ は，局所的にみれば後者は離散的であるものの，遠くから見ればどちらも直線に見える．そのため，この二つは擬等長の関係である．また，有界な集合は遠くから見ると一点とみなせるため，一点集合と擬等長である．
+
+\begin{rem*}
 擬等長埋め込みは連続とは限らない(実際上の例の $f$ は連続でない)．同様に，擬等長写像は連続であるとは限らない(図\ref{map} 参照)．
-\end{rem}
+\end{rem*}
 
 \begin{figure}[h]
 \centering
@@ -149,9 +154,9 @@ bilipschitz埋め込み は単射な連続写像である．よって，bilipsch
 \label{map}
 \end{figure}
 
-\begin{rem}
+\begin{rem*}
   等長埋め込み同士の合成写像は等長埋め込みであり，bilipschitz埋め込み同士の合成写像はbilipschitz埋め込みであり，擬等長埋め込み同士の合成は擬等長埋め込みである．
-\end{rem}
+\end{rem*}
 
 定数倍と定数分のズレを許してしまうという，擬等長の``大雑把な視点''が幾何学的群論では重要なのだが，その擬等長に関する定義について，それと同値なものを紹介する．
 
@@ -164,11 +169,21 @@ Definition~\ref{QI} の 擬等長写像における二条件は，以下の二�
 \end{prop}
 
 \begin{proof}
-Definition~\ref{QI} を満たすならば［1］,［2］を満たすことの証明：\\
+以下の二つ
+\begin{enumerate}
+  \item[・] Definition~\ref{QI} を満たすならば［1］,［2］を満たす．
+  \item[・] ［1］,［2］を満たすならば Definition~\ref{QI} を満たす．
+\end{enumerate}
+を示せばよい．
+
+\noindent
+・ Definition~\ref{QI} を満たすならば［1］,［2］を満たすことの証明：\\
 ［2］を示せばよい．$f\colon X\rightarrow Y$ に対し，定義より，ある擬等長写像 $g\colon Y\rightarrow X$ が存在し，$f\circ g$ が $\id_Y$ と finite distance である．任意の $y\in Y$ をとる．$x\coloneqq g(y)$ と定めることで，
 $$d_Y(f(x),y)=d_Y((f\circ g)(y),y)\leq c$$
 を満たす．\\
-［1］,［2］を満たすならば Definition~\ref{QI} を満たすことの証明：\\ 
+
+\noindent
+・［1］,［2］を満たすならば Definition~\ref{QI} を満たすことの証明：\\ 
 仮定より，ある定数 $c\in\mathbb{R}_{>0}$ が存在し，
 \begin{enumerate}
   \item 任意の $x,x^\prime \in X$ に対し，$\frac{1}{c}d_X(x,x^\prime)-c \leq d_Y(f(x),f(x^\prime)) \leq cd_X(x,x^\prime)+c,$\label{1}
@@ -201,21 +216,21 @@ Proposition~\ref{dense image} の条件［2］を $f$ が満たすとき，$f$ �
 であり，これは $G$ 上の距離関数である．
 \end{dfn}
 
-\begin{ex}
+\begin{ex*}
   群 $G$ の生成系 $S$ に関する $\Cay(G,S)$ において，グラフ上の頂点間の距離とはまさに $d_S$ のことである($\Cay(G,S)$ の定義は Definition~\ref{cayley} を参照されたい)．
-\end{ex}
+\end{ex*}
 
 \begin{dfn}\label{GQIX}
 $G$ を有限生成群としたとき，$G$ が距離空間 $X$ に \textbf{bilipschitz equivalent} であるとは，$G$ のある有限な生成系 $S$ がとれ，距離空間 $(G,d_S)$ と $X$ が (\ref{subsec_QI_of_Metric}~節で定義した) bilipschitz equivalent であることをいう．また，$G$ が $X$ に \textbf{擬等長 (quasi-isometric)} であるとは，ある有限な生成系 $S$ がとれ，距離空間 $(G,d_S)$ と $X$ が (\ref{subsec_QI_of_Metric}~節で定義した) quasi-isometric であることをいう．
 \end{dfn}
 
-\begin{rem}
+\begin{rem*}
   群 $G$ とその生成系 $S$ からできる距離空間 $(G,d_S)$ では，$G$ が有限生成であること，$S$ を有限としていることに注意．
-\end{rem}
+\end{rem*}
 
-\begin{ex}
-  群 $\mathbb{Z}^2$ とその生成系 $S=\{(0,1),(1,0)\}$ からなる距離空間 $(\mathbb{Z}^2,d_S)$ は，距離空間 $\mathbb{R}^2$ と擬等長である．
-\end{ex}
+\begin{ex*}
+  群 $\mathbb{Z}^2$ とその生成系 $S=\{(0,1),(1,0)\}$ からなる距離空間 $(\mathbb{Z}^2,d_S)$ は，距離空間 $\mathbb{R}^2$ と擬等長である．このことは，Example~\ref{rei} から証明できる．
+\end{ex*}
 
 群に導入する距離関数を word metric にした場合，その定義からこの距離空間は生成系に大きく依存するため，距離空間と群が同じ構造を持つかどうかの議論が難しくなる．しかし，擬等長 (より一般に，bi-Lip) という``大雑把な視点''で見ると，生成系に依らずに議論することが可能である．
 
@@ -248,32 +263,28 @@ $$c\coloneqq\underset{s\in S\cup S^{-1}}{\max}d_{S^\prime}(e,s)$$
 となり，$d_{S^\prime}(g,h)\leq cd_S(g,h)$ が得られる．同様の議論を $S,S^\prime$ を逆にしてすれば $d_S(g,h)\leq cd_{S^\prime}(g,h)$ が得られる．id は全単射であることも含めると，id は bilipschitz equivalence である．
 \end{proof}
 
-\begin{rem}
-  Definition~\ref{GQIX} と Proposition~\ref{Sprime} より，距離空間に bilipschitz equivalent な群(quasi-isometric な群)は，その有限生成系の取り方に依らない．
-\end{rem}
-
 \subsection{Quasi-Geodesic Metric Spaces}
 本節では，\ref{intro}~節でも記した，よい距離空間について述べる．一般に距離空間では，二点が与えられたときに二点間の距離が定まるが，その距離を道のりとしたパスが距離空間上に存在するとは限らない．一方で，そのようなことが可能であるような距離空間を測地的といい，その条件をさらに緩めたものを擬測地的という．
 \begin{dfn}
 距離空間 $X$ 上の長さ $L\in\mathbb{R}_{>0}$ の \textbf{測地線 (geodesic)} とは，$[0,L]\subset\mathbb{R}$ から $X$ への等長埋め込み，$\gamma\colon[0,L]\rightarrow X$ のことである．また，$X$ が \textbf{測地的 (geodesic)} であるとは，任意の $x,x^\prime\in X$ において，$\gamma(0)=x$，$\gamma(L)=x^\prime$ となるような 等長埋め込み $\gamma$ がとれるときをいう．
 \end{dfn}
 
-\begin{ex}
+\begin{ex*}
 通常の距離が入った $\mathbb{R}^n$ は測地的だが，$\mathbb{R}^n\setminus\{0\}$ は測地的でない．実際，$(1,0)$ と $(-1,0)$ 間の距離は $2$ だが，この測地線は原点を通ってしまう．一般に，$\mathbb{R}^n$ 上の凸集合は測地的である．
-\end{ex}
+\end{ex*}
 
 \begin{dfn}
 距離空間 $X$ 上の \textbf{\bm{$(c,b)$}-擬測地線 (\bm{$(c,b)$}-quasi-godesic)} とは，とは，$[0,L]\subset\mathbb{R}$ から $X$ への $(c,b)$-擬等長埋め込み，$\gamma\colon[0,L]\rightarrow X$ のことである．また，$X$ が \textbf{\bm{$(c,b)$}-擬測地的 (\bm{$(c,b)$}-quasi-godesic)} であるとは，任意の $x,x^\prime\in X$ において，$\gamma(0)=x$，$\gamma(L)=x^\prime$ となるような $(c,b)$-擬等長埋め込み，$\gamma$ がとれるときをいう．また，$(c,b)$ を省略し，単に擬測地線や擬測地的ともいう．
 \end{dfn}
 
-\begin{ex}
+\begin{ex*}
 通常の距離が入った $\mathbb{R}^n\setminus\{0\}$ は，$(1,\epsilon)$-測地的である($\epsilon>0$)．これは，原点中心で十分小さい半径の円で原点を迂回すれば，擬測地線が得られるからである．
-\end{ex}
+\end{ex*}
 
 \section{主補題}\label{sec_hodai}
 本論文の主補題となる Švarc-Milnor Lemma と，それに関連する主張について紹介する．
 \subsection{Švarc-Milnor Lemma I}
-\begin{lem}\label{svarc}
+\begin{lem}[{\cite[Proposition 5.4.1]{1}}]\label{svarc}
 $G$ を群とし，$(c,b)$-測地的な距離空間 $(X,d_X)$ 上に等長な群作用があるとする ($b,c>0$)．もしある部分集合 $B\subset X$ が存在し，
    \begin{enumerate}
    \item[(a)] $\diam B\coloneqq\underset{x,y\in B}{\sup}d(x,y)<\infty,$
@@ -385,7 +396,7 @@ $$d_X(x,s_i\cdot x)\leq \diam B+2b+\diam B=2(\diam B+b)$$
 を得る．
 \end{proof}
 
-\begin{ex}
+\begin{ex}\label{rei}
 通常の距離が入った距離空間 $\mathbb{R}^2$ に群 $\mathbb{Z}^2$ が，
 \begin{align*}
   (1,0)\cdot (x,y) = (x+1,y),\\
@@ -410,7 +421,7 @@ $$B=\{(x,y)\in\mathbb{R}^2\mid -1/2\leq x\leq 1/2，-1/2\leq y\leq 1/2\}$$
 \end{ex}
 \subsection{Švarc-Milnor Lemma I の拡張}
 Lemma~\ref{svarc} は，群作用が等長でなくても成立する．つまり，以下のとおりである．
-\begin{lem}
+\begin{lem}[{\cite[Exercise 5.E.15]{1}}]
   Lemma~\ref{svarc} は，群 $G$ が距離空間 $X$ に等長な群作用だけでなく，擬等長な群作用としても成り立つ．
 \end{lem}
 証明は，以下のLemma~\ref{lem1}--\ref{lem3} より与えらえる．
@@ -498,9 +509,9 @@ Lemma~\ref{svarc} の主張を言い換えた主張が存在する．その主�
   が常にコンパクトになることをいう．
 \end{dfn}
 
-\begin{ex}
+\begin{ex*}
   ユークリッド空間は proper である一方，$\mathbb{R}$ の部分空間として $(0,1)$ に相対位相を入れた空間は，$(0,1)$ 自身は有界閉集合だがコンパクトでない．また，一つの頂点から無限本の辺が伸びているようなグラフは proper でない．
-\end{ex}
+\end{ex*}
 
 \begin{dfn}
  群 $G$ が位相空間 $X$ に作用しているとする．この作用が \textbf{properly discontinuous} であるとは，任意のコンパクトな集合 $K\subset X$ に関して，
@@ -508,9 +519,9 @@ Lemma~\ref{svarc} の主張を言い換えた主張が存在する．その主�
  が有限集合であることをさす．
 \end{dfn}
 
-\begin{ex}
+\begin{ex*}
 $\mathbb{R}$ に $\mathbb{Z}$ が加法で群作用をしているとき，この作用は properly discontinuous である．しかし，$\mathbb{Q}$ が加法で群作用をしている場合，この作用は properly discontinuous ではない．
-\end{ex}
+\end{ex*}
 
 \begin{dfn}
   群 $G$ が位相空間 $X$ に作用しているとする．この作用が \textbf{余コンパクト (cocompact)} であるとは，商集合 $G\backslash X$ がコンパクトであることをいう．言い換えると，あるコンパクトな集合 $K\subset X$ が存在し，
@@ -518,12 +529,12 @@ $\mathbb{R}$ に $\mathbb{Z}$ が加法で群作用をしているとき，こ�
   を満たす．商集合に関しては Definition~\ref{orbit_quotient} を参照されたい．
 \end{dfn}
 
-\begin{ex}
+\begin{ex*}
   $\mathbb{R}$ に $\mathbb{Z}$ や $\mathbb{Q}$ が加法で群作用をしているとき，この作用は余コンパクトである．一方，$\mathbb{R}^2$ に $\mathbb{Z}$ が作用する場合，これは余コンパクトでない(商集合は$S^1\times \mathbb{R}$ と同相であり，これはコンパクトでないため)．
-\end{ex}
+\end{ex*}
 
 \subsection{Švarc-Milnor Lemma II}\label{subsec_svarc_top}
-\begin{lem}
+\begin{lem}[{\cite[Corollary 5.4.2]{1}}]
   群 $G$ が，proper かつ擬測地的な距離空間 $(X,d_X)$ に，等長に作用しているとする．この群作用が properly discontinuous かつ余コンパクトであれば，$G$ は有限生成であり，$G$ と $X$ は擬等長である．
 \end{lem}
 \begin{proof}
@@ -540,10 +551,10 @@ $X$ は擬測地的であるので，Lemma~\ref{svarc} の仮定を満足する�
 
 \subsection{応用例}
 この補題の応用例として，以下のような主張がある．
-\begin{cor}\label{cor}
+\begin{cor}[{\cite[Corollary 5.4.10]{1}}]\label{cor}
   $M$ をコンパクトで境界のないリーマン多様体とする．$M$ の普遍被覆 $\widetilde{M}$ に，基本群 $\pi_1(M)$ が被覆変換で群作用をしているとき， $\pi_1(M)$ は有限生成であり，任意の $\tilde{x}\in\widetilde{M}$ によって定まる写像
   $$\pi_1(M)\rightarrow \widetilde{M}\; ;\; g\mapsto g\cdot \tilde{x}$$
-  は擬等長写像である．被覆変換に関しては Definition~\ref{def_deck} を参照されたい．
+  は擬等長写像である．被覆変換に関しては Definition~\ref{def_deck} を，$\widetilde{M}$ 上の距離関数に関しては Definition~\ref{kyori} を参照されたい．
 \end{cor}
 
 \begin{proof}
@@ -554,7 +565,7 @@ $$\tilde{g}_{\tilde{x}}(u,v)\coloneqq g_{p(\tilde{x})}(dp_{\tilde{x}}(u),dp_{\ti
 とすることで，$\widetilde{M}$ に距離が入る．\\
 
 \noindent
-$\widetilde{M}$ が proper かつ測地的な距離空間であることの証明：
+$\widetilde{M}$ が proper かつ測地的な距離空間であることを示す．
 
 $M$ はコンパクトな距離空間のため(距離空間として)完備である．Hopf-Rinow の定理より，完備な距離空間は測地的完備であるので，$M$ は測地的完備である．
 
@@ -568,7 +579,7 @@ Hopf-Rinowの定理より，測地的完備な空間は (\ref{subsec_jyunbi}~節
 % $\widetilde{M}$ が測地的完備⇒$\widetilde{M}$ 上の有界閉集合がコンパクト,$\widetilde{M}$ が測地的である (Hopf-Rinow の定理)\\
 % という流れであることは理解した．\\
 \noindent
-群作用が等長であることの証明：
+群作用が等長であることを示す．
 
 $f\in\pi_1(M)$ とする．リーマン多様体における距離の定義より，$f$ でベクトルを送る前と送った後で内積の値が一致することを示せば十分である． $p\circ f=p$ より，任意の $\tilde{x}\in\widetilde{M}$ において，微分 $dp_{f(\tilde{x})}\circ df_{\tilde{x}}=dp_{\tilde{x}}$ が成立する．$u,v\in T_{\tilde{x}}(\widetilde{M})$ を $f$ で送った $df_{\tilde{x}}(u),df_{\tilde{x}}(v)$ の内積は，
 \begin{align*}
@@ -579,12 +590,10 @@ $f\in\pi_1(M)$ とする．リーマン多様体における距離の定義よ�
 となり，$f$ で送る前の $u,v$ の内積と一致する．\\
 
 \noindent
-群作用が余コンパクトであることの証明：
-
-被覆空間の定義より，商集合 $\pi_1(M)\backslash \widetilde{M}$ は $M$ と同相である．仮定より $M$ はコンパクトなので，商集合 $\pi_1(M)\backslash \widetilde{M}$ もそうである．\\
+被覆空間の定義より，商集合 $\pi_1(M)\backslash \widetilde{M}$ は $M$ と同相である．仮定より $M$ はコンパクトなので，商集合 $\pi_1(M)\backslash \widetilde{M}$ もそうである．このことから群作用が余コンパクトであることが従う．\\
 
 \noindent
-群作用が properly discontinuous であることの証明：
+群作用が properly discontinuous であることを示す．
 
 任意のコンパクトな集合 $\widetilde{K}\subset\widetilde{M}$ をとる．積空間 $\widetilde{K}\times\widetilde{K}$ 上の点 $(\tilde{x},\tilde{y})$ を覆う開集合を以下のように定める．
 \begin{enumerate}
@@ -597,9 +606,9 @@ $f\in\pi_1(M)$ とする．リーマン多様体における距離の定義よ�
 $\widetilde{K}\times\widetilde{K}$ はコンパクトなので，以上の開集合からなる開被覆のうち，有限個で $\widetilde{K}\times\widetilde{K}$ を覆うことができる．各開集合で $g\cdot\widetilde{U}_{\tilde{x}}\cap \widetilde{U}_{\tilde{y}}\neq\emptyset$ となる $g\in\pi_1(M)\setminus\{e\}$ は高々一個であるので，$\{g\in\pi_1(M)\mid g\cdot \widetilde{K}\cap\widetilde{K}\neq\emptyset\}$ は有限集合である．
 \end{proof}
 
-\begin{ex}
-  $S^1$ の基本群は $\pi_1(S^1)\cong \mathbb{Z}$ であり，$S^1$ の普遍被覆は $\mathbb{R}$ である．よって，Corollary~\ref{cor} より，$\mathbb{Z}$ と $\mathbb{R}$ は擬等長である．
-\end{ex}
+\begin{ex*}
+  $S^1$ の基本群は $\pi_1(S^1)\cong \mathbb{Z}$ であり，$S^1$ の普遍被覆は $\mathbb{R}$ である．よって，Corollary~\ref{cor} より，$\mathbb{Z}$ と $\mathbb{R}$ は擬等長である(なおこの事実は，Definition~\ref{GQIX} の定義から具体的に擬等長な写像を構成しても得られる)．
+\end{ex*}
 
 \appendix
 \section{付録}
@@ -617,7 +626,7 @@ $\widetilde{K}\times\widetilde{K}$ はコンパクトなので，以上の開集
   \end{enumerate}
 \end{dfn}
 
-\begin{ex}
+\begin{ex*}
 $\mathbb{Z}^2$ の生成系 $\{(1,0),(0,1)\}$ と，$\{(1,1),(0,1)\}$ に関するCayleyグラフは以下のようになる．
 
 \begin{figure}[h]
@@ -627,7 +636,7 @@ $\mathbb{Z}^2$ の生成系 $\{(1,0),(0,1)\}$ と，$\{(1,1),(0,1)\}$ に関す�
 \label{cayleyZ2_2}
 \end{figure}
 
-\end{ex}
+\end{ex*}
 
 \begin{thm}\label{-tree}
  $F$ が自由群であり，$S$ がその生成系の場合，$\Cay(F,S)$ は treeである．
@@ -651,17 +660,17 @@ Cayleyグラフにサイクルがある場合，そのサイクルに沿って $
 が成立することである. ただし, $e$ は単位元である.
 \end{dfn}
 
-\begin{rem}
+\begin{rem*}
 $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に対し，$g\cdot A\coloneqq\{g\cdot x\mid x\in A\}$ とする．
-\end{rem}
+\end{rem*}
 
 \begin{dfn}
  群 $G$ による集合 $X$ への群作用が \textbf{自由 (free)} であるとは，任意の $g\in G\setminus\{e\}$ と任意の $x\in X$ に対して，$g\cdot x\neq x$ が成り立つときをいう．
 \end{dfn}
 
-\begin{ex}
+\begin{ex*}
   群 $\mathbb{Z}^2$ の集合 $\mathbb{R}^2$ への加法での群作用は自由である．しかし，回転群 $\mathrm{SO}(2)\coloneqq\{A\in \mathrm{GL}_2(\mathbb{R})\mid \mathrm{det}A=1\}$ の $\mathbb{R}^2$ への群作用は自由でない．点 $(0,0)\in \mathbb{R}^2$ は$\mathrm{SO}(2)$ のいかなる元を作用させても不動だからである．
-\end{ex}
+\end{ex*}
 
 \begin{dfn}\label{orbit_quotient}
  群 $G$ が 集合 $X$ に群作用しているとする．元 $x\in X$ における，この群作用による\textbf{軌道 (orbit)} とは，集合
@@ -671,9 +680,9 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
  のことである．
 \end{dfn}
 
-\begin{ex}
+\begin{ex*}
   群 $\mathbb{Z}^2$ の集合 $\mathbb{R}^2$ への加法での群作用による，$(0,0)\in\mathbb{R}^2$ の軌道は $\mathbb{Z}^2\subset\mathbb{R}^2$ である．また，この群作用による商集合は，代表元の集合が $[0,1)\times[0,1)$ であり，トーラス $S^1\times S^1$ と同相である．
-\end{ex}
+\end{ex*}
 
 \begin{dfn}
   $(V,E),(V^\prime,E^\prime)$ をグラフとする．$f\colon (V,E)\rightarrow(V^\prime,E^\prime)$ が \textbf{グラフ準同型 (graph homomorphism)} であるとは，以下の二条件が成り立つときをいう．
@@ -733,9 +742,9 @@ $g(x)$ を $g\cdot x$ と表記する．また，部分集合 $A\subset X$ に�
  このとき，パス $f_0$ と $f_1$ を \textbf{ホモトピック (homotopic)} であるといい，$f_0\simeq f_1$ と表記する．
 \end{dfn}
  
-\begin{rem}
+\begin{rem*}
   Definition~\ref{homotopy} における $\simeq$ は，始点と終点が一致しているパス集合上の同値関係である．
-\end{rem}
+\end{rem*}
 
 \begin{dfn}
   パス $f,g\colon I\rightarrow X$ に関して，$f(1)=g(0)$ のとき， $f$ と $g$ の演算を，
@@ -751,13 +760,13 @@ f \cdot g \coloneqq
   を導入することで群ができる．この群を \textbf{基本群 (fundamental group)} といい，$\pi_1(X,x_0)$ と表記する．
 \end{dfn}
 
-\begin{ex}
-  $S^1\subset \mathbb{R}^2$ の，基点 $(1,0)$ に関する基本群は，$\pi_1(S^1,(1,0))\cong \mathbb{Z}$ である．
-\end{ex}
+\begin{ex*}
+  $S^1\subset \mathbb{R}^2$ の，基点 $(1,0)$ に関する基本群は，$\pi_1(S^1,(1,0))\cong \mathbb{Z}$ である．また，トーラス $T=S^1\times S^1$ の基点 $(1,0)\times (1,0)$ に関する基本群は，$\pi_1(T,(1,0)\times (1,0))\cong \mathbb{Z}^2$ である．
+\end{ex*}
 
-\begin{rem}
+\begin{rem*}
   $X$ が弧状連結のとき，$X$ による基本群の同型類は基点に依らない．そこで，$X$ が弧状連結のときは，基点を省略して単に $\pi_1(X)$ と表記する．なお，$X$ が弧状連結とは，任意の二点 $x,y\in X$ に対し，$\gamma(0)=x,\gamma(1)=y$ となるようなパスが取れるときをいう．
-\end{rem}
+\end{rem*}
 
 \subsection{Covering Spaces}\label{coveringspace}
 \begin{dfn}
@@ -770,7 +779,7 @@ f \cdot g \coloneqq
   が成り立つとき，$\widetilde{X}$ と $p$ の組 $(\widetilde{X},p)$ を $X$ の \textbf{被覆空間 (covering space)} という．また，$p$ を省略し，$\widetilde{X}$ のみを被覆空間ということもある．
 \end{dfn}
 
-\begin{ex}
+\begin{ex*}
   $\mathbb{R}$ は $S^1$ の被覆空間である (図\ref{S2coveringspace}参照)．
 
 \begin{figure}[h]
@@ -779,7 +788,7 @@ f \cdot g \coloneqq
 \caption{$S^1$ の被覆空間の例}
 \label{S2coveringspace}
 \end{figure}
-\end{ex}
+\end{ex*}
 
 \begin{dfn}
   $X$ を位相空間，$(\widetilde{X},p)$ を $X$ の被覆空間とし，写像 $f\colon Y\rightarrow X$ は連続とする．
@@ -810,15 +819,15 @@ f \cdot g \coloneqq
   位相空間 $X$ の 被覆空間 $\widetilde{X}$ が \textbf{普遍被覆 (universal cover)} であるとは，$\widetilde{X}$ が弧状連結かつ $\pi_1(\widetilde{X})$ が自明群であることをいう．
 \end{dfn}
 
-\begin{ex}
+\begin{ex*}
   図\ref{S2coveringspace} より，$\mathbb{R}$ は $S^1$ の普遍被覆である．
-\end{ex}
+\end{ex*}
 
 \begin{dfn}\label{def_deck}
   $X$ を位相空間，$(\widetilde{X},p)$ を $X$ の被覆空間とする．写像 $f\colon \widetilde{X}\rightarrow \widetilde{X}$ が同相写像かつ $p\circ f=p$ をみたすとき，$f$ を \textbf{被覆変換 (deck transformation)} という．
 \end{dfn}
 
-\begin{ex}
+\begin{ex*}
   $S^1$ の被覆空間 $\mathbb{R}$ をとる．$p\colon \mathbb{R}\rightarrow S^1\subset \mathbb{R}^2\;;\; t\mapsto (\cos2\pi t,\sin2\pi t)$ としたとき，$f\colon \mathbb{R}\rightarrow \mathbb{R}\; ;\; t\mapsto t+2\pi k\; (k\in\mathbb{Z})$ は被覆変換である (図\ref{decktrans} 参照)．
 
 \begin{figure}[h]
@@ -827,7 +836,7 @@ f \cdot g \coloneqq
 \caption{$S^1$ の被覆変換の例}
 \label{decktrans}
 \end{figure}
-\end{ex}
+\end{ex*}
 
 \begin{lem}\label{deck_lemma}
   $X$ を位相空間，$(\widetilde{X},p)$ を $X$ の被覆空間とし，$\widetilde{X}$ が連結であるとする．$x\in X$ に対し，$y_1,y_2\in p^{-1}(x)$ としたとき，$f(y_1)=y_2$ となるような被覆変換 $f$ は，存在すれば一意的である．
@@ -853,6 +862,12 @@ f \cdot g \coloneqq
   と定める．
 \end{dfn}
 
+\begin{rem}\label{kyori}
+$(M,\{g_p\}_{p\in M})$ をリーマン多様体とし，$N$ を多様体，$f\colon N\rightarrow M$ とする．任意の $q\in N$ にて，微分 $df_q\colon T_q(N)\rightarrow T_{f(q)}(M)$ が単射のとき，$N$ には $M$ から誘導されるリーマン計量 $\{h_q\}_{q\in N}$ が，
+$$h_q(u,v)\coloneqq g_{p(q)}(dp_{q}(u),dp_{q}(v))$$
+で入り，そこから $N$ には距離関数が入る．
+\end{rem}
+
 \begin{dfn}
   多様体 $M$ が \textbf{測地的完備} であるとは，任意の極大測地線 $\gamma\colon I\rightarrow M$ に対して，$I=\mathbb{R}$ が成り立つことをいう．
 \end{dfn}
@@ -873,7 +888,7 @@ f \cdot g \coloneqq
   \bibitem{1} Clara Löh, \textit{Geometric Group Theory}, Springer, 2018.
   \bibitem{4} J. Milnor, \textit{A note on curvature and fundamental group}, Journal of Differential Geometry, vol.2, No.1, 1968, pp.1--7.
   \bibitem{5} J. Milnor, \textit{Growth of finitely generated solvable groups}, Journal of Differential Geometry, vol.2, No.1, 1968, pp.447--449.
-  \bibitem{6} V.A. Efremovič, \textit{The proximity geometry of Riemannian manifolds}, Uspekhi Matematicheskikh Nauk 8, No.5, 1953, pp.189--191.
+  %\bibitem{6} V.A. Efremovič, \textit{The proximity geometry of Riemannian manifolds}, Uspekhi Matematicheskikh Nauk 8, No.5, 1953, pp.189--191.
   \bibitem{7} 河野 俊丈，測地線と完備性など, https://www.ms.u-tokyo.ac.jp/~kohno/lectures/dg9.pdf (2026/1/28 閲覧)．
   \bibitem{9} 佐藤 隆夫，基本群と被覆空間，裳華房，2023．
   \bibitem{8} 正井 秀俊，群と幾何をみる，日本評論社，2023．
