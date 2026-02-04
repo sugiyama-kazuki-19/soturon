@@ -1,11 +1,11 @@
 # Fdb version 4
-["dvipdf"] 1769960136.7764 "gaiyou.dvi" "gaiyou.pdf" "gaiyou" 1769960137.06109 0
-  "gaiyou.dvi" 1769960136 7676 23ca2c151e2b410fd9a78a085b37eef2 "latex"
+["dvipdf"] 1770193500.92439 "gaiyou.dvi" "gaiyou.pdf" "gaiyou" 1770193501.50625 0
+  "gaiyou.dvi" 1770193500 8092 3e93e65637dffb8513fab13b13e56a78 "latex"
   (generated)
   "gaiyou.pdf"
   (rewritten before read)
-["latex"] 1769960136.47248 "c:/Users/kazus/github/soturon/gaiyou/gaiyou.tex" "gaiyou.dvi" "gaiyou" 1769960137.05923 0
-  "c:/Users/kazus/github/soturon/gaiyou/gaiyou.tex" 1769960135 6817 c0d9de41e38e5b120d40223f1d4c61d7 ""
+["latex"] 1770193500.31884 "c:/Users/kazus/github/soturon/gaiyou/gaiyou.tex" "gaiyou.dvi" "gaiyou" 1770193501.50163 0
+  "c:/Users/kazus/github/soturon/gaiyou/gaiyou.tex" 1770193497 7148 e9af68fe09b109accce85c3d90344a90 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1764496659 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1764496660 916 f87d7c45f9c908e672703b83b72241a3 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1764496660 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -39,8 +39,8 @@
   "c:/texlive/2025/texmf-dist/web2c/texmf.cnf" 1764496606 42213 4e2ca030e8e2640502016e9e45868dcb ""
   "c:/texlive/2025/texmf-var/web2c/euptex/uplatex.fmt" 1764498180 2371685 a01da38a0aee414faf9a5cffd5c909e5 ""
   "c:/texlive/2025/texmf.cnf" 1764497938 713 e69b156964470283e0530f5060668171 ""
-  "gaiyou.aux" 1769960136 32 3985256e7290058c681f74d7a3565a19 "latex"
-  "gaiyou.tex" 1769960135 6817 c0d9de41e38e5b120d40223f1d4c61d7 ""
+  "gaiyou.aux" 1770193500 32 3985256e7290058c681f74d7a3565a19 "latex"
+  "gaiyou.tex" 1770193497 7148 e9af68fe09b109accce85c3d90344a90 ""
   (generated)
   "gaiyou.aux"
   "gaiyou.dvi"
