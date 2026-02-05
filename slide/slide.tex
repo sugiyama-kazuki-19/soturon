@@ -10,31 +10,52 @@
 \usepackage{tikz}
 \usepackage{xcolor}
 \usepackage{mathtools}
+
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 \usetheme[block=fill]{metropolis}
+\usefonttheme[onlymath]{serif}
+
 \DeclareMathOperator{\diam}{diam}
 \DeclareMathOperator{\id}{id}
 \DeclareMathOperator{\Cay}{Cay}
 
-\setbeamertemplate{theorems}[numbered]
-\makeatletter
-\@ifundefined{c@definition}{\newcounter{definition}}{}
-\makeatother
-\newtheorem{dfn}{Definition}[section]
-\newtheorem{prop}[dfn]{Proposition}
-\newtheorem{lem}[dfn]{Lemma}
-\newtheorem{thm}[dfn]{Theorem}
-\newtheorem{ex}[dfn]{Example}
+\useinnertheme{rounded}
+\setbeamertemplate{itemize items}[default]
+\setbeamertemplate{enumerate items}[default]
 
-% \setbeamercolor{block title}{fg=black,bg=blue!40!white}
-% \setbeamercolor{block body}{fg=black,bg=blue!15!white}
-% \setbeamercolor{block title alerted}{fg=black,bg=orange!40!white}
-% \setbeamercolor{block body alerted}{fg=black,bg=orange!15!white}
-% \setbeamercolor{block title example}{fg=black,bg=green!40!white}
-% \setbeamercolor{block body example}{fg=black,bg=green!15!white}
+\setbeamertemplate{theorems}[numbered]
+% \makeatletter
+% \@ifundefined{c@definition}{\newcounter{definition}}{}
+% \makeatother
+
+% \newtheorem{dfn}{Definition}[section]
+% \newtheorem{prop}[dfn]{Proposition}
+% \newtheorem{lem}[dfn]{Lemma}
+% \newtheorem{thm}[dfn]{Theorem}
+% \newtheorem{ex}[dfn]{Example}
+
+\theoremstyle{definition}
+\newtheorem{dfn}{Definition}[section]
+\newtheorem{ex}[dfn]{Example}
+\newtheorem{lem}[dfn]{Lemma}
+
+\AtBeginEnvironment{dfn}{
+    \setbeamercolor{block title}{fg=white, bg=blue!60!black}
+    \setbeamercolor{block body}{bg=blue!5}
+}
+
+\AtBeginEnvironment{ex}{
+    \setbeamercolor{block title}{fg=white, bg=green!50!black}
+    \setbeamercolor{block body}{bg=green!5}
+}
+
+\AtBeginEnvironment{lem}{
+    \setbeamercolor{block title}{fg=white, bg=orange!50!black}
+    \setbeamercolor{block body}{bg=orange!5}
+}
 
 \title{テストスライド}
-\author{2264138 杉山和輝}
+\author{おなまえ}
 \date{\today}
 
 \begin{document}
@@ -42,17 +63,19 @@
     \maketitle
 \end{frame}
 
-\section{Cayleyグラフ}
+\begin{frame}
+    \section{Cayley Graphs}
+\end{frame}
 
 \begin{frame}
     \frametitle{1}
     \begin{dfn}
     生成系 $S$ による群 $G$ の \textbf{Cayleyグラフ (Cayley graph)} とは
         \begin{enumerate}
-            \item 頂点集合を $G$．
-            \item 辺集合を $\{\{g,g\cdot s\}\mid g\in G，s\in(S\cup S^{-1})\setminus\{e\}\}$．
+            \item 頂点集合を $G$，
+            \item 辺集合を $\{\{g,g\cdot s\}\mid g\in G，s\in(S\cup S^{-1})\setminus\{e\}\}$，
         \end{enumerate}
-    を満たすグラフである．このグラフを $\Cay(G,S)$ と表記する．
+    とするグラフである．このグラフを $\Cay(G,S)$ と表記する．
     \end{dfn}
 
     \begin{ex}
@@ -73,7 +96,13 @@
         \end{equation*}
         であり，これは $G$ 上の距離関数である．
     \end{dfn}
-    この距離関数は，$\Cay(G,S)$の一辺の長さを1としてえられる距離関数と同じである．また，この距離関数は生成系に依存する．
+    この距離関数は，$\Cay(G,S)$の一辺の長さを1としてえられる距離関数と同じである．また，この距離関数は生成系に依存する．\\
+
+    この関数により，$(G,d_S)$ は距離空間となる．
+\end{frame}
+
+\begin{frame}
+    \section{Quasi-isometries}
 \end{frame}
 
 \begin{frame}
@@ -146,13 +175,65 @@
 
 \begin{frame}
     \frametitle{8}
-    \begin{prop}
-        擬等長写像における二条件は，以下の二条件と同値．
+    \begin{dfn}
+        $G$ を有限生成群としたとき，$G$ が距離空間 $X$ に \textbf{bilipschitz equivalent} であるとは，$G$ のある有限な生成系 $S$ がとれ，距離空間 $(G,d_S)$ と $X$ が (先ほど定義した) bilipschitz equivalent であることをいう．\\
+        
+        また，$G$ が $X$ に \textbf{擬等長 (quasi-isometric)} であるとは，ある有限な生成系 $S$ がとれ，距離空間 $(G,d_S)$ と $X$ が (先ほど定義した) quasi-isometric であることをいう．
+    \end{dfn}
+    群 $G$ の生成系 $S$ が有限であることに注意．
+
+\end{frame}
+
+\section{Quasi-Geodesic Metric Spaces}
+
+\begin{frame}
+    \frametitle{9}
+    \begin{dfn}
+    距離空間 $X$ 上の長さ $L\in\mathbb{R}_{>0}$ の \textbf{測地線 (geodesic)} とは，$[0,L]\subset\mathbb{R}$ から $X$ への等長埋め込み，つまり任意の二点 $t_1,t_2\in [0,L]$ に対し，
+    $$|t_2-t_1|=d_X(\gamma(t_2),\gamma(t_1))$$
+    をみたす $\gamma\colon[0,L]\rightarrow X$ のことである．
+
+    また，$X$ が \textbf{測地的 (geodesic)} であるとは，任意の $x,x^\prime\in X$ において，$\gamma(0)=x$，$\gamma(L)=x^\prime$ となるような 等長埋め込み $\gamma$ がとれるときをいう．
+    \end{dfn}
+
+    \begin{ex}
+        通常の距離が入った $\mathbb{R}^n$ は測地的だが，$\mathbb{R}^n\setminus\{0\}$ は測地的でない．実際，$(1,0)$ と $(-1,0)$ 間の距離は $2$ だが，この測地線は原点を通ってしまう．
+    \end{ex}
+\end{frame}
+
+\begin{frame}
+    \frametitle{10}
+    \begin{dfn}
+    距離空間 $X$ 上の \textbf{\bm{$(c,b)$}-擬測地線 (\bm{$(c,b)$}-quasi-godesic)} とは，$[0,L]\subset\mathbb{R}$ から $X$ への $(c,b)$-擬等長埋め込み，つまり任意の二点 $t_1,t_2\in [0,L]$ に対し，
+    $$\frac{1}{c}|t_2-t_1|-b\leq d_X(\gamma(t_2),\gamma(t_1))\leq c|t_2-t_1|+b$$
+    をみたす $\gamma\colon[0,L]\rightarrow X$ のことである．
+    
+    また，$X$ が \textbf{\bm{$(c,b)$}-擬測地的 (\bm{$(c,b)$}-quasi-godesic)} であるとは，任意の $x,x^\prime\in X$ において，$\gamma(0)=x$，$\gamma(L)=x^\prime$ となるような $(c,b)$-擬等長埋め込み，$\gamma$ がとれるときをいう(単に擬測地線や擬測地的ともいう)．
+    \end{dfn}
+
+    \begin{ex}
+    通常の距離が入った $\mathbb{R}^n\setminus\{0\}$ は，$(1,\epsilon)$-測地的である($\epsilon>0$)．これは，原点中心で十分小さい半径の円で原点を迂回すれば，擬測地線が得られるからである．
+    \end{ex}
+\end{frame}
+
+\section{Švarc-Milnor Lemma}
+
+\begin{frame}
+    \frametitle{11}
+    \begin{lem}[Švarc-Milnor Lemma]
+        $G$ を群とし，$(c,b)$-測地的な距離空間 $(X,d_X)$ 上に等長な群作用があるとする ($b,c>0$)．もしある部分集合 $B\subset X$ が存在し，
     \begin{enumerate}
-    \item[［1］] $f\colon X\rightarrow Y$ が擬等長埋め込みである．
-    \item[［2］] ある定数 $c\in\mathbb{R}_{>0}$ が存在し，任意の $y\in Y$ に対してある $x\in X$ をとると，$d_Y(f(x),y)\leq c$ を満たす．
+    \item[(a)] $\diam B\coloneqq\underset{x,y\in B}{\sup}d(x,y)<\infty,$
+    \item[(b)] $\bigcup_{g\in G}g\cdot B=X,$
+    \item[(c)] 集合 $S\coloneqq\{g\in G\mid g\cdot B^\prime \cap B^\prime \neq \emptyset\}$ が有限
     \end{enumerate}
-    \end{prop}
+    を満たすならば，
+    \begin{enumerate}
+    \item $S$ は $G$ の有限生成系であり，\label{S_is_generating_set}
+    \item 任意の $x\in X$ に対して定まる写像 $\varphi\colon G\rightarrow X\;;\; g\mapsto g\cdot x$ によって，$G$ と $X$ は擬等長である．\label{G~X}
+    \end{enumerate}
+    ただし，$B^\prime \coloneqq\{x\in X\mid y\in B，d_X(x,y)\leq 2b\}$ と定める．
+    \end{lem}
 \end{frame}
 
 \end{document}
