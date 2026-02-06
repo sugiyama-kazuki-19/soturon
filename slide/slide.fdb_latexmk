@@ -1,5 +1,5 @@
 # Fdb version 4
-["lualatex"] 1770266960.40584 "c:/Users/kazus/github/soturon/slide/slide.tex" "slide.pdf" "slide" 1770266966.23128 0
+["lualatex"] 1770272536.53021 "c:/Users/kazus/github/soturon/slide/slide.tex" "slide.pdf" "slide" 1770272541.08742 0
   "../picture/benzu.png" 1767278203 55168 e67991185dd4a336eea132cba95c175c ""
   "../picture/cayleyZ2_2.png" 1768716304 55099 c803b00420aaef7ddfc709a83037a7fe ""
   "C:/Users/kazus/.texlive2025/texmf-var/luatexja/extra_haranoajigothic-medium.luc" 1764758456 321585 d50579a91670d934ad6ca342ef83efaa ""
@@ -35,9 +35,9 @@
   "C:/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmsans12-regular.luc" 1764758456 128157 b0bf3ea7f2f839288ddc402105768dd3 ""
   "C:/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmsans8-regular.luc" 1770098945 127588 469621a01f637c9e085db805c2bf446e ""
   "C:/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmsans9-regular.luc" 1770106421 128297 48787925b35dc7b8b26c895208def923 ""
-  "C:/texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1770266962 88 6eaf95b49dd101cf2a05b33b874241da "lualatex"
+  "C:/texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1770272538 88 6eaf95b49dd101cf2a05b33b874241da "lualatex"
   "C:/texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1770099502 52228 61196d30422cf91110947a3d1f5e6e76 ""
-  "c:/Users/kazus/github/soturon/slide/slide.tex" 1770266952 11630 2b5bd795145016c43afdb1d9a47a1b5a ""
+  "c:/Users/kazus/github/soturon/slide/slide.tex" 1770267830 12715 9c6d1d63bbe80786cbb1592db01915f8 ""
   "c:/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf" 1764497058 4760392 aafa9998dbe8bca0a2b37fc99dd6054a ""
   "c:/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf" 1764497058 6422896 10567d16226fce1e1957ca6d1451a578 ""
   "c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf" 1764497403 118828 5d91d27a335c65bda4818de63abc25ce ""
@@ -83,6 +83,7 @@
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb" 1764496660 36912 b448ef9ad9d7228ec3c6e71005136d55 ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1764496660 35752 024fb6c41858982481f6968b5fc26508 ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1764496660 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1764496660 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1764496660 32716 08e384dc442464e7285e891af9f45947 ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1764496660 34694 870c211f62cb72718a00e353f14f254d ""
   "c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1764497514 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -370,10 +371,10 @@
   "c:/texlive/2025/texmf-dist/tex/luatex/luatexja/patches/lltjp-geometry.sty" 1764497442 18655 988d7f23464591f321cce5720dc67e3d ""
   "c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1764497953 115598 04350d51ed004e06dc9289e99a89f6b4 ""
   "c:/texlive/2025/texmf-var/web2c/luahbtex/lualatex.fmt" 1764497994 5657302 cc593e95247c645fb41ad814782584f5 ""
-  "slide.aux" 1770266965 4001 a9cee543549272dee70c4c088f78818e "lualatex"
-  "slide.nav" 1770266965 2350 26a111a867ac7c246219faf0163b61b7 "lualatex"
-  "slide.out" 1770266965 562 56ece22bc5137fefe87591bca42bece0 "lualatex"
-  "slide.tex" 1770266952 11630 2b5bd795145016c43afdb1d9a47a1b5a ""
+  "slide.aux" 1770272540 4261 419b0e25cc663ae2eafc45f8c5b7828d "lualatex"
+  "slide.nav" 1770272540 2534 01ab4fedba5b0c80f4c717ace236228a "lualatex"
+  "slide.out" 1770272540 562 56ece22bc5137fefe87591bca42bece0 "lualatex"
+  "slide.tex" 1770267830 12715 9c6d1d63bbe80786cbb1592db01915f8 ""
   (generated)
   "C:/texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.lua"
   "C:/texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc"

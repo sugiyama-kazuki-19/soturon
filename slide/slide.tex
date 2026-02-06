@@ -38,6 +38,7 @@
 \newtheorem{dfn}{Definition}[section]
 \newtheorem{ex}[dfn]{Example}
 \newtheorem{lem}[dfn]{Lemma}
+\newtheorem{prop}[dfn]{Proposition}
 
 \AtBeginEnvironment{dfn}{
     \setbeamercolor{block title}{fg=white, bg=blue!60!black}
@@ -50,6 +51,11 @@
 }
 
 \AtBeginEnvironment{lem}{
+    \setbeamercolor{block title}{fg=white, bg=orange!50!black}
+    \setbeamercolor{block body}{bg=orange!5}
+}
+
+\AtBeginEnvironment{prop}{
     \setbeamercolor{block title}{fg=white, bg=orange!50!black}
     \setbeamercolor{block body}{bg=orange!5}
 }
@@ -182,6 +188,9 @@
     \end{dfn}
     群 $G$ の生成系 $S$ が有限であることに注意．
 
+    \begin{prop}
+        $S$,$S^\prime$ をともに群 $G$ の有限な生成系としたとき，距離空間 $(G,d_S)$ が距離空間 $(X,d_X)$ と $f$ で bilipschitz equivalent ならば，$(G,d_{S^\prime})$ と $(X,d_X)$ も $f$ で bilipschitz equivalent である．
+    \end{prop}
 \end{frame}
 
 \section{Quasi-Geodesic Metric Spaces}
@@ -220,8 +229,8 @@
 
 \begin{frame}
     \frametitle{11}
-    \begin{lem}[Švarc-Milnor Lemma]
-        $G$ を群とし，$(c,b)$-測地的な距離空間 $(X,d_X)$ 上に等長な群作用があるとする ($b,c>0$)．もしある部分集合 $B\subset X$ が存在し，
+    \begin{lem}[Švarc-Milnor Lemma I]
+        $G$ を群とし，$(c,b)$-測地的な距離空間 $(X,d_X)$ 上に擬等長な群作用があるとする ($b,c>0$)．もしある部分集合 $B\subset X$ が存在し，
     \begin{enumerate}
     \item[(a)] $\diam B\coloneqq\underset{x,y\in B}{\sup}d(x,y)<\infty,$
     \item[(b)] $\bigcup_{g\in G}g\cdot B=X,$
@@ -233,6 +242,20 @@
     \item 任意の $x\in X$ に対して定まる写像 $\varphi\colon G\rightarrow X\;;\; g\mapsto g\cdot x$ によって，$G$ と $X$ は擬等長である．\label{G~X}
     \end{enumerate}
     ただし，$B^\prime \coloneqq\{x\in X\mid y\in B，d_X(x,y)\leq 2b\}$ と定める．
+    \end{lem}
+\end{frame}
+
+\begin{frame}
+    \frametitle{12}
+    \begin{ex}
+        群 $\mathbb{Z}^2$ の，距離空間 $\mathbb{R}^2$ への群作用を考えると，$\mathbb{Z}^2$ は $\mathbb{R}^2$ と擬等長である．
+    \end{ex}
+\end{frame}
+
+\begin{frame}
+    \frametitle{15}
+    \begin{lem}[Švarc-Milnor Lemma II]
+    群 $G$ が，proper かつ擬測地的な距離空間 $(X,d_X)$ に，等長に作用しているとする．この群作用が properly discontinuous かつ余コンパクトであれば，$G$ は有限生成であり，$G$ と $X$ は擬等長である．
     \end{lem}
 \end{frame}
 
