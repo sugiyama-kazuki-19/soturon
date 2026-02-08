@@ -377,6 +377,8 @@ INPUT C:/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmromandemi10-obl
 INPUT C:/Users/kazus/.texlive2025/texmf-var/luatexja/extra_lmromandemi10-oblique.luc
 INPUT ../picture/benzu.png
 INPUT ../picture/benzu.png
+INPUT ../picture/R2Z2_ex.png
+INPUT ../picture/R2Z2_ex.png
 OUTPUT slide.nav
 OUTPUT slide.toc
 OUTPUT slide.snm
