@@ -303,8 +303,12 @@ INPUT c:/texlive/2025/texmf-dist/tex/luatex/luatexja/patches/lltjp-fontspec.sty
 INPUT C:/texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc
 OUTPUT C:/texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.lua
 OUTPUT C:/texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc
-INPUT c:/texlive/2025/texmf-dist/tex/latex/beamer/beamerfontthemeserif.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/beamer/beamerthemeFrankfurt.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/beamer/beamerouterthemesmoothbars.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/beamer/beamerfontthemeserif.sty
 INPUT ./slide.aux
 OUTPUT slide.aux
 INPUT c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -324,9 +328,9 @@ INPUT c:/texlive/2025/texmf-dist/tex/latex/translator/translator-theorem-diction
 INPUT c:/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT ./slide.nav
 INPUT C:/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmsans8-regular.luc
 INPUT C:/Users/kazus/.texlive2025/texmf-var/luatexja/extra_lmsans8-regular.luc
+INPUT ./slide.nav
 INPUT C:/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmsans12-regular.luc
 INPUT C:/Users/kazus/.texlive2025/texmf-var/luatexja/extra_lmsans12-regular.luc
 INPUT C:/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmsans9-regular.luc
