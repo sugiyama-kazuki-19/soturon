@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.11.30)  9 FEB 2026 05:22
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.11.30)  9 FEB 2026 12:53
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/kazus/github/soturon/slide/slide.tex
@@ -1476,6 +1476,8 @@ Overfull \vbox (9.37263pt too high) detected at line 281
 
 ] [21
 
+] [22
+
 ]
 \tf@nav=\write6
 
@@ -1496,19 +1498,19 @@ Package rerunfilecheck Info: File `slide.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 31174 strings out of 476081
+ 31176 strings out of 476081
  125244,1144653 words of node,token memory allocated
- 21959 words of node memory still in use:
-   93 hlist, 12 vlist, 87 rule, 6 disc, 4 local_par, 8 math, 205 glue, 22 kern, 25 penalty, 139 glyph, 7407 attribute, 71 glue_spec, 747 attribute_list, 4 write, 91 user_defined, 97 pdf_literal, 24 pdf_colorstack nodes
-   avail lists: 1:4,2:20517,3:462,4:625,5:201,6:30,7:2292,8:52,9:850,10:33,11:84
+ 21935 words of node memory still in use:
+   93 hlist, 12 vlist, 87 rule, 6 disc, 4 local_par, 8 math, 205 glue, 22 kern, 25 penalty, 139 glyph, 7396 attribute, 71 glue_spec, 746 attribute_list, 4 write, 91 user_defined, 97 pdf_literal, 24 pdf_colorstack nodes
+   avail lists: 1:4,2:20529,3:462,4:629,5:202,6:30,7:2292,8:52,9:850,10:33,11:84
  52598 multiletter control sequences out of 65536+600000
  74 fonts using 43133359 bytes
  105i,13n,114p,2064b,1202s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmromandemi10-oblique.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman7-italic.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans9-regular.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on slide.pdf (21 pages, 322231 bytes).
+<c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmromandemi10-oblique.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman7-italic.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans9-regular.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on slide.pdf (22 pages, 325554 bytes).
 
-PDF statistics: 574 PDF objects out of 1000 (max. 8388607)
- 349 compressed objects within 4 object streams
- 51 named destinations out of 1000 (max. 131072)
+PDF statistics: 579 PDF objects out of 1000 (max. 8388607)
+ 353 compressed objects within 4 object streams
+ 53 named destinations out of 1000 (max. 131072)
  1456 words of extra memory for PDF output out of 10000 (max. 100000000)
 
