@@ -212,8 +212,8 @@ Proposition~\ref{dense image} の条件［2］を $f$ が満たすとき，$f$ �
 
 以下，$G$ を群として，$S$ をその生成系とする．
 \begin{dfn}
-生成系 $S$ による，群 $G$ 上の \textbf{word metric} とは，$d_S\colon G\times G\rightarrow \mathbb{N}_{\geq 0}$，
- $$d_S(g,h)\coloneqq\min\{n\in\mathbb{N}_{\geq 0}\mid s_1,s_2,\ldots, s_n\in S\cup S^{-1}，g^{-1}h=s_1s_2\cdots s_n\}$$
+生成系 $S$ による，群 $G$ 上の \textbf{word metric} とは，$d_S\colon G\times G\rightarrow \mathbb{Z}_{\geq 0}$，
+ $$d_S(g,h)\coloneqq\min\{n\in\mathbb{Z}_{\geq 0}\mid s_1,s_2,\ldots, s_n\in S\cup S^{-1}，g^{-1}h=s_1s_2\cdots s_n\}$$
 であり，これは $G$ 上の距離関数である．
 \end{dfn}
 
@@ -251,7 +251,7 @@ $f \colon (X,d_X)\rightarrow (G,d_S)$，$f^\prime\colon (X,d_X)\rightarrow (G,d_
 \draw[->] (S) to node {id} (S*);
 \end{tikzpicture}
 \end{center}
-より，$f^\prime=f\circ\id=f$ が成立する．bilipschitz equivalence の合成写像は bilipschitz equivalence なので，あとは $\id$ が bilipschitz equivalence であることを示せばよい．$c\in\mathbb{N}_{\geq 0}$ を，
+より，$f^\prime=f\circ\id=f$ が成立する．bilipschitz equivalence の合成写像は bilipschitz equivalence なので，あとは $\id$ が bilipschitz equivalence であることを示せばよい．$c\in\mathbb{Z}_{\geq 0}$ を，
 $$c\coloneqq\underset{s\in S\cup S^{-1}}{\max}d_{S^\prime}(e,s)$$
 とすると，$S$ は有限なのでこれは有限値である．$g,h\in G$ をとり，$d_S(g,h)=n$ とし，$g^{-1}h=s_1s_2\cdots s_{n-1} s_n$ ($s_1,s_2,\ldots,s_{n-1},s_n\in S\cup S^{-1}$) と表せられるとする．このとき，$S^\prime$ 上での $g,h$ の word metric は，
 \begin{align*}
@@ -275,7 +275,7 @@ $$c\coloneqq\underset{s\in S\cup S^{-1}}{\max}d_{S^\prime}(e,s)$$
 \end{ex*}
 
 \begin{dfn}
-距離空間 $X$ 上の \textbf{\bm{$(c,b)$}-擬測地線 (\bm{$(c,b)$}-quasi-godesic)} とは，とは，$[0,L]\subset\mathbb{R}$ から $X$ への $(c,b)$-擬等長埋め込み，$\gamma\colon[0,L]\rightarrow X$ のことである．また，$X$ が \textbf{\bm{$(c,b)$}-擬測地的 (\bm{$(c,b)$}-quasi-godesic)} であるとは，任意の $x,x^\prime\in X$ において，$\gamma(0)=x$，$\gamma(L)=x^\prime$ となるような $(c,b)$-擬等長埋め込み，$\gamma$ がとれるときをいう．また，$(c,b)$ を省略し，単に擬測地線や擬測地的ともいう．
+距離空間 $X$ 上の \textbf{\bm{$(c,b)$}-擬測地線 (\bm{$(c,b)$}-quasi-geodesic)} とは，とは，$[0,L]\subset\mathbb{R}$ から $X$ への $(c,b)$-擬等長埋め込み，$\gamma\colon[0,L]\rightarrow X$ のことである．また，$X$ が \textbf{\bm{$(c,b)$}-擬測地的 (\bm{$(c,b)$}-quasi-geodesic)} であるとは，任意の $x,x^\prime\in X$ において，$\gamma(0)=x$，$\gamma(L)=x^\prime$ となるような $(c,b)$-擬等長埋め込み，$\gamma$ がとれるときをいう．また，$(c,b)$ を省略し，単に擬測地線や擬測地的ともいう．
 \end{dfn}
 
 \begin{ex*}
